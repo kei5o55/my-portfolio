@@ -35,11 +35,11 @@ export default function Home() {
           <h3>MISORIA : Frontier</h3>
 
           <p style={{ opacity: 0.8 }}>
-            オリジナルADV + 探索ゲーム。React + Viteで制作。
+            オリジナルADV + 探索ゲーム。React + Viteで制作中。
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="https://original-game-hazel.vercel.app/">▶ Play</a>{/*今後indexにて実装予定*/}
+            <a href="https://original-game-hazel.vercel.app/">▶ DEMO Play</a>{/*今後indexにて実装予定*/}
             <a href="https://github.com/kei5o55/minesweeper">GitHub</a>
           </div>
         </div>
@@ -55,11 +55,11 @@ export default function Home() {
           <h3>レジアプリ</h3>
 
           <p style={{ opacity: 0.8 }}>
-            同人即売会向けレジアプリ。React + Viteで制作。
+            同人即売会向けレジアプリ。React + Viteで制作中。
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="https://register-3k2l.vercel.app/">▶ Play</a>{/*今後indexにて実装予定*/}
+            <a href="https://register-3k2l.vercel.app/">▶ DEMO Play</a>{/*今後indexにて実装予定*/}
             <a href="https://github.com/kei5o55/register">GitHub</a>
           </div>
 
