@@ -31,5 +31,21 @@ export const artworks: ArtWork[] = [
     tags:["一次創作"],
     image: "/art/sample4.png",
     description: "一次創作イラスト",
+  },
+  {
+    slug: "white2-illustration",
+    title: "white2 / illustration",
+    date: "2026-02-09",
+    tags:["一次創作"],
+    image: "/art/sample.jpg",
+    description: "一次創作イラスト2",
+  },
+  {
+    slug: "embark-illustration",
+    title: "embark / illustration",
+    date: "2026-02-09",
+    tags:["二次創作"],
+    image: "/art/sample5.png",
+    description: "CHUNITHM二次創作イラスト",
   }
 ];
