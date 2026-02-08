@@ -39,7 +39,7 @@ export default function Home() {
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="/play">▶ Play</a>
+            <a href="https://original-game-hazel.vercel.app/">▶ Play</a>{/*今後indexにて実装予定*/}
             <a href="https://github.com/kei5o55/minesweeper">GitHub</a>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function Home() {
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="/play">▶ Play</a>
+            <a href="https://https://register-3k2l.vercel.app/">▶ Play</a>{/*今後indexにて実装予定*/}
             <a href="https://github.com/kei5o55/register">GitHub</a>
           </div>
 
