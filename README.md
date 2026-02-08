@@ -35,3 +35,6 @@ https://my-portfolio-iota-three-57.vercel.app/
 - TypeScript
 
 ---
+
+将来的には Raspberry Pi を用いた自宅サーバ運用に移行し、
+本サイトを自作作品の公開・発信拠点として、継続的に育てていきたいと考えています
