@@ -32,4 +32,12 @@ export const artworks: ArtWork[] = [
     image: "/art/sample3.png",
     description: "災害のように現れる脅威。",
   },
+  {
+    slug: "annna-illustration",
+    title: "annna / illustration",
+    date: "2026-01-15",
+    tags:["二次創作"],
+    image: "/art/sample4.png",
+    description: "音楽ゲームCHUNITHM",
+  }
 ];

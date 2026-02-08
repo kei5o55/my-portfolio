@@ -98,6 +98,9 @@ export default function ArtIndexPage() {
             </div>
           </Link>
         ))}
+      <Link href="/" style={{ display: "inline-block", marginBottom: 14 }}>
+        ← Back to home
+      </Link>
       </div>
     </main>
   );

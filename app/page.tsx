@@ -43,6 +43,28 @@ export default function Home() {
             <a href="https://github.com/kei5o55/minesweeper">GitHub</a>
           </div>
         </div>
+
+        <div
+          style={{
+            border: "1px solid #333",
+            borderRadius: 8,
+            padding: 16,
+            marginTop: 12,
+          }}
+        >
+          <h3>レジアプリ</h3>
+
+          <p style={{ opacity: 0.8 }}>
+            同人即売会向けレジアプリ。React + Viteで制作。
+          </p>
+
+          <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
+            <a href="/play">▶ Play</a>
+            <a href="https://github.com/kei5o55/register">GitHub</a>
+          </div>
+
+        </div>
+
         <div
           style={{
             border: "1px solid #333",
@@ -54,7 +76,7 @@ export default function Home() {
           <h3>作品ページ</h3>
 
           <p style={{ opacity: 0.8 }}>
-            オリジナルADV + 探索ゲーム。React + Viteで制作。
+            イラストの紹介ページ。
           </p>
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
             <Link href="/art">Illustrations →</Link>
