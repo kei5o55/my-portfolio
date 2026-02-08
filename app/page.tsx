@@ -15,7 +15,7 @@ export default function Home() {
       <section style={{ marginBottom: 32 }}>
         <h2>About</h2>
         <p>
-          世界観重視のADVゲームとWeb UIを制作しています。
+          創作世界観とイラスト・Webアプリケーションを制作しています。
           フロントエンド中心に、最近は自宅サーバ運用にも興味があります。
         </p>
       </section>
@@ -59,7 +59,7 @@ export default function Home() {
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="https://https://register-3k2l.vercel.app/">▶ Play</a>{/*今後indexにて実装予定*/}
+            <a href="https://register-3k2l.vercel.app/">▶ Play</a>{/*今後indexにて実装予定*/}
             <a href="https://github.com/kei5o55/register">GitHub</a>
           </div>
 
