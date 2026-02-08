@@ -1,17 +1,25 @@
+// app/art/[slug]/page.tsx
+// 作品詳細ページ
+// slugに対応する作品データを表示する(画像、タイトル、日付、タグ、説明文など)
+
 import Link from "next/link";
 import { artworks } from "../_data";
+import ArtLightbox from "./ArtLightbox";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default function ArtDetailPage({ params }: Props) {
-  const art = artworks.find((a) => a.slug === params.slug);
+export default async function ArtDetailPage({ params }: Props) {
+  const { slug } = await params; // ← ここが重要
+
+  const art = artworks.find((a) => a.slug === slug);
 
   if (!art) {
     return (
       <main style={{ padding: 32 }}>
         <h1>Not Found</h1>
+        <p style={{ opacity: 0.7 }}>slug: {slug}</p>
         <Link href="/art">← Back</Link>
       </main>
     );
@@ -42,27 +50,23 @@ export default function ArtDetailPage({ params }: Props) {
         ))}
       </div>
 
-      <div
-        style={{
-          border: "1px solid rgba(255,255,255,0.12)",
-          borderRadius: 12,
-          overflow: "hidden",
-          background: "rgba(255,255,255,0.06)",
-        }}
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={art.image}
-          alt={art.title}
-          style={{ width: "100%", height: "auto", display: "block" }}
-        />
-      </div>
+      <ArtLightbox src={art.image} alt={art.title} />
 
-      {art.description && (
+      {art.description && (/* descriptionがあれば表示する */
         <p style={{ marginTop: 14, lineHeight: 1.8, opacity: 0.85 }}>
           {art.description}
         </p>
       )}
+
+      {/* フッター */}
+      <div style={{ marginTop: 80, textAlign: "center", paddingBottom: 100 }}>
+        <p style={{ opacity: 0.5, fontSize: 14 }}>Created by [kei5o55]</p>
+        <div style={{ display: "flex", justifyContent: "center", gap: 20, marginTop: 10 }}>
+            <Link href="/about">About Me</Link>
+            <Link href="/">Home</Link>
+        </div>
+      </div>
+
     </main>
   );
 }
