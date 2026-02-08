@@ -25,27 +25,29 @@ export default function ArtLightbox({ src, alt }: { src: string; alt: string }) 
 
       {open && (
         <div
-          onClick={() => setOpen(false)}
-          style={{
+            onClick={() => setOpen(false)}
+            style={{
             position: "fixed",
             inset: 0,
-            background: "rgba(0,0,0,0.85)",
+            background: "rgba(0,0,0,0.6)", // 透明度を少し上げる(0.85 -> 0.6)
+            backdropFilter: "blur(12px)",  // ★ここで背後をぼかす
+            WebkitBackdropFilter: "blur(12px)", // Safari用
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             zIndex: 9999,
             cursor: "zoom-out",
             padding: 24,
-          }}
+            }}
         >
-          <img
+            <img
             src={src}
             alt={alt}
             style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }}
             onClick={(e) => e.stopPropagation()}
-          />
+            />
         </div>
-      )}
+        )}
     </>
   );
 }

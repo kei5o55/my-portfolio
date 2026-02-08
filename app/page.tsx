@@ -76,7 +76,7 @@ export default function Home() {
           <h3>作品ページ</h3>
 
           <p style={{ opacity: 0.8 }}>
-            イラストの紹介ページ。
+            イラスト置き場
           </p>
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
             <Link href="/art">Illustrations →</Link>
