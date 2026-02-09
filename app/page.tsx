@@ -73,7 +73,7 @@ export default function Home() {
             marginTop: 12,
           }}
         >
-          <h3>作品ページ</h3>
+          <h3>Artwork</h3>
 
           <p style={{ opacity: 0.8 }}>
             イラスト置き場
