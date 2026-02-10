@@ -21,6 +21,9 @@ https://my-portfolio-iota-three-57.vercel.app/
 - Next.js App Router
 
 ---
+## 今後実装したい機能
+- ブログ機能
+- 問い合わせフォーム
 
 ## 仕様技術
 
