@@ -23,7 +23,24 @@ export default function Home() {
       {/* 作品 */}
       <section style={{ marginBottom: 32 }}>
         <h2>Works</h2>
+        <div
+          style={{
+            border: "1px solid #333",
+            borderRadius: 8,
+            padding: 16,
+            marginTop: 12,
+          }}
+        >
+          <h3>Artwork</h3>
 
+          <p style={{ opacity: 0.8 }}>
+            イラスト置き場
+          </p>
+          <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
+            <Link href="/art">Illustrations →</Link>
+          </div>
+        </div>
+        
         <div
           style={{
             border: "1px solid #333",
@@ -65,23 +82,7 @@ export default function Home() {
 
         </div>
 
-        <div
-          style={{
-            border: "1px solid #333",
-            borderRadius: 8,
-            padding: 16,
-            marginTop: 12,
-          }}
-        >
-          <h3>Artwork</h3>
-
-          <p style={{ opacity: 0.8 }}>
-            イラスト置き場
-          </p>
-          <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <Link href="/art">Illustrations →</Link>
-          </div>
-        </div>
+       
       </section>
 
       {/* 連絡 */}
