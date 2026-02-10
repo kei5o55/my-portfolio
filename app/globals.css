@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+a {
+  color: #007bff; /* 基本の青 */
+  text-decoration: none; /* 最初は下線を消しておく */
+  transition: color 0.3s; /* 変化をふわっとさせる */
+}
+a:hover {
+  color: #0056b3;
+}
