@@ -47,5 +47,13 @@ export const artworks: ArtWork[] = [
     tags:["二次創作"],
     image: "/art/sample5.png",
     description: "CHUNITHM二次創作イラスト",
+  },
+  {
+    slug: "amor_fati",
+    title: "amor_fati / artwork",
+    date: "2026-02-10",
+    tags:["二次創作","造形"],
+    image: "/art/amor_fati.jpg",
+    description: "CHUNITHM二次創作造形作品",
   }
 ];
