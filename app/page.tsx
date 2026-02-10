@@ -81,7 +81,24 @@ export default function Home() {
           </div>
 
         </div>
+        <div
+          style={{
+            border: "1px solid #333",
+            borderRadius: 8,
+            padding: 16,
+            marginTop: 12,
+          }}
+        >
+          <h3>個人ブログ</h3>
 
+          <p style={{ opacity: 0.8 }}>
+            個人ブログ。日記や作業記録など。
+          </p>
+
+          <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
+            <Link href="/blog">Blog →</Link>
+          </div>
+        </div>
        
       </section>
 
