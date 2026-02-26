@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { artworks } from "./_data";
+import "./page.css";
 
 export default function ArtIndexPage() {
   const allTags = useMemo(() => {
@@ -76,7 +77,7 @@ export default function ArtIndexPage() {
               />
             </div>
 
-            <div style={{ padding: 12 }}>
+            <div className="title" style={{ padding: 12 }}>
               <div style={{ fontWeight: 700 }}>{a.title}</div>
               <div style={{ fontSize: 12, opacity: 0.7 }}>{a.date}</div>
 

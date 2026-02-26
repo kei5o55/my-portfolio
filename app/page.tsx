@@ -97,10 +97,10 @@ export default function Home() {
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <Link href="/blog">Blog →</Link>
+            <a href="https://matsudaidayo.fanbox.cc/">Fanbox →</a>
           </div>
         </div>
-       
+      
       </section>
 
       {/* 連絡 */}
