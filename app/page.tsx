@@ -57,7 +57,6 @@ export default function Home() {
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="https://original-game-hazel.vercel.app/">▶ DEMO Play</a>{/*今後indexにて実装予定*/}
             <a href="https://github.com/kei5o55/minesweeper">GitHub</a>
           </div>
         </div>
