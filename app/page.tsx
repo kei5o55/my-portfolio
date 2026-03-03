@@ -89,6 +89,24 @@ export default function Home() {
             marginTop: 12,
           }}
         >
+          <h3>作業記録ツール</h3>
+
+          <p style={{ opacity: 0.8 }}>
+            作業記録用ツール（イラスト版Github風）。React + Viteで制作中。
+          </p>
+
+          <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
+            <a href="https://github.com/kei5o55/worklog-app">GitHub</a>
+          </div>
+        </div>
+        <div
+          style={{
+            border: "1px solid #333",
+            borderRadius: 8,
+            padding: 16,
+            marginTop: 12,
+          }}
+        >
           <h3>個人ブログ</h3>
 
           <p style={{ opacity: 0.8 }}>
