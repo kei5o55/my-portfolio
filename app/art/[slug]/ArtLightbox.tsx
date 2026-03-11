@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+
 
 export default function ArtLightbox({ src, alt }: { src: string; alt: string }) {
   const [open, setOpen] = useState(false);
@@ -40,7 +42,7 @@ export default function ArtLightbox({ src, alt }: { src: string; alt: string }) 
             padding: 24,
             }}
         >
-            <img
+            <Image
             src={src}
             alt={alt}
             style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }}
