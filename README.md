@@ -7,7 +7,7 @@ Next.js（App Router）を使ってサイト構造を作り、
 
 ## Demo
 
-https://kei5o55.vercel.app/
+https://kei5ot.com/
 
 ---
 
