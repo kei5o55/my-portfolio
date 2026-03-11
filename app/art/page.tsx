@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { artworks } from "./_data";
 import "./page.css";
+import Image from "next/image";
 
 export default function ArtIndexPage() {
   const allTags = useMemo(() => {
@@ -68,14 +69,17 @@ export default function ArtIndexPage() {
               display: "block",
             }}
           >
-            <div style={{ aspectRatio: "4 / 3", background: "rgba(255,255,255,0.06)" }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={a.image}
-                alt={a.title}
-                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-              />
-            </div>
+          <div style={{ aspectRatio: "4 / 3", background: "rgba(255,255,255,0.06)", position: "relative" }}>
+            <Image
+              src={a.image}
+              alt={a.title}
+              fill // 親要素いっぱいに広げる
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // 閲覧環境に応じた最適化
+              style={{ objectFit: "cover" }}
+              // ↓ これが重要！画面外の画像はスクロールするまで読み込まない（Lazy Load）
+              loading="lazy" 
+            />
+          </div>
 
             <div className="title" style={{ padding: 12 }}>
               <div style={{ fontWeight: 700 }}>{a.title}</div>
