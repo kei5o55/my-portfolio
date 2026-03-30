@@ -5,12 +5,8 @@ export default function Home() {
   return (
     <main style={{ padding: 32, maxWidth: 900, margin: "0 auto" }}>
       <h1 style={{ fontSize: 32, marginBottom: 8 }}>
-        my-Portfolio
+        Portfolio
       </h1>
-
-      <p style={{ opacity: 0.7, marginBottom: 24 }}>
-        React / TypeScript / Next.js
-      </p>
 
       {/* 自己紹介 */}
       <section style={{ marginBottom: 32 }}>
