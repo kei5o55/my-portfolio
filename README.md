@@ -2,8 +2,7 @@
 個人制作のポートフォリオサイトです。  
 オリジナルゲーム・イラスト作品・世界観プロジェクトをまとめて展示するために制作しました。
 
-Next.js（App Router）を使ってサイト構造を作り、  
-ゲーム部分は別途 Vite + React で開発したものを埋め込んでいます。
+Next.js（App Router）を使ってサイト構造を作
 
 ## Demo
 
@@ -16,7 +15,6 @@ https://kei5ot.com/
 - トップページ / 作品一覧 / 作品詳細ページ
 - イラスト作品のタグ付き一覧
 - クリックで拡大表示できるギャラリー
-- オリジナルADVゲームの埋め込み
 - TypeScript + React
 - Next.js App Router
 
@@ -31,11 +29,6 @@ https://kei5ot.com/
 - React
 - TypeScript
 - CSS (inline + custom styles)
-
-ゲーム部分：
-- Vite
-- React
-- TypeScript
 
 ---
 
