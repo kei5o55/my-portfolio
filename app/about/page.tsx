@@ -22,6 +22,7 @@ export default function AboutPage(){
                         TypeScript / Reactを用いたWebアプリケーションの個人開発を行っています。<br />
                         自身が使用する創作支援アプリケーションを制作しており、HomeのWorksセクションにGithubを掲載しています。<br />
                         フロントエンド領域に興味があり、何を作るかといったアイデア出しやユーザ体験を意識した新機能の追加・改善などが好きです。<br />
+                        今後はDBやAPIなどのバックエンド領域の経験も積み、フルスタックでプロジェクト開発を進められるエンジニアになりたいと考えています。<br />
                         絵描きとしての創作活動を行っています。
                     </p>
                 </div>
@@ -42,8 +43,9 @@ export default function AboutPage(){
                     <div  style={{ border: "1px solid #000000", borderRadius: 8, padding: 16 }}>
                         <h3 style={{ fontSize: 18, marginBottom: 8 }}>Creative</h3>
                         <p style={{ fontSize: 14, opacity: 0.7, lineHeight: 1.6 }}>
-                            illust : CLIP STUDIO PAINT<br />
-                            event : 関西コミティア / Comitia /コミックマーケット
+                            illust : fan art / original character & worldbuilding<br />
+                            event : 関西コミティア / Comitia /コミックマーケット<br />
+                            tools : CLIP STUDIO PAINT
                         </p>
                     </div>
                 </div>

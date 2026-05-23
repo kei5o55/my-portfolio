@@ -13,9 +13,9 @@ export default function Home() {
         <h2 style={{ fontSize: 24 }}>About</h2>
         <p>
           kei5ot&nbsp;or&nbsp;kei5o55&nbsp;という名前で活動しています。創作世界観とイラスト・Webアプリケーションを制作しています。<br></br>
-          &nbsp;このサイトはnext.jsを使用し制作しているのですが、めちゃくちゃ便利ですね。今まで自分の作品を公開する際は、Viteのみで制作していましたが、物によってはnext.jsなどフレームワークを使用する方が圧倒的に楽だなと感じました。
+          &nbsp;このサイトはnext.jsを初めて使用し制作しているのですが、めちゃくちゃ便利ですね。今まで自分の作品を公開する際は、Viteのみで制作していましたが、物によってはnext.jsなどフレームワークを使用する方が圧倒的に楽だなと感じました。
         </p>
-        <p>&nbsp;特に、worksにある作業記録ツールもviteで制作しているのですが、ルーティングの管理がファイルベースで直感的なところが、設計上絶対next.jsのほうが良いなと思いました。</p>
+        <p>&nbsp;worksに載せてある作業記録ツールは現在viteのみで制作しているのですが、next.jsのルーティングの管理がファイルベースで直感的なところが設計にマッチしており、絶対導入したほうが良いなと思いました。</p>
 
         <Link href="/about" style={{ display: "inline-block", marginTop: 12 }}>
           More about me →
@@ -33,11 +33,11 @@ export default function Home() {
             marginTop: 12,
           }}
         >
-          <h3>Artwork</h3>
-          <p style={{ opacity: 0.8 }}>
+          <h3 style={{fontSize : 20}}>Artwork</h3>
+          <p style={{ opacity: 0.7 ,fontSize: 14}}>
             イラスト置き場
           </p>
-          <p>高画質で配置しているので、読み込みに少し時間がかかります</p>
+          <p>画像を直置きしているので、読み込みに少し時間がかかるかもしれません</p>
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
             <Link href="/art">Illustrations →</Link>
           </div>
@@ -51,12 +51,15 @@ export default function Home() {
             marginTop: 12,
           }}
         >
-          <h3>Rejistella ( 仮称 ) / レジアプリ</h3>
+          <h3 style={{fontSize : 20}}>Rejistella ( 仮称 ) / レジアプリ</h3>
 
           <p style={{ opacity: 0.7 ,fontSize: 14}}>
-            同人即売会向けレジアプリ。React + Viteで制作中。
+            同人即売会向けレジアプリ / React + Viteで制作中
           </p>
-          <p>最も力を入れているプロジェクトです。実運用を通して機能を改善していき、長期的に運用・育成したいと考えています。</p>
+          <p>
+            最も力を入れているプロジェクトです。実運用を通して機能を改善していき、長期的に運用・育成したいと考えています。<br/>
+            詳細はリポジトリのREADMEに記載していますので、興味がある方はぜひご覧ください。<br />
+          </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
             <a href="https://register-3k2l.vercel.app/">▶ DEMO</a>
@@ -73,14 +76,14 @@ export default function Home() {
             marginTop: 12,
           }}
         >
-          <h3>作業記録ツール</h3>
+          <h3 style={{fontSize : 20}}>作業記録ツール</h3>
 
           <p style={{ opacity: 0.7 ,fontSize: 14}}>
-            作業記録用ツール（イラスト版Github風）。React + Viteで制作中。
+            イラスト版Github風 / 現在はViteでミニマルに制作していますが、今後Next.jsに移行予定
           </p>
           <p>
-            イラスト制作の作業記録をつけるためのツール。タスク管理や進捗管理なども追加し、スケジュールアプリとして日常的に使用できるようにしたいと考えています。<br />
-            現在はViteでミニマルに制作していますが、今後Next.jsに移行予定。
+            イラスト制作の作業記録をつけるためのツール。タスク管理や進捗管理などの追加・バックエンドの開発等を進め、スケジュールアプリとして日常的に使用できるようにしたいと考えています。<br />
+            詳細はリポジトリのREADMEに記載していますので、興味がある方はぜひご覧ください。<br />
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
@@ -97,7 +100,7 @@ export default function Home() {
             marginTop: 12,
           }}
         >
-          <h3>個人ブログ</h3>
+          <h3 style={{fontSize : 20}}>個人ブログ</h3>
 
           <p style={{ opacity: 0.7 ,fontSize: 14}}>
             個人ブログ。日記や作業記録など。
