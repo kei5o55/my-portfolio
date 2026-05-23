@@ -13,7 +13,7 @@ export default function Home() {
         <h2 style={{ fontSize: 24 }}>About</h2>
         <p>
           kei5ot&nbsp;or&nbsp;kei5o55&nbsp;という名前で活動しています。創作世界観とイラスト・Webアプリケーションを制作しています。<br></br>
-          <p>&nbsp;このサイトはnext.jsを使用し制作しているのですが、めちゃくちゃ便利ですね。今まで自分の作品を公開する際は、Viteのみで制作していましたが、物によってはnext.jsなどフレームワークを使用する方が圧倒的に楽だなと感じました。</p>
+          &nbsp;このサイトはnext.jsを使用し制作しているのですが、めちゃくちゃ便利ですね。今まで自分の作品を公開する際は、Viteのみで制作していましたが、物によってはnext.jsなどフレームワークを使用する方が圧倒的に楽だなと感じました。
           特に、worksにある作業記録ツールもviteで制作しているのですが、ルーティングの管理がファイルベースで直感的なところが、設計上絶対next.jsのほうが良いなと思いました。
         </p>
       </section>
@@ -108,6 +108,9 @@ export default function Home() {
           </li>
           <li>
             <a href="https://www.pixiv.net/users/16743124">pixiv</a>
+          </li>
+          <li>
+            <a href="https://X.com/kei5ot">X(旧Twitter)</a>
           </li>
         </ul>
       </section>

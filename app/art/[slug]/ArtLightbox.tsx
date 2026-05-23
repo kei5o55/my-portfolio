@@ -27,29 +27,34 @@ export default function ArtLightbox({ src, alt }: { src: string; alt: string }) 
 
       {open && (
         <div
-            onClick={() => setOpen(false)}
-            style={{
+          onClick={() => setOpen(false)} // ここで閉じるはず
+          style={{
             position: "fixed",
             inset: 0,
-            background: "rgba(0,0,0,0.6)", // 透明度を少し上げる(0.85 -> 0.6)
-            backdropFilter: "blur(12px)",  // ★ここで背後をぼかす
-            WebkitBackdropFilter: "blur(12px)", // Safari用
+            background: "rgba(0,0,0,0.6)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             zIndex: 9999,
             cursor: "zoom-out",
-            padding: 24,
-            }}
+            padding: 40, // 少し余裕を持たせる
+          }}
         >
+          {/* 画像を fill にせず、通常のImageとして扱う */}
+          <div style={{ position: "relative", width: "100%", height: "100%" }}>
             <Image
-            src={src}
-            alt={alt}
-            style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }}
-            onClick={(e) => e.stopPropagation()}
+              src={src}
+              alt={alt}
+              fill
+              className="object-contain" // Tailwindを使わないなら style={{ objectFit: "contain" }}
+              unoptimized // サイズ計算をバイパスする
+              onClick={() => setOpen(false)} // 画像をクリックしても閉じるようにする
             />
+          </div>
         </div>
-        )}
+      )}
     </>
   );
 }

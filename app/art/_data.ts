@@ -22,7 +22,7 @@ export const artworks: ArtWork[] = [
     date: "2026-02-09",
     tags:["二次創作"],
     image: "/art/sample3.webp",
-    description: "somunia 楽曲モチーフ二次創作イラスト",
+    description: "somunia 楽曲モチーフ二次創作イラスト\n liberateという楽曲をイメージしています。オススメの楽曲なのでぜひ聴いてみてください。",
   },
   {
     slug: "white-illustration",
@@ -54,7 +54,7 @@ export const artworks: ArtWork[] = [
     date: "2026-02-10",
     tags:["二次創作","造形"],
     image: "/art/amor_fati.webp",
-    description: "CHUNITHM二次創作造形作品",
+    description: "CHUNITHM二次創作造形作品\n シーリングスタンプと便箋をデザインして、実際にスタンプを作成しました。即売会でポストカードを入れたりしたいなと思っています。",
   },
   {
     slug: "mire",
@@ -70,6 +70,22 @@ export const artworks: ArtWork[] = [
     date: "2026-05-17",
     tags:["一次創作"],
     image: "/art/ethos.webp",
-    description: "一次創作・関西コミティアでポストカード・画集表紙として頒布したイラスト作品",
+    description: "一次創作・関西コミティアでポストカード・画集表紙として頒布したイラスト作品\n Annnaと構図が一緒で恥ずかしい",
+  },
+  {
+    slug: "megane",
+    title: "megane / illustration",
+    date: "2026-05-17",
+    tags:["一次創作","眼鏡"],
+    image: "/art/megane.webp",
+    description: "一次創作・デカいめがねは可愛い",
+  },
+  {
+    slug: "mekakure",
+    title: "mekakure / illustration",
+    date: "2026-05-17",
+    tags:["一次創作"],
+    image: "/art/mekakure.webp",
+    description: "一次創作・メカクレは可愛いすぎる。",
   }
 ];

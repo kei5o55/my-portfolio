@@ -53,7 +53,7 @@ export default async function ArtDetailPage({ params }: Props) {
       <ArtLightbox src={art.image} alt={art.title} />
 
       {art.description && (/* descriptionがあれば表示する */
-        <p style={{ marginTop: 14, lineHeight: 1.8, opacity: 0.85 }}>
+        <p style={{ marginTop: 14, lineHeight: 1.8, opacity: 0.85 ,whiteSpace: "pre-wrap" /* 改行を反映させる */}}>
           {art.description}
         </p>
       )}
