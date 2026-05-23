@@ -51,16 +51,17 @@ export default function Home() {
             marginTop: 12,
           }}
         >
-          <h3>レジアプリ</h3>
+          <h3>Rejistella ( 仮称 ) / レジアプリ</h3>
 
-          <p style={{ opacity: 0.8 }}>
+          <p style={{ opacity: 0.7 ,fontSize: 14}}>
             同人即売会向けレジアプリ。React + Viteで制作中。
           </p>
           <p>最も力を入れているプロジェクトです。実運用を通して機能を改善していき、長期的に運用・育成したいと考えています。</p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="https://register-3k2l.vercel.app/">▶ DEMO Play</a>{/*今後indexにて実装予定*/}
-            <a href="https://github.com/kei5o55/register">GitHub</a>
+            <a href="https://register-3k2l.vercel.app/">▶ DEMO</a>
+            <p>/</p>
+            <a href="https://github.com/kei5o55/register">GitHubリポジトリ</a>
           </div>
 
         </div>
@@ -74,12 +75,18 @@ export default function Home() {
         >
           <h3>作業記録ツール</h3>
 
-          <p style={{ opacity: 0.8 }}>
+          <p style={{ opacity: 0.7 ,fontSize: 14}}>
             作業記録用ツール（イラスト版Github風）。React + Viteで制作中。
+          </p>
+          <p>
+            イラスト制作の作業記録をつけるためのツール。タスク管理や進捗管理なども追加し、スケジュールアプリとして日常的に使用できるようにしたいと考えています。<br />
+            現在はViteでミニマルに制作していますが、今後Next.jsに移行予定。
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="https://github.com/kei5o55/worklog-app">GitHub</a>
+            <a href="https://worklog-app-ruby.vercel.app/projects">▶ DEMO</a>
+            <p>/</p>
+            <a href="https://github.com/kei5o55/worklog-app">GitHubリポジトリ</a>
           </div>
         </div>
         <div
@@ -92,7 +99,7 @@ export default function Home() {
         >
           <h3>個人ブログ</h3>
 
-          <p style={{ opacity: 0.8 }}>
+          <p style={{ opacity: 0.7 ,fontSize: 14}}>
             個人ブログ。日記や作業記録など。
           </p>
 
