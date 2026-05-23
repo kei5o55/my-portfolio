@@ -21,7 +21,7 @@ export const artworks: ArtWork[] = [
     title: "somunia / illustration",
     date: "2026-02-09",
     tags:["二次創作"],
-    image: "/art/sample3.png",
+    image: "/art/sample3.webp",
     description: "somunia 楽曲モチーフ二次創作イラスト",
   },
   {
@@ -29,7 +29,7 @@ export const artworks: ArtWork[] = [
     title: "white / illustration",
     date: "2026-02-09",
     tags:["一次創作"],
-    image: "/art/sample4.png",
+    image: "/art/sample4.webp",
     description: "一次創作イラスト",
   },
   {
@@ -37,7 +37,7 @@ export const artworks: ArtWork[] = [
     title: "white2 / illustration",
     date: "2026-02-09",
     tags:["一次創作"],
-    image: "/art/sample.jpg",
+    image: "/art/sample.webp",
     description: "一次創作イラスト2",
   },
   {
@@ -45,7 +45,7 @@ export const artworks: ArtWork[] = [
     title: "embark / illustration",
     date: "2026-02-09",
     tags:["二次創作"],
-    image: "/art/sample5.png",
+    image: "/art/sample5.webp",
     description: "CHUNITHM二次創作イラスト",
   },
   {
@@ -53,7 +53,23 @@ export const artworks: ArtWork[] = [
     title: "amor_fati / artwork",
     date: "2026-02-10",
     tags:["二次創作","造形"],
-    image: "/art/amor_fati.jpg",
+    image: "/art/amor_fati.webp",
     description: "CHUNITHM二次創作造形作品",
+  },
+  {
+    slug: "mire",
+    title: "mire / illustration",
+    date: "2026-05-17",
+    tags:["一次創作"],
+    image: "/art/mire.webp",
+    description: "一次創作・関西コミティアでポストカードとして頒布したイラスト作品",
+  },
+  {
+    slug: "ethos",
+    title: "ethos / illustration",
+    date: "2026-05-17",
+    tags:["一次創作"],
+    image: "/art/ethos.webp",
+    description: "一次創作・関西コミティアでポストカード・画集表紙として頒布したイラスト作品",
   }
 ];
