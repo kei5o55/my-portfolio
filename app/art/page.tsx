@@ -23,6 +23,9 @@ export default function ArtIndexPage() {
   return (
     <main style={{ padding: 32, maxWidth: 1000, margin: "0 auto" }}>
       <h1 style={{ fontSize: 28, marginBottom: 8 }}>Illustrations</h1>
+      <Link href="/" style={{ display: "inline-block", marginBottom: 14 }}>
+        ← Back to home
+      </Link>
       <p style={{ opacity: 0.7, marginBottom: 16 }}>
         タグで絞り込み → クリックで詳細へ
       </p>
@@ -103,9 +106,6 @@ export default function ArtIndexPage() {
             </div>
           </Link>
         ))}
-      <Link href="/" style={{ display: "inline-block", marginBottom: 14 }}>
-        ← Back to home
-      </Link>
       </div>
 
             {/* フッター */}
