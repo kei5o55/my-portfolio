@@ -14,8 +14,12 @@ export default function Home() {
         <p>
           kei5ot&nbsp;or&nbsp;kei5o55&nbsp;という名前で活動しています。創作世界観とイラスト・Webアプリケーションを制作しています。<br></br>
           &nbsp;このサイトはnext.jsを使用し制作しているのですが、めちゃくちゃ便利ですね。今まで自分の作品を公開する際は、Viteのみで制作していましたが、物によってはnext.jsなどフレームワークを使用する方が圧倒的に楽だなと感じました。
-          特に、worksにある作業記録ツールもviteで制作しているのですが、ルーティングの管理がファイルベースで直感的なところが、設計上絶対next.jsのほうが良いなと思いました。
         </p>
+        <p>&nbsp;特に、worksにある作業記録ツールもviteで制作しているのですが、ルーティングの管理がファイルベースで直感的なところが、設計上絶対next.jsのほうが良いなと思いました。</p>
+
+        <Link href="/about" style={{ display: "inline-block", marginTop: 12 }}>
+          More about me →
+        </Link>
       </section>
 
       {/* 作品 */}
@@ -30,10 +34,10 @@ export default function Home() {
           }}
         >
           <h3>Artwork</h3>
-
           <p style={{ opacity: 0.8 }}>
             イラスト置き場
           </p>
+          <p>高画質で配置しているので、読み込みに少し時間がかかります</p>
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
             <Link href="/art">Illustrations →</Link>
           </div>
@@ -119,7 +123,6 @@ export default function Home() {
       <div style={{ marginTop: 80, textAlign: "center", paddingBottom: 100 }}>
         <p style={{ opacity: 0.5, fontSize: 14 }}>Created by [kei5o55]</p>
         <div style={{ display: "flex", justifyContent: "center", gap: 20, marginTop: 10 }}>
-            <Link href="/about">About Me</Link>
             <Link href="/">Home</Link>
         </div>
       </div>
