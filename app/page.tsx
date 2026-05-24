@@ -6,17 +6,20 @@ export default function Home() {
     <main style={{ padding: 32, maxWidth: 900, margin: "0 auto" }}>
       <h1 style={{ fontSize: 32, marginBottom: 8 }}>
         Portfolio
+        <span style={{fontSize: 16,opacity: 0.5,marginLeft: 12,}}>
+          React + Next.js
+        </span>
       </h1>
 
       {/* 自己紹介 */}
       <section style={{ marginBottom: 32 }}>
         <h2 style={{ fontSize: 24 }}>About</h2>
         <p>
-          kei5ot&nbsp;or&nbsp;kei5o55&nbsp;という名前で活動しています。創作世界観とイラスト・Webアプリケーションを制作しています。<br></br>
-          &nbsp;このサイトはnext.jsを初めて使用し制作しているのですが、めちゃくちゃ便利ですね。今まで自分の作品を公開する際は、Viteのみで制作していましたが、物によってはnext.jsなどフレームワークを使用する方が圧倒的に楽だなと感じました。
+          kei5ot&nbsp;or&nbsp;kei5o55&nbsp;という名前で活動しています。創作世界観とイラスト・TypeScript / Reactを用いたWebアプリケーションを制作しています。<br />
+          創作支援アプリケーションを制作しており、Worksセクションに制作物を掲載しています。<br />
+          フロントエンド領域に興味があり、何を作るかといったアイデア出しやユーザ体験を意識した新機能の追加・改善などが好きですが、
+          今後はバックエンド技術についても学び、フルスタックな開発ができるようになりたいと考えています。
         </p>
-        <p>&nbsp;worksに載せてある作業記録ツールは現在viteのみで制作しているのですが、next.jsのルーティングの管理がファイルベースで直感的なところが設計にマッチしており、絶対導入したほうが良いなと思いました。</p>
-
         <Link href="/about" style={{ display: "inline-block", marginTop: 12 }}>
           More about me →
         </Link>
@@ -58,7 +61,7 @@ export default function Home() {
           </p>
           <p>
             最も力を入れているプロジェクトです。実運用を通して機能を改善していき、長期的に運用・育成したいと考えています。<br/>
-            詳細はリポジトリのREADMEに記載していますので、興味がある方はぜひご覧ください。<br />
+            詳細はリポジトリのREADMEに記載していますので、ぜひご覧ください。<br />
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
@@ -83,7 +86,7 @@ export default function Home() {
           </p>
           <p>
             イラスト制作の作業記録をつけるためのツール。タスク管理や進捗管理などの追加・バックエンドの開発等を進め、スケジュールアプリとして日常的に使用できるようにしたいと考えています。<br />
-            詳細はリポジトリのREADMEに記載していますので、興味がある方はぜひご覧ください。<br />
+            詳細はリポジトリのREADMEに記載していますので、ぜひご覧ください。<br />
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>

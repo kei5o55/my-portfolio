@@ -14,16 +14,17 @@ export default function AboutPage(){
                 <h2 style={{ fontSize: 24 }}>Profile</h2>
                 <div style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
                     <p> kei5ot / kei5o55</p>
-                    <p style={{ opacity: 0.6, fontSize: 12, marginBottom: 16, letterSpacing: "0.05em" }}>
-                        絵描き / Webエンジニア
-                    </p>
+                        <p style={{ opacity: 0.6, fontSize: 12, marginBottom: 16, letterSpacing: "0.05em" }}>
+                            絵描き / Webエンジニア
+                        </p>
                     <p>
-                        高知大学 理工学部 情報科学科<br />
-                        TypeScript / Reactを用いたWebアプリケーションの個人開発を行っています。<br />
-                        創作支援アプリケーションを制作しており、HomeのWorksセクションにGithubを掲載しています。<br />
-                        フロントエンド領域に興味があり、何を作るかといったアイデア出しやユーザ体験を意識した新機能の追加・改善などが好きです。<br />
-                        今後はDBやAPIなどのバックエンド領域の経験も積み、フルスタックでプロジェクト開発を進められるエンジニアになりたいと考えています。<br />
+                        高知大学 理工学部 情報科学科<br /><br />
+                        &nbsp;このサイトはnext.jsを初めて使用し制作しているのですが、めちゃくちゃ便利ですね。今まで自分の作品を公開する際は、Viteのみで制作していましたが、
+                            物によってはnext.jsなどフレームワークを使用する方が圧倒的に楽だなと感じました。
+                        <br />worksに載せてある作業記録ツールは現在viteのみで制作しているのですが、next.jsのルーティングの管理がファイルベースで直感的なところが設計にマッチしており、絶対導入したほうが良いなと思いました。
                         絵描きとしての創作活動を行っています。
+                        <br />
+                        長所は、食べ物の好き嫌いが無いところだと思ってます。
                     </p>
                 </div>
             </section>
@@ -35,8 +36,8 @@ export default function AboutPage(){
                     <div  style={{ border: "1px solid #000000", borderRadius: 8, padding: 16 }}>
                         <h3 style={{ fontSize: 18, marginBottom: 8 }}>Developement</h3>
                         <p style={{ fontSize: 14, opacity: 0.7, lineHeight: 1.6 }}>
-                            main : TypeScript / React / Next.js<br />
-                            sub : C / html /css<br />
+                            main : TypeScript / React / C<br />
+                            sub : Next.js / html /css<br />
                             tools : VSCode / GitHub
                         </p>
                     </div>
@@ -44,7 +45,7 @@ export default function AboutPage(){
                         <h3 style={{ fontSize: 18, marginBottom: 8 }}>Creative</h3>
                         <p style={{ fontSize: 14, opacity: 0.7, lineHeight: 1.6 }}>
                             illust : fan art / original character & worldbuilding<br />
-                            event : 関西コミティア / Comitia /コミックマーケット<br />
+                            event : 関西コミティア / コミックマーケット<br />
                             tools : CLIP STUDIO PAINT
                         </p>
                     </div>
@@ -56,11 +57,10 @@ export default function AboutPage(){
                 <h2 style={{ fontSize: 24,marginBottom: 12 }}>Hobbies & Others</h2>
                 <div style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
                     <h3 style={{ fontSize: 24,marginBottom: 12 }}>
-                        音楽ゲーム(CHUNITHM)
+                        CHUNITHM（音ゲー）
                     </h3>
                     <p>
                         音ゲーは中学の頃からやっていて、特にCHUNITHMを10年以上続けています。<br />
-                        最近は作品制作の方に時間を割いているため、プレイ頻度は下がっていますが、今でも音ゲーは大好きです。
                     </p>
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
                         主な実績
@@ -70,19 +70,38 @@ export default function AboutPage(){
                         ・Legend of CRYSTAL 取得<br />
                         ・15＋ AJ3 ( 蠍火・ToBe Continued・Danann )<br />
                         ・15↑ 全SSS<br />
+                        <br />
                     </p>
+
+                    <h3 style={{ fontSize: 24,marginBottom: 12 }}>
+                        GUILTY GEAR -STRIVE-（格ゲー）
+                    </h3>
+                    <p>
+                        最近始めました。コンボを練習してるところです。<br />
+                        今まで対戦ゲームはやってこなかったですが、ギルティギアはキャラクターが魅力的で音楽やストーリーにも惹かれました。<br />
+                    </p>
+                    <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
+                        好きなキャラクター
+                    </p>
+                    <p>
+                        ・ラムレザル<br />
+                        ・ディライラ（ベッドマン？）<br />
+                        <br />
+                    </p>
+
                     <h3 style={{ fontSize: 24,marginBottom: 12 }}>
                         絵
                     </h3>
                     <p>
                         test
                     </p>
+
                     <h3 style={{ fontSize: 24,marginBottom: 12 }}>
                         剣道
                     </h3>
                     <p>
                         小学高学年から大学まで続けていました。<br />
-                        最近は学業や作品制作に力を入れたいと考えているため、剣道からは少し距離を置いていますが、進路や生活が安定すれば再開したいと考えています。特に、卒業後社会人になってからも続けたいです。
+                        最近は学業や作品制作に力を入れたいと考えているため、剣道からは少し距離を置いていますが、進路や生活が安定すれば再開したいと考えています。特に、卒業後社会人になってからは場所を見つけて絶対に再開したいと考えています。
                     </p>
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
                         主な実績

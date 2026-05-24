@@ -72,38 +72,38 @@ export default function ArtIndexPage() {
               display: "block",
             }}
           >
-          <div style={{ aspectRatio: "4 / 3", background: "rgba(255,255,255,0.06)", position: "relative" }}>
-            <Image
-              src={a.image}
-              alt={a.title}
-              fill // 親要素いっぱいに広げる
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // 閲覧環境に応じた最適化
-              style={{ objectFit: "cover" }}
-              // ↓ これが重要！画面外の画像はスクロールするまで読み込まない（Lazy Load）
-              loading="lazy" 
-            />
-          </div>
-
-            <div className="title" style={{ padding: 12 }}>
-              <div style={{ fontWeight: 700 }}>{a.title}</div>
-              <div style={{ fontSize: 12, opacity: 0.7 }}>{a.date}</div>
-
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 8 }}>
-                {a.tags.slice(0, 3).map((t) => (
-                  <span
-                    key={t}
-                    style={{
-                      fontSize: 12,
-                      padding: "3px 8px",
-                      borderRadius: 999,
-                      background: "rgba(255,255,255,0.10)",
-                    }}
-                  >
-                    {t}
-                  </span>
-                ))}
-              </div>
+            <div style={{ aspectRatio: "4 / 3", background: "rgba(255,255,255,0.06)", position: "relative" }}>
+              <Image
+                src={a.image}
+                alt={a.title}
+                fill // 親要素いっぱいに広げる
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // 閲覧環境に応じた最適化
+                style={{ objectFit: "cover" }}
+                // ↓ これが重要！画面外の画像はスクロールするまで読み込まない（Lazy Load）
+                loading="lazy" 
+              />
             </div>
+
+              <div className="title" style={{ padding: 12 }}>
+                <div style={{ fontWeight: 700 }}>{a.title}</div>
+                <div style={{ fontSize: 12, opacity: 0.7 }}>{a.date}</div>
+
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 8 }}>
+                  {a.tags.slice(0, 3).map((t) => (
+                    <span
+                      key={t}
+                      style={{
+                        fontSize: 12,
+                        padding: "3px 8px",
+                        borderRadius: 999,
+                        background: "rgba(255,255,255,0.10)",
+                      }}
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
           </Link>
         ))}
       </div>
