@@ -23,6 +23,7 @@ export default function ArtIndexPage() {
   return (
     <main style={{ padding: 32, maxWidth: 1000, margin: "0 auto" }}>
       <h1 style={{ fontSize: 28, marginBottom: 8 }}>Illustrations</h1>
+      <p style={{fontSize:14,opacity: 0.7,marginBottom : 8}}>掲載日の降順にソートしています</p>
       <Link href="/" style={{ display: "inline-block", marginBottom: 14 }}>
         ← Back to home
       </Link>
@@ -60,7 +61,11 @@ export default function ArtIndexPage() {
           gap: 14,
         }}
       >
-        {filtered.map((a) => (
+        {filtered
+          .slice() // 元の配列を壊さないようにコピーを作成
+          .sort((a, b) => {
+          return new Date(b.date).getTime() - new Date(a.date).getTime();
+        }).map((a) => (
           <Link
             key={a.slug}
             href={`/art/${a.slug}`}
