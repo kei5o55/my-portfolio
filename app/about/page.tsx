@@ -6,16 +6,33 @@ export default function AboutPage(){
             <h1 style={{ fontSize: 32, marginBottom: 8 }}>
                 About Me
             </h1>
-            <Link href="/" style={{ display: "inline-block", marginBottom: 14 }}>
-                ← Back to home
+            <Link
+                href="/"
+                className="
+                    inline-flex
+                    items-center
+                    gap-2
+                    px-4
+                    py-2
+                    mb-4
+                    border
+                    border-black
+                    rounded-lg
+                    text-sm
+                    transition
+                    hover:bg-black
+                    hover:text-white
+                "
+            >
+            ← Back to home
             </Link>
             {/*プロフィール基本情報*/}
             <section style={{ marginBottom: 32 }}>
-                <h2 style={{ fontSize: 24 }}>Profile</h2>
+                <h2 style={{ fontSize: 24, marginBottom: 32 }}>Profile</h2>
                 <div style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
-                    <p> kei5ot / kei5o55</p>
+                    <p style={{fontSize: 20}}> kei5ot or kei5o55</p>
                         <p style={{ opacity: 0.6, fontSize: 12, marginBottom: 16, letterSpacing: "0.05em" }}>
-                            絵描き / Webエンジニア
+                            絵描き / 個人開発者
                         </p>
                     <p>
                         高知大学 理工学部 情報科学科<br /><br />
@@ -26,7 +43,15 @@ export default function AboutPage(){
                         <br />
                         長所は、食べ物の好き嫌いが無いところだと思ってます。
                     </p>
+                    <h3 style={{fontSize : 20}}>個人ブログ</h3>
+                    <p style={{ opacity: 0.7 ,fontSize: 14}}>
+                        個人ブログ。日記や作業記録など。
+                    </p>
+                    <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
+                        <a href="https://kei5ot.fanbox.cc/">Fanbox →</a>
+                    </div>
                 </div>
+                    
             </section>
 
             {/* スキル・活動 */}
@@ -36,8 +61,8 @@ export default function AboutPage(){
                     <div  style={{ border: "1px solid #000000", borderRadius: 8, padding: 16 }}>
                         <h3 style={{ fontSize: 18, marginBottom: 8 }}>Developement</h3>
                         <p style={{ fontSize: 14, opacity: 0.7, lineHeight: 1.6 }}>
-                            main : TypeScript / React / C<br />
-                            sub : Next.js / html /css<br />
+                            main : TypeScript / React<br />
+                            sub : Next.js / html /css / C<br />
                             tools : VSCode / GitHub
                         </p>
                     </div>
@@ -77,15 +102,15 @@ export default function AboutPage(){
                         GUILTY GEAR -STRIVE-（格ゲー）
                     </h3>
                     <p>
-                        最近始めました。コンボを練習してるところです。<br />
-                        今まで対戦ゲームはやってこなかったですが、ギルティギアはキャラクターが魅力的で音楽やストーリーにも惹かれました。<br />
+                        最近始めました。<br />
+                        今まで対戦ゲームはあまりやってこなかったですが、ギルティギアはキャラクターが魅力的で音楽やストーリーにも惹かれました。<br />
                     </p>
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
-                        好きなキャラクター
+                        使用キャラクター
                     </p>
                     <p>
                         ・ラムレザル<br />
-                        ・ディライラ（ベッドマン？）<br />
+                        ・ディライラ<br />
                         <br />
                     </p>
 
@@ -93,14 +118,19 @@ export default function AboutPage(){
                         絵
                     </h3>
                     <p>
-                        test
+                        見るのも描くのも好きで、ファンアート、オリジナル問わず描いています。<br />
+                        主にpixivやXに投稿しています。<br />
+                        <Link href="/art" style={{ display: "inline-block", marginBottom: 8, marginTop: 8 }}>
+                            My Artworks →
+                        </Link>
+                        <br />
+                        には自分のイラストを掲載していますので、ぜひご覧ください。
                     </p>
-
                     <h3 style={{ fontSize: 24,marginBottom: 12 }}>
                         剣道
                     </h3>
                     <p>
-                        小学高学年から大学まで続けていました。<br />
+                        {/*小学高学年から大学まで続けていました。<br />*/}
                         最近は学業や作品制作に力を入れたいと考えているため、剣道からは少し距離を置いていますが、進路や生活が安定すれば再開したいと考えています。特に、卒業後社会人になってからは場所を見つけて絶対に再開したいと考えています。
                     </p>
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>

@@ -28,7 +28,7 @@ export default function ArtIndexPage() {
         ← Back to home
       </Link>
       <p style={{ opacity: 0.7, marginBottom: 16 }}>
-        タグで絞り込み → クリックで詳細へ
+        タグで絞り込み / クリックで詳細へ
       </p>
 
       {/* タグUI */}

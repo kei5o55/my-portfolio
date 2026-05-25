@@ -15,10 +15,12 @@ export default function Home() {
       <section style={{ marginBottom: 32 }}>
         <h2 style={{ fontSize: 24 }}>About</h2>
         <p>
-          kei5ot&nbsp;or&nbsp;kei5o55&nbsp;という名前で活動しています。創作世界観とイラスト・TypeScript / Reactを用いたWebアプリケーションを制作しています。<br />
+          kei5ot&nbsp;or&nbsp;kei5o55&nbsp;というHNで活動しています。創作世界観とイラスト・TypeScript / Reactを用いたWebアプリケーションを制作しています。<br />
           創作支援アプリケーションを制作しており、Worksセクションに制作物を掲載しています。<br />
-          フロントエンド領域に興味があり、何を作るかといったアイデア出しやユーザ体験を意識した新機能の追加・改善などが好きですが、
-          今後はバックエンド技術についても学び、フルスタックな開発ができるようになりたいと考えています。
+          フロントエンド領域に興味があり、問題解決のために何を作るかといったアイデア出しや、ユーザ体験を意識した新機能の追加・改善などが好きですが、
+          今後は低レイヤー領域やバックエンド技術についても学び、フルスタックな開発ができるようになりたいと考えています。
+          <br />
+          
         </p>
         <Link href="/about" style={{ display: "inline-block", marginTop: 12 }}>
           More about me →
@@ -27,7 +29,10 @@ export default function Home() {
 
       {/* 作品 */}
       <section style={{ marginBottom: 32 }}>
-        <h2>Works</h2>
+        <h2 style={{ fontSize: 24 }}>Works</h2>
+        <p style={{fontSize: 16,marginBottom: 16,opacity: 0.7 }}>力を入れている制作物を掲載しています。ぜひご覧ください。<br />
+          「Detail Page →」には各制作物に対する詳細情報や思いをカジュアルに記載しています。
+        </p>
         <div
           style={{
             border: "1px solid #333",
@@ -68,6 +73,8 @@ export default function Home() {
             <a href="https://register-3k2l.vercel.app/">▶ DEMO</a>
             <p>/</p>
             <a href="https://github.com/kei5o55/register">GitHubリポジトリ</a>
+            <p>/</p>
+            <a href="/works/rejistella">Detail Page →</a>
           </div>
 
         </div>
@@ -86,13 +93,15 @@ export default function Home() {
           </p>
           <p>
             イラスト制作の作業記録をつけるためのツール。タスク管理や進捗管理などの追加・バックエンドの開発等を進め、スケジュールアプリとして日常的に使用できるようにしたいと考えています。<br />
-            詳細はリポジトリのREADMEに記載していますので、ぜひご覧ください。<br />
+            <span >詳細はリポジトリのREADMEに記載していますので、ぜひご覧ください。<br /></span>
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
             <a href="https://worklog-app-ruby.vercel.app/projects">▶ DEMO</a>
             <p>/</p>
             <a href="https://github.com/kei5o55/worklog-app">GitHubリポジトリ</a>
+            <p>/</p>
+            <a href="/works/worklog">Detail Page →</a>
           </div>
         </div>
         <div
@@ -103,16 +112,24 @@ export default function Home() {
             marginTop: 12,
           }}
         >
-          <h3 style={{fontSize : 20}}>個人ブログ</h3>
+          <h3 style={{fontSize : 20}}>簡易ペイントツール</h3>
 
           <p style={{ opacity: 0.7 ,fontSize: 14}}>
-            個人ブログ。日記や作業記録など。
+            超簡易的なペイントツール / C言語を使用したデスクトップアプリ
+          </p>
+          <p>
+            一番初めに開発したツールです。<br />
+            デスクトップアプリとして制作したため、ブラウザ上でのデモは用意していませんが、GitHubにソースコードを公開しています。<br />
+            詳細はリポジトリのREADMEに記載していますので、ぜひご覧ください。<br />
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="https://kei5ot.fanbox.cc/">Fanbox →</a>
+            <a href="https://github.com/kei5o55/DrawApp">GitHubリポジトリ</a>
+            <p>/</p>
+            <a href="/works/drawapp">Detail Page →</a>
           </div>
         </div>
+
       
       </section>
 
