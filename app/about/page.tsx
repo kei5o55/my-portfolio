@@ -120,7 +120,7 @@ export default function AboutPage(){
                     <p>
                         見るのも描くのも好きで、ファンアート、オリジナル問わず描いています。<br />
                         主にpixivやXに投稿しています。<br />
-                        絵を見るだけで誰が描いたのか分かるような作者ごとの癖や個性のようなものを大切にしていて、写実的ではなく、感情や雰囲気を重視した傾向の作品が多いと思います。<br />
+                        絵を見るだけで誰が描いたのか分かるような、作者ごとの癖や個性のようなものを大切にしていて、写実的ではなく、感情や雰囲気を重視した傾向の作品が多いと思います。<br />
                         <Link href="/art" style={{ display: "inline-block", marginBottom: 8, marginTop: 8 }}>
                             My Artworks →
                         </Link>
