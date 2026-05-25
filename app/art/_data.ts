@@ -118,7 +118,7 @@ export const artworks: ArtWork[] = [
     date: "2026-05-19",
     tags:["一次創作","ラフ"],
     image: "/art/setup_wizard.webp",
-    description: "一次創作のラフ。魔法使いの女の子",
+    description: "アルケイア中央学院 戦術科３年 ネア連星。\n 優れたエーテル操作技術と実績・使用術式から「虹の魔法使い」と他学生から呼ばれている。\n７色のエーテルを扱える数少ない人間",
   },
   {
     slug: "o_anna",

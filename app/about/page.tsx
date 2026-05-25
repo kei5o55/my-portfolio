@@ -71,6 +71,9 @@ export default function AboutPage(){
                         </p>
                     </div>
                 </div>
+                <Link href="/misoria" style={{ display: "inline-block", marginTop: 12 }}>
+                    More →
+                </Link>
             </section>
             
             <section style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>

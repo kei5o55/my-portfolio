@@ -20,10 +20,27 @@ export const worksData: Work[] = [
     content: (
       <div style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
         <h2 style={{ fontSize: '20px', borderBottom: '1px solid #ddd', paddingBottom: '8px' }}>概要</h2>
+        <div
+              style={{
+                width: 500,
+                height: 400,
+                overflow: "hidden",
+                position: "relative",
+                margin: "auto"
+              }}
+            >
+              <Image
+                src="/image/image.jpg"
+                alt="実運用風景"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+        </div>
         同人即売会向けのレジアプリケーションです。初めてTypescriptを使用して制作しました。
           開発当初、web技術について知識が無かったため、書籍やLLMを用いて学びながら開発を進めました。<br />
           インターネットを通じて気軽に作品を展示できる現代において、同人即売会（コミケとか）のようなフィジカル現場の価値は今までよりも高まっているのではないかと考えています。
-          データではなく画集・ポストカード・グッズのような作品として実際に創作を共有できる、そういった価値をより高められたらいいなと思っています。<br /><br />
+          データではなく画集・ポストカード・グッズのような作品として実際に創作を共有できる、そういった体験を本アプリを通して高めることができたらいいなと思っています。<br /><br />
+
           <h2 style={{ fontSize: '20px', borderBottom: '1px solid #ddd', paddingBottom: '8px' }}>実運用を通して</h2>
           一度関西コミティアで実際に運用しました。自分の制作物だというコトもありとても楽しく、またユーザビリティの面で改善すべき点や新たな機能のアイデアが多く見つかりましたが、改善に向けてワクワクしながら取り組めています。<br />
           <div
@@ -65,7 +82,7 @@ export const worksData: Work[] = [
               />
             </div>
           </div>
-          技術的に高度なことはできていないのですが、欲しいと思った機能を上手く実現でき、現在でもある程度の完成度がある状態なんじゃないかなと思っています。<br />
+          欲しいと思った機能を上手く実現でき、現在でも運用においての機能面では十分な完成度があると考えています。<br />
         
         {/* 画像を入れる例
         <div style={{ margin: '24px 0' }}>
