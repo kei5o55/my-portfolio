@@ -9,6 +9,7 @@ export type Work = {
     demoUrl?: string;
     githubUrl?: string;
 };
+export default Work;
 
 export const worksData: Work[] = [
   {
