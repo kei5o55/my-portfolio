@@ -41,15 +41,11 @@ export default function AboutPage(){
                         <br />worksに載せてある作業記録ツールは現在viteのみで制作しているのですが、next.jsのルーティングの管理がファイルベースで直感的なところが設計にマッチしており、絶対導入したほうが良いなと思いました。
                         絵描きとしての創作活動を行っています。
                         <br />
-                        長所は、食べ物の好き嫌いが無いところだと思ってます。
+                        下部の趣味欄にも記載していますが、創作やゲームが好きです。創作に関しては、最近は小説や世界観設定などの文章に興味があります。<br />
+                        イラストで同人即売会に参加もしており、一次創作では「Emotone」二次創作では「人間」というサークル名で活動しています。<br />
+                        長所は、食べ物の好き嫌いが無いところ。剣道の得意なところは出所の掴みづらい小手と攻勢時の技の繋ぎです。
                     </p>
-                    <h3 style={{fontSize : 20}}>個人ブログ</h3>
-                    <p style={{ opacity: 0.7 ,fontSize: 14}}>
-                        個人ブログ。日記や作業記録など。
-                    </p>
-                    <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-                        <a href="https://kei5ot.fanbox.cc/">Fanbox →</a>
-                    </div>
+                    
                 </div>
                     
             </section>
@@ -69,14 +65,24 @@ export default function AboutPage(){
                     <div  style={{ border: "1px solid #000000", borderRadius: 8, padding: 16 }}>
                         <h3 style={{ fontSize: 18, marginBottom: 8 }}>Creative</h3>
                         <p style={{ fontSize: 14, lineHeight: 1.6 }}>
-                            illust : fan art / original character & worldbuilding<br />
-                            event : 関西コミティア / コミックマーケット<br />
+                            illust : original character & worldbuilding / fan art<br />
+                            circle : Emotone / 人間<br />
                             tools : CLIP STUDIO PAINT
                         </p>
                     </div>
                 </div>
             </section>
-
+            
+            <section style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
+                <h3 style={{fontSize : 20}}>個人ブログ</h3>
+                    <p style={{ opacity: 0.7 ,fontSize: 14}}>
+                        日記や作業記録やイベント参加レポートなどをたまにまとめています。
+                    </p>
+                    <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
+                        <a href="https://kei5ot.fanbox.cc/">Fanbox →</a>
+                    </div>
+            </section>
+            
             {/*趣味・その他*/}
             <section style={{ marginBottom: 32 }}>
                 <h2 style={{ fontSize: 24,marginBottom: 12 }}>Hobbies & Others</h2>

@@ -90,7 +90,7 @@ export default function Home() {
           <h3 style={{fontSize : 20}}>作業記録ツール</h3>
 
           <p style={{ opacity: 0.7 ,fontSize: 14}}>
-            イラスト版Github風 / 現在はViteでミニマルに制作していますが、今後Next.jsに移行予定
+            イラスト版Github風 / 現在はViteでミニマルに制作していますが、現在Next.jsに移行作業中
           </p>
           <p>
             イラスト制作の作業記録をつけるためのツール。タスク管理や進捗管理などの追加・バックエンドの開発等を進め、スケジュールアプリとして日常的に使用できるようにしたいと考えています。<br />
