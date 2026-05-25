@@ -31,7 +31,8 @@ export default function Home() {
       <section style={{ marginBottom: 32 }}>
         <h2 style={{ fontSize: 24 }}>Works</h2>
         <p style={{fontSize: 16,marginBottom: 16,opacity: 0.7 }}>力を入れている制作物を掲載しています。ぜひご覧ください。<br />
-          「Detail Page →」には各制作物に対する詳細情報や思いをカジュアルに記載しています。
+          GithubのReadmeには詳細な情報や、制作の背景・工夫点などを、<br />
+          「Detail Page →」には各制作物に対する思いや紹介をカジュアルに記載していますので、両方ご覧いただけると嬉しいです。
         </p>
         <div
           style={{

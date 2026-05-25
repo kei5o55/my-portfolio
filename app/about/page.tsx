@@ -60,7 +60,7 @@ export default function AboutPage(){
                 <div style={{display: "grid",gridTemplateColumns: "1fr 1fr",gap: 24,}}>
                     <div  style={{ border: "1px solid #000000", borderRadius: 8, padding: 16 }}>
                         <h3 style={{ fontSize: 18, marginBottom: 8 }}>Developement</h3>
-                        <p style={{ fontSize: 14, opacity: 0.7, lineHeight: 1.6 }}>
+                        <p style={{ fontSize: 14,lineHeight: 1.6 }}>
                             main : TypeScript / React<br />
                             sub : Next.js / html /css / C<br />
                             tools : VSCode / GitHub
@@ -68,7 +68,7 @@ export default function AboutPage(){
                     </div>
                     <div  style={{ border: "1px solid #000000", borderRadius: 8, padding: 16 }}>
                         <h3 style={{ fontSize: 18, marginBottom: 8 }}>Creative</h3>
-                        <p style={{ fontSize: 14, opacity: 0.7, lineHeight: 1.6 }}>
+                        <p style={{ fontSize: 14, lineHeight: 1.6 }}>
                             illust : fan art / original character & worldbuilding<br />
                             event : 関西コミティア / コミックマーケット<br />
                             tools : CLIP STUDIO PAINT
@@ -120,6 +120,7 @@ export default function AboutPage(){
                     <p>
                         見るのも描くのも好きで、ファンアート、オリジナル問わず描いています。<br />
                         主にpixivやXに投稿しています。<br />
+                        絵を見るだけで誰が描いたのか分かるような作者ごとの癖や個性のようなものを大切にしていて、写実的ではなく、感情や雰囲気を重視した傾向の作品が多いと思います。<br />
                         <Link href="/art" style={{ display: "inline-block", marginBottom: 8, marginTop: 8 }}>
                             My Artworks →
                         </Link>
@@ -138,8 +139,9 @@ export default function AboutPage(){
                     </p>
                     <p>
                         ・三段取得<br />
-                        ・高校　県大会団体３位入賞<br />
-                        ・大学　中四国新人戦準優勝（二年時）<br />
+                        ・中学 : 郡市大会 個人３位入賞<br />
+                        ・高校 : 県大会団体 ３位入賞<br />
+                        ・大学 : 中四国新人大会 団体準優勝（二年時）<br />
                     </p>
                 </div>
             </section>
