@@ -20,8 +20,7 @@ export default function AboutPage(){
                     rounded-lg
                     text-sm
                     transition
-                    hover:bg-black
-                    hover:text-white
+                    hover:bg-zinc-200
                 "
             >
             ← Back to home
@@ -69,11 +68,35 @@ export default function AboutPage(){
                             circle : Emotone / 人間<br />
                             tools : CLIP STUDIO PAINT
                         </p>
-                    </div>
-                </div>
-                <Link href="/misoria" style={{ display: "inline-block", marginTop: 12 }}>
+                        <p style={{ textAlign: "right" }}>
+                <Link
+                    className="
+                        inline-flex
+                        items-center
+                        gap-2
+                        px-4
+                        py-2
+                        mb-4
+                        border
+                        border-black
+                        rounded-lg
+                        text-sm
+                        transition
+                        hover:bg-zinc-200
+                    "
+                    href="/misoria"
+                    style={{
+                        display: "inline-block",
+                        marginTop: 12,
+                        marginLeft: "auto",
+                    }}
+                    >
                     More →
                 </Link>
+                </p>
+                    </div>
+                </div>
+                
             </section>
             
             <section style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
@@ -82,7 +105,20 @@ export default function AboutPage(){
                         日記や作業記録やイベント参加レポートなどをたまにまとめています。
                     </p>
                     <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-                        <a href="https://kei5ot.fanbox.cc/">Fanbox →</a>
+                        <a href="https://kei5ot.fanbox.cc/" className="
+                            inline-flex
+                            items-center
+                            gap-2
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">Fanbox →</a>
                     </div>
             </section>
             
@@ -115,7 +151,7 @@ export default function AboutPage(){
                         今まで対戦ゲームはあまりやってこなかったですが、ギルティギアはキャラクターが魅力的で音楽やストーリーにも惹かれました。<br />
                     </p>
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
-                        使用キャラクター
+                        好きなキャラクター
                     </p>
                     <p>
                         ・ラムレザル<br />
@@ -130,7 +166,22 @@ export default function AboutPage(){
                         見るのも描くのも好きで、ファンアート、オリジナル問わず描いています。<br />
                         主にpixivやXに投稿しています。<br />
                         絵を見るだけで誰が描いたのか分かるような、作者ごとの癖や個性のようなものを大切にしていて、写実的ではなく、感情や雰囲気を重視した傾向の作品が多いと思います。<br />
-                        <Link href="/art" style={{ display: "inline-block", marginBottom: 8, marginTop: 8 }}>
+                        <Link href="/art"
+                        className="
+                            inline-flex
+                            items-center
+                            gap-2
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        "
+                        style={{ display: "inline-block", marginBottom: 8, marginTop: 8 }}>
                             My Artworks →
                         </Link>
                         <br />

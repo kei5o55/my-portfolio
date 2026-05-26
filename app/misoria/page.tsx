@@ -4,24 +4,23 @@ export default function MisoRiaPage() {
     return(
     <div style={{ padding: "40px 20px", display: "flex", flexDirection: "column", alignItems: "center", backgroundColor: "#ffffff", color: "#333", fontFamily: "sans-serif" }}>
     <Link
-                href="/"
+                href="/about"
                 className="
-                    inline-flex
-                    items-center
-                    gap-2
-                    px-4
-                    py-2
-                    mb-4
-                    border
-                    border-black
-                    rounded-lg
-                    text-sm
-                    transition
-                    hover:bg-black
-                    hover:text-white
-                "
+                            inline-flex
+                            items-center
+                            gap-2
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        "
             >
-            ← Back to home
+            ← Back
     </Link>
     <div style={{ width: "100%", maxWidth: "800px", border: "1px solid #000000", borderRadius: 8, padding: "48px 32px", lineHeight: 1.8, textAlign: "center", boxSizing: "border-box" }}>
         

@@ -27,7 +27,21 @@ export default async function ArtDetailPage({ params }: Props) {
 
   return (
     <main style={{ padding: 32, maxWidth: 1000, margin: "0 auto" }}>
-      <Link href="/art" style={{ display: "inline-block", marginBottom: 14 }}>
+      <Link href="/art" className="
+                            inline-flex
+                            items-center
+                            gap-2
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        "
+                        style={{ display: "inline-block", marginBottom: 14 }}>
         ← Back to list
       </Link>
 

@@ -31,7 +31,22 @@ export default function Home() {
           <br />
           
         </p>
-        <Link href="/about" style={{ display: "inline-block", marginTop: 12 }}>
+        <Link href="/about" 
+              className="
+                            inline-flex
+                            items-center
+                            gap-2
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        "
+                        style={{ display: "inline-block", marginTop: 12 }}>
           More about me →
         </Link>
       </section>
@@ -60,7 +75,21 @@ export default function Home() {
               感覚や手癖を大切にして描いています。オリジナルキャラクターや二次創作を中心に制作しています。<br />
               ※高解像度画像を掲載しているため、読み込みに時間がかかる場合があります。</p>
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <Link href="/art">Illustrations →</Link>
+            <Link href="/art" className="
+                            inline-flex
+                            items-center
+                            gap-2
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        "
+                        >Illustrations →</Link>
           </div>
         </div>
         
@@ -74,8 +103,10 @@ export default function Home() {
         >
           <h3 style={{fontSize : 20}}>Rejistella ( 仮称 ) / レジアプリ</h3>
           <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 12 }}>
+            <span style={tagStyle("#3178C6", "#fff")}>TypeScript</span>
             <span style={tagStyle("#61DAFB", "#000")}>React</span>
             <span style={tagStyle("#646CFF", "#fff")}>Vite</span>
+            <span style={tagStyle("#9e4e86", "#fff")}>Web App</span>
             <span style={tagStyle("rgb(25, 27, 87)", "#fff")}>PWA</span>
             <span style={tagStyle("#4CAF50", "#fff")}>実運用中</span>
             <span style={tagStyle("#FF9800", "#fff")}>個人開発</span>
@@ -90,11 +121,48 @@ export default function Home() {
           </div>
           
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="https://register-3k2l.vercel.app/">▶ DEMO</a>
-            <p>/</p>
-            <a href="https://github.com/kei5o55/register">GitHubリポジトリ</a>
-            <p>/</p>
-            <a href="/works/rejistella">Detail Page →</a>
+            <a href="https://register-3k2l.vercel.app/"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">▶ DEMO</a>
+            <a href="https://github.com/kei5o55/register"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">GitHubリポジトリ</a>
+            <a href="/works/rejistella"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">Detail Page →</a>
           </div>
 
         </div>
@@ -109,9 +177,11 @@ export default function Home() {
           <h3 style={{fontSize : 20}}>作業記録ツール</h3>
 
           <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 12 }}>
+            <span style={tagStyle("#3178C6", "#fff")}>TypeScript</span>
             <span style={tagStyle("#61DAFB", "#000")}>React</span>
             <span style={tagStyle("#0070f3", "#fff")}>Next.js (移行中)</span>
             <span style={tagStyle("#646CFF", "#fff")}>Vite</span>
+            <span style={tagStyle("#9e4e86", "#fff")}>Web App</span>
             <span style={tagStyle("#4CAF50", "#fff")}>実運用中</span>
             <span style={tagStyle("#FF9800", "#fff")}>個人開発</span>
           </div>
@@ -122,11 +192,48 @@ export default function Home() {
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="https://worklog-app-ruby.vercel.app/projects">▶ DEMO</a>
-            <p>/</p>
-            <a href="https://github.com/kei5o55/worklog-app">GitHubリポジトリ</a>
-            <p>/</p>
-            <a href="/works/worklog">Detail Page →</a>
+            <a href="https://worklog-app-ruby.vercel.app/projects"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">▶ DEMO</a>
+            <a href="https://github.com/kei5o55/worklog-app"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">GitHubリポジトリ</a>
+            <a href="/works/worklog"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">Detail Page →</a>
           </div>
         </div>
         <div
@@ -139,9 +246,12 @@ export default function Home() {
         >
           <h3 style={{fontSize : 20}}>簡易ペイントツール</h3>
 
-          <p style={{ opacity: 0.7 ,fontSize: 14}}>
-            超簡易的なペイントツール / C言語を使用したデスクトップアプリ
-          </p>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 12 }}>
+            <span style={tagStyle("#555555", "#fff")}>C言語</span>
+            <span style={tagStyle("#a3aa3f", "#fff")}>SDL2</span>
+            <span style={tagStyle("#607D8B", "#fff")}>Desktop App</span>
+            <span style={tagStyle("#FF9800", "#fff")}>個人開発</span>
+          </div>
           <p>
             一番初めに開発したツールです。<br />
             デスクトップアプリとして制作したため、ブラウザ上でのデモは用意していませんが、GitHubにソースコードを公開しています。<br />
@@ -149,12 +259,89 @@ export default function Home() {
           </p>
 
           <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
-            <a href="https://github.com/kei5o55/DrawApp">GitHubリポジトリ</a>
-            <p>/</p>
-            <a href="/works/drawapp">Detail Page →</a>
+            <a href="https://github.com/kei5o55/DrawApp"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">GitHubリポジトリ</a>
+            <a href="/works/drawapp"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">Detail Page →</a>
           </div>
+          
         </div>
+<div
+            style={{
+              border: "1px solid #333",
+              borderRadius: 8,
+              padding: 16,
+              marginTop: 12,
+            }}
+          >
+          <h3 style={{fontSize : 20}}>ポートフォリオサイト</h3>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 12 }}>
+            <span style={tagStyle("#61DAFB", "#000")}>React</span>
+            <span style={tagStyle("#0070f3", "#fff")}>Next.js</span>
+            <span style={tagStyle("#3178C6", "#fff")}>TypeScript</span>
+            <span style={tagStyle("#06B6D4", "#fff")}>Tailwind CSS</span>
+          </div>
+          <p>
+            このサイトです。<br />
+            Next.jsを用いた初めての開発を通じ、技術習得と創作世界観の構築を両立させています。単なるポートフォリオに留まらず、自身の作品の一つとしてアップデートを続けていきます。<br />
+            <br />
+          </p>
 
+          <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
+            <a href="https://github.com/kei5o55/my-portfolio"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">GitHubリポジトリ</a>
+            <a href="/works/drawapp"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">Detail Page →</a>
+          </div>
+          </div>
       
       </section>
 

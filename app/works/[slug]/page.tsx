@@ -18,7 +18,22 @@ export default async function WorkDetailPage({ params }: Props) {
     return (
         <main style={{ padding: 32, maxWidth: 800, margin: "0 auto", color: "#000", backgroundColor: "#fff", minHeight: "100vh" }}>
         {/* 戻るボタン */}
-        <Link href="/" style={{ color: "#666", textDecoration: "none", fontSize: 14 }}>
+        <Link href="/" 
+        className="
+                            inline-flex
+                            items-center
+                            gap-2
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        "
+        style={{ color: "#666", textDecoration: "none", fontSize: 14 }}>
             ← Back to home
         </Link>
 

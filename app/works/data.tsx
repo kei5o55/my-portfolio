@@ -6,7 +6,7 @@ export type Work = {
     slug: string;
     title: string;
     subtitle: string;
-    content: React.ReactNode; // string ではなく ReactNode にする
+    content: React.ReactNode;
     demoUrl?: string;
     githubUrl?: string;
 };

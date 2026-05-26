@@ -24,7 +24,21 @@ export default function ArtIndexPage() {
     <main style={{ padding: 32, maxWidth: 1000, margin: "0 auto" }}>
       <h1 style={{ fontSize: 28, marginBottom: 8 }}>Illustrations</h1>
       <p style={{fontSize:14,opacity: 0.7,marginBottom : 8}}>掲載日の降順にソートしています</p>
-      <Link href="/" style={{ display: "inline-block", marginBottom: 14 }}>
+      <Link href="/" className="
+                            inline-flex
+                            items-center
+                            gap-2
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        "
+            style={{ display: "inline-block", marginBottom: 14 }}>
         ← Back to home
       </Link>
       <p style={{ opacity: 0.7, marginBottom: 16 }}>
