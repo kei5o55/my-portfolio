@@ -172,7 +172,7 @@ export const worksData: Work[] = [
       <div style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
         <h2 style={{ fontSize: '20px', borderBottom: '1px solid #ddd', paddingBottom: '8px' }}>概要</h2>
         このサイトです。<br/>
-        next.jsやtailwind cssなどのモダンな技術を初めて使ってweb開発を行っています。めちゃくちゃ便利ですね。<br/>
+        next.jsやtailwind cssなどのモダンな技術を初めて使って作成しています。めちゃくちゃ便利ですね。<br/>
         自創作発表の場や、制作物を乗せる場所など、自身の活動のハブとして今後は活用していきたいです。
         <br/>webサイト開発の知識がまだ少なく、高度なことはできていないのですが、なるべく見やすく制作することを意識しています。
         <br/><br/>
