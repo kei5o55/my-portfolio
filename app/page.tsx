@@ -15,9 +15,6 @@ export default function Home() {
     <main style={{ padding: 32, maxWidth: 900, margin: "0 auto" }}>
       <h1 style={{ fontSize: 32, marginBottom: 8 }}>
         Portfolio
-        <span style={{fontSize: 16,opacity: 0.5,marginLeft: 12,}}>
-          React + Next.js
-        </span>
       </h1>
 
       {/* 自己紹介 */}
