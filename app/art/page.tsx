@@ -55,8 +55,8 @@ export default function ArtIndexPage() {
               onClick={() => setActiveTag(tag)}
               style={{
                 padding: "6px 10px",
-                borderRadius: 999,
-                border: "1px solid rgba(255,255,255,0.18)",
+                borderRadius: 300,
+                border: "1px solid rgba(0, 0, 0, 0.18)",
                 background: active ? "rgba(255,255,255,0.14)" : "transparent",
                 cursor: "pointer",
               }}

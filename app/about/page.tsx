@@ -35,16 +35,55 @@ export default function AboutPage(){
                         </p>
                     <p>
                         高知大学 理工学部 情報科学科<br /><br />
-                        &nbsp;このサイトはnext.jsを初めて使用し制作しているのですが、めちゃくちゃ便利ですね。今まで自分の作品を公開する際は、Viteのみで制作していましたが、
-                            物によってはnext.jsなどフレームワークを使用する方が圧倒的に楽だなと感じました。
-                        <br />worksに載せてある作業記録ツールは現在viteのみで制作しているのですが、next.jsのルーティングの管理がファイルベースで直感的なところが設計にマッチしており、絶対導入したほうが良いなと思いました。
-                        絵描きとしての創作活動を行っています。
-                        <br />
+                        普段は絵を描いたり個人開発アプリを作成したりしています。<br/>
                         下部の趣味欄にも記載していますが、創作やゲームが好きです。創作に関しては、最近は小説や世界観設定などの文章に興味があります。<br />
                         イラストで同人即売会に参加もしており、一次創作では「Emotone」二次創作では「人間」というサークル名で活動しています。<br />
                         長所は、食べ物の好き嫌いが無いところ。剣道の得意なところは出所の掴みづらい小手と攻勢時の技の繋ぎです。
                     </p>
-                    
+                    <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
+                    <a href="https://x.com/kei5ot"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">X(一次創作)</a>
+                    <a href="https://x.com/mochiki_02"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">X(二次創作)</a>
+                    <a href="https://www.pixiv.net/users/16743124"  className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        ">pixiv</a>
+                    </div>
                 </div>
                     
             </section>
@@ -91,7 +130,7 @@ export default function AboutPage(){
                         marginLeft: "auto",
                     }}
                     >
-                    More →
+                    worldbuilding →
                 </Link>
                 </p>
                     </div>
