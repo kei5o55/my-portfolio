@@ -55,7 +55,7 @@ export default function Home() {
       <section style={{ marginBottom: 32 }}>
         <h2 style={{ fontSize: 24 }}>Works</h2>
         <p style={{fontSize: 16,marginBottom: 16,opacity: 0.7 }}>力を入れている制作物を掲載しています。<br />
-          GithubのReadmeには情報や、制作の背景・工夫点などを詳細に、<br />
+          GithubのReadmeには機能詳細・工夫点などを詳細に、<br />
           「Detail Page →」には制作物に対する思いや開発背景を簡単に記載していますので、ぜひ両方ご覧ください。
         </p>
         <div
@@ -326,7 +326,7 @@ export default function Home() {
                             transition
                             hover:bg-zinc-200
                         ">GitHubリポジトリ</a>
-            <a href="/works/drawapp"  className="
+            <a href="/works/portfolio"  className="
                             inline-flex
                             items-center
                             gap-1

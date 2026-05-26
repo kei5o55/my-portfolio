@@ -1,6 +1,7 @@
 // app/works/data.ts
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link"
 
 export type Work = {
     slug: string;
@@ -85,6 +86,7 @@ export const worksData: Work[] = [
             </div>
           </div>
           欲しいと思った機能を上手く実現でき、現在でも運用においての機能面では十分な完成度があると考えています。<br />
+        <br/><br/><p style={{fontSize:20 }}><a href="https://github.com/kei5o55/register" style={{color: "#2563eb",textDecoration: "underline",}}>GitHub</a>にさらに詳しく記載してます。ぜひご覧ください！</p>
       </div>
     ),
 
@@ -97,12 +99,31 @@ export const worksData: Work[] = [
         subtitle: "イラスト版Github風 / 現在はViteでミニマルに制作していますが、今後Next.jsに移行予定",
 
         content: (
-      <div>
+      <div style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
         <h2 style={{ fontSize: '20px', borderBottom: '1px solid #ddd', paddingBottom: '8px' }}>概要</h2>
-        <p>READMEから抜粋した内容や、実運用レポートをここに書きます。</p>
-        
-        <h2 style={{ fontSize: '20px', marginTop: '32px' }}>こだわり</h2>
-        <p>オフライン環境でも動作するよう、IndexedDBを活用しています。</p>
+        <p>個人的に欲しかったイラスト制作作業を記録していくためのツールです</p>
+        １プロジェクトに対して、複数コミットを保存可能、進捗画像も一緒に保存できます。<br/>
+        作業時間の可視化がしたいなぁって思っただけでなく、近年の生成AIブームの中、人が積み重ねて作成した部分に価値が発生してきているのじゃないかなと感じており、そういった部分を視覚的に出来るような仕組み
+        を作っています。
+        <br/>創作に関する記録を付けるだけでなく、スケジュールカレンダーなどを実装しており、今後は日常でも使える創作支援OSとして開発していきたいです。例えば、この日はバイトが○○時まであるから○○から作業　とか。出来たら嬉しい（自分が）
+        <div
+              style={{
+                width: 500,
+                height: 400,
+                overflow: "hidden",
+                position: "relative",
+              }}
+            >
+              <Image
+                src="/image/4.jpg"
+                alt="実運用風景"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+        </div>
+        こちらも実際に自分で使いながら改善点を見つけ、継続的に成長させています。Rejistellaに比べ、細かいところは作りこめていないので今後力を入れて行きたい。<br/>
+        <br/><br/><p style={{fontSize:20 }}><a href="https://github.com/kei5o55/worklog-app" style={{color: "#2563eb",textDecoration: "underline",}}>GitHub</a>にさらに詳しく記載してます。ぜひご覧ください！</p>
+
       </div>
     ),
 
@@ -115,16 +136,53 @@ export const worksData: Work[] = [
         subtitle: "超簡易的なペイントツール / C言語を使用したデスクトップアプリ",
 
         content: (
-      <div>
+      <div style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
         <h2 style={{ fontSize: '20px', borderBottom: '1px solid #ddd', paddingBottom: '8px' }}>概要</h2>
-        <p>READMEから抜粋した内容や、実運用レポートをここに書きます。</p>
+        全体を通して初めて作った個人開発アプリです。<br/>
+        Gitを用いて実際に開発の過程を学ぶために制作始めたという背景が大きいですが、自分用に最適化したペイントツールとして今後は育成していきたいと考えています。<br/>
+        サイズを設定できる消しゴム・ブラシのみのシンプルな構成ですが、逆に機能を制限することで簡単なラフや気軽に絵を描く際に使えるのかなとか考えています。<br/>
+        <div
+              style={{
+                width: 500,
+                height: 400,
+                overflow: "hidden",
+                position: "relative",
+              }}
+            >
+              <Image
+                src="/image/5.jpg"
+                alt="実運用風景"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+        </div>
+        <br/>最近はRejistella,worklogappに力を入れているため長らくアップデート出来ていませんが、今後も手を加えて実際に使えるぐらいまで成長させたいです。
         
-        <h2 style={{ fontSize: '20px', marginTop: '32px' }}>こだわり</h2>
-        <p>オフライン環境でも動作するよう、IndexedDBを活用しています。</p>
       </div>
     ),
 
         demoUrl: undefined,
         githubUrl: "https://github.com/kei5o55/DrawApp"
-    }
+    },{
+        slug: "portfolio",
+        title: "ポートフォリオサイト",
+        subtitle: "制作物置き場用サイト",
+
+        content: (
+      <div style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
+        <h2 style={{ fontSize: '20px', borderBottom: '1px solid #ddd', paddingBottom: '8px' }}>概要</h2>
+        このサイトです。<br/>
+        next.jsやtailwind cssなどのモダンな技術を初めて使ってweb開発を行っています。めちゃくちゃ便利ですね。<br/>
+        自創作発表の場や、制作物を乗せる場所など、自身の活動のハブとして今後は活用していきたいです。
+        <br/>webサイト開発の知識がまだ少なく、高度なことはできていないのですが、なるべく見やすく制作することを意識しています。
+        <br/><br/>
+        <Link href="/misoria" style={{color: "#2563eb",textDecoration: "underline",}}>自創作の魔法学校の世界観</Link>があるのですが、今後はその世界感に沿ったデザインに移行していけたらいいなと考えています。
+        
+        
+      </div>
+    ),
+
+        demoUrl: undefined,
+        githubUrl: "https://github.com/kei5o55/my-portfolio"
+    },
 ];

@@ -135,20 +135,39 @@ export default function AboutPage(){
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
                         主な実績
                     </p>
-                    <p style={{borderBottom: "1px solid #000"}}>
+                    <p >
                         ・Rating 17.50↑ ( CHUNITHM X-VERSE-X )<br />
                         ・Legend of CRYSTAL 取得<br />
                         ・15＋ AJ3 ( 蠍火・ToBe Continued・Danann )<br />
                         ・15↑ 全SSS<br />
                         <br />
                     </p>
-                    
-
+                    <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
+                        オリジナルの好きな曲(ほかにも沢山あります)
+                    </p>
+                    <div style={{borderBottom: "1px solid #000"}}>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/QOZ0RYUGINw"
+                            title="YouTube video player"
+                            allowFullScreen
+                        />
+                        <br/>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/SL2EQT_-LgI"
+                            title="YouTube video player"
+                            allowFullScreen
+                        />
+                        <br/>
+                    </div>
                     <h3 style={{ fontSize: 24,marginBottom: 12 }}>
                         GUILTY GEAR -STRIVE-（格ゲー）
                     </h3>
                     <p>
-                        最近始めました。<br />
+                        最近始めました。５，６階を行ったり来たりしています。<br />
                         今まで対戦ゲームはあまりやってこなかったですが、ギルティギアはキャラクターが魅力的で音楽やストーリーにも惹かれました。<br />
                     </p>
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
