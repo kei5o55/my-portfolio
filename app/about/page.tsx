@@ -130,7 +130,7 @@ export default function AboutPage(){
                         CHUNITHM（音ゲー）
                     </h3>
                     <p>
-                        音ゲーは中学の頃からやっていて、特にCHUNITHMを10年以上続けています。<br />
+                        音ゲーは中学の頃からやっていて、特にCHUNITHMを10年近く続けています。<br />
                     </p>
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
                         主な実績
