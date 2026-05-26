@@ -135,13 +135,14 @@ export default function AboutPage(){
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
                         主な実績
                     </p>
-                    <p>
+                    <p style={{borderBottom: "1px solid #000"}}>
                         ・Rating 17.50↑ ( CHUNITHM X-VERSE-X )<br />
                         ・Legend of CRYSTAL 取得<br />
                         ・15＋ AJ3 ( 蠍火・ToBe Continued・Danann )<br />
                         ・15↑ 全SSS<br />
                         <br />
                     </p>
+                    
 
                     <h3 style={{ fontSize: 24,marginBottom: 12 }}>
                         GUILTY GEAR -STRIVE-（格ゲー）
@@ -153,7 +154,7 @@ export default function AboutPage(){
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
                         好きなキャラクター
                     </p>
-                    <p>
+                    <p style={{borderBottom: "1px solid #000"}}>
                         ・ラムレザル<br />
                         ・ディライラ<br />
                         <br />
@@ -162,7 +163,7 @@ export default function AboutPage(){
                     <h3 style={{ fontSize: 24,marginBottom: 12 }}>
                         絵
                     </h3>
-                    <p>
+                    <p style={{borderBottom: "1px solid #000"}}>
                         見るのも描くのも好きで、ファンアート、オリジナル問わず描いています。<br />
                         主にpixivやXに投稿しています。<br />
                         絵を見るだけで誰が描いたのか分かるような、作者ごとの癖や個性のようなものを大切にしていて、写実的ではなく、感情や雰囲気を重視した傾向の作品が多いと思います。<br />
