@@ -144,4 +144,12 @@ export const artworks: ArtWork[] = [
     image: "/art/anna3.webp",
     description: "アンナ（コメントないかも）",
   },
+  {
+    slug: "anna_summer",
+    title: "anna_summer / illustration",
+    date: "2026-05-29",
+    tags:["二次創作","anna"],
+    image: "/art/summer.jpg",
+    description: "チュウニズム１０周年で描いた二次創作",
+  },
 ];
