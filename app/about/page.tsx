@@ -139,10 +139,7 @@ export default function AboutPage(){
             </section>
             
             <section style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
-                <h3 style={{fontSize : 20}}>個人ブログ</h3>
-                    <p style={{ opacity: 0.7 ,fontSize: 14}}>
-                        日記や作業記録やイベント参加レポートなどをたまにまとめています。
-                    </p>
+                <h3 style={{fontSize : 20}}>日記や作業記録やイベント参加レポートなどをたまにまとめています</h3>
                     <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
                         <a href="https://kei5ot.fanbox.cc/" className="
                             inline-flex
