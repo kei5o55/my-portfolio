@@ -31,10 +31,10 @@ export default function AboutPage(){
                 <div style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
                     <p style={{fontSize: 20}}> kei5ot or kei5o55</p>
                         <p style={{ opacity: 0.6, fontSize: 12, marginBottom: 16, letterSpacing: "0.05em" }}>
-                            絵描き / 個人開発者
+                            絵描き / 個人開発
                         </p>
                     <p>
-                        高知大学 理工学部 情報科学科<br /><br />
+                        
                         普段は絵を描いたり個人開発アプリを作成したりしています。<br/>
                         下部の趣味欄にも記載していますが、創作やゲームが好きです。創作に関しては、最近は小説や世界観設定などの文章に興味があります。<br />
                         イラストで同人即売会に参加もしており、一次創作では「Emotone」二次創作では「人間」というサークル名で活動しています。<br />
