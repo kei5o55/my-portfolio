@@ -179,7 +179,7 @@ export default function AboutPage(){
                         <br />
                     </p>
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
-                        オリジナルの好きな曲(ほかにも沢山あります)
+                        好きなオリジナル楽曲(ほかにも沢山あります)
                     </p>
                     <div style={{borderBottom: "1px solid #000"}}>
                         <iframe
