@@ -99,6 +99,32 @@ export default function AboutPage(){
                             sub : Next.js / html /css / C<br />
                             tools : VSCode / GitHub
                         </p>
+                        <p style={{ textAlign: "right" }}>
+                <Link
+                    className="
+                        inline-flex
+                        items-center
+                        gap-2
+                        px-4
+                        py-2
+                        mb-4
+                        border
+                        border-black
+                        rounded-lg
+                        text-sm
+                        transition
+                        hover:bg-zinc-200
+                    "
+                    href="/practice"
+                    style={{
+                        display: "inline-block",
+                        marginTop: 12,
+                        marginLeft: "auto",
+                    }}
+                    >
+                    practice →
+                </Link>
+                </p>
                     </div>
                     <div  style={{ border: "1px solid #000000", borderRadius: 8, padding: 16 }}>
                         <h3 style={{ fontSize: 18, marginBottom: 8 }}>Creative</h3>

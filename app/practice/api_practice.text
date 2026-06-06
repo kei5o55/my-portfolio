@@ -1,0 +1,38 @@
+type ApiResponse = {
+  images: {
+    id: string;
+    name: string;
+    like_count: number;
+    tags:string[];
+    created_at: string;
+  }[];
+};
+
+の形でAPIからイラストデータが渡されるとする
+
+interface illustrations[]={
+    id:string;
+    name:string;
+    likes:string;
+    tags?:string[];
+    createdAt: string;
+}
+
+フロント側ではこんな感じで整形したい。
+
+データ整形
+const normalize(data:ApiResponse):illustrations={
+    return(
+        
+    )
+}
+
+useEffect(() => {
+  if!()return (<div>now loading...</div>);
+}, []);
+
+post = Post.create(title: "1", description: "１だろ普通に")
+post.image.attach(
+  io: File.open("app/assets/images/1.png"),
+  filename: "1.png"
+)
