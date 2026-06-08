@@ -11,7 +11,7 @@ type Props = {
 };
 
 export default async function ArtDetailPage({ params }: Props) {
-  const { slug } = await params; // ← ここが重要
+  const { slug } = await params; 
 
   const art = artworks.find((a) => a.slug === slug);
 

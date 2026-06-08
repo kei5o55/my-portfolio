@@ -124,6 +124,30 @@ export default function AboutPage(){
                     >
                     practice →
                 </Link>
+                {/*<Link
+                    className="
+                        inline-flex
+                        items-center
+                        gap-2
+                        px-4
+                        py-2
+                        mb-4
+                        border
+                        border-black
+                        rounded-lg
+                        text-sm
+                        transition
+                        hover:bg-zinc-200
+                    "
+                    href="/practice/todo"
+                    style={{
+                        display: "inline-block",
+                        marginTop: 12,
+                        marginLeft: "auto",
+                    }}
+                    >
+                    practice(todo) →
+                </Link>*/}
                 </p>
                     </div>
                     <div  style={{ border: "1px solid #000000", borderRadius: 8, padding: 16 }}>

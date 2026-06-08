@@ -2,15 +2,7 @@
 
 import {useEffect, useState} from "react";
 import Image from "next/image"
-
-interface Illustration {
-    id: number;
-    title: string;
-    author: string;
-    imageUrl: string;
-    likes: number;
-    tags:string[];
-}
+import Link from "next/link"
 
 type illust={
     id:number;
@@ -26,11 +18,39 @@ const MOCK_DATA: illust[]=[
     {id:3,title:"タイトル３",author:"説明３",imageUrl:"/image/3.jpg",}
 ];
 
+function IllustCard({illust,mockFallback}:{illust:illust;mockFallback:string}){
+    const[isImageLoading,setIsImageLoading]=useState(true);
+    return(
+        <div>
+            <div className="aspect-[4/3] bg-zinc-100 dark:bg-white/5 relative overflow-hidden rounded-md w-full flex items-center justify-center">
+                {isImageLoading && (
+                <div className="absolute inset-0 flex items-center justify-center bg-zinc-100 dark:bg-zinc-900 text-sm font-medium z-10">
+                    読み込み中....
+                </div>
+                )}
+                <Image
+                    className={`object-cover transition-opacity duration-300 ${
+                        isImageLoading ? "opacity-0" : "opacity-100"
+                    }`}
+                    src={illust.imageUrl ?? mockFallback}
+                    alt={illust.title ?? "無題"}
+                    fill
+                    unoptimized
+                    onLoad={() => setIsImageLoading(false)}
+                />
+            </div>
+            <div className="mt-2" style={{ fontWeight: 700 }}>
+                {illust.title}
+            </div>
+        </div>
+    );
+}
+
 export default function Home() {
     const [count, setCount] = useState(0);
     const [Illust,setIllust] = useState<illust[]>([]);
     const [load,setload] = useState(true);
-    const [error,setError] =useState<string|null>(null);
+    const [error,setError] =useState<string | null>("画像データ読み込み中");
     const increment=()=> setCount(count + 1);
 
     useEffect(()=>{
@@ -52,6 +72,7 @@ export default function Home() {
                 }))
                 console.log(formatted)
                 setIllust(formatted); 
+                setError(null);
                 setload(false)
             })
             .catch(err => {
@@ -63,48 +84,54 @@ export default function Home() {
                 setload(false);
         });
     },[]);
-
-    if(load){
-        return(
-            <div>読み込み中....</div>
-        );
-    }
     
     
     
     return (
         <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
         <main className="flex flex-1 w-full  flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+            <Link href="/about" 
+                className="
+                            inline-flex
+                            items-center
+                            gap-2
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                        "
+                    style={{ display: "inline-block", marginBottom: 14 }}>
+                    ← Back to about
+            </Link>
             <p>オッス</p>
             <p>{error}</p>
-            {/*3列のままでも全体の横幅が広がったので1枚あたりがかなり大きく*/}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
-                {Illust.map((a) => {
-                    return (
-                        <div key={a.id}>
-                            <div className="aspect-[4/3] bg-zinc-100 dark:bg-white/5 relative overflow-hidden rounded-md w-full">
-                                <Image 
-                                    className="object-cover"
-                                    src={a.imageUrl ?? MOCK_DATA[0].imageUrl}
-                                    alt={a.title ?? "無題"}
-                                    fill
-                                    unoptimized
-                                />
-                            </div>
-                            <div style={{ fontWeight: 700 }}>
-                                {a.title}
-                            </div>
-                        </div>
-                    );
-                })}
+                {Illust.map((a) => (
+                        <IllustCard 
+                            key={a.id} 
+                            illust={a} 
+                            mockFallback={MOCK_DATA[0].imageUrl} 
+                        />
+                ))}
             </div>
-            {/*<Image src={MOCK_DATA[0]?.imageUrl} alt="image" width={100} height={100} style={{ objectFit: "cover" }}></Image>*/}
+
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={increment}>
                 加算されるボタン
             </button>
             <p>{count}</p>
             {/*<p>{JSON.stringify(Illust)}</p>*/}
-            
+                                            {/*<Image 
+                                    className="object-cover"
+                                    src={a.imageUrl ?? MOCK_DATA[0].imageUrl}
+                                    alt={a.title ?? "無題"}
+                                    fill
+                                    unoptimized
+                                />*/}
         </main>
         </div>
     );

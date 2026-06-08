@@ -31,8 +31,13 @@ useEffect(() => {
   if!()return (<div>now loading...</div>);
 }, []);
 
-post = Post.create(title: "1", description: "１だろ普通に")
+
+
+railsの画像チュートリアル入れるようのコード
+ruby c →　いじってはりつけ
+
+post = Post.create(title: "2332", description: "4だろ普通に")
 post.image.attach(
-  io: File.open("app/assets/images/1.png"),
-  filename: "1.png"
+  io: File.open("app/assets/images/4.png"),
+  filename: "4.png"
 )
