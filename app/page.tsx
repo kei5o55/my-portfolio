@@ -114,7 +114,7 @@ export default function Home() {
             
             <p>
               同人即売会向けのレジアプリケーション。<br />
-              最も力を入れているプロジェクトです。実運用を通して機能を改善し、
+              実運用を通して機能を改善し、
               長期的な視点での育成を継続しています。<br/><br />
             </p>
           </div>
@@ -178,8 +178,8 @@ export default function Home() {
           <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 12 }}>
             <span style={tagStyle("#3178C6", "#fff")}>TypeScript</span>
             <span style={tagStyle("#61DAFB", "#000")}>React</span>
-            <span style={tagStyle("#0070f3", "#fff")}>Next.js (移行中)</span>
-            <span style={tagStyle("#646CFF", "#fff")}>Vite</span>
+            <span style={tagStyle("#0070f3", "#fff")}>Next.js </span>
+            <span style={tagStyle("#8f2c2c", "#fff")}>Ruby（バックエンド）</span>
             <span style={tagStyle("#9e4e86", "#fff")}>Web App</span>
             <span style={tagStyle("#4CAF50", "#fff")}>実運用中</span>
             <span style={tagStyle("#FF9800", "#fff")}>個人開発</span>
