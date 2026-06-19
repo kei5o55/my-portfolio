@@ -152,4 +152,20 @@ export const artworks: ArtWork[] = [
     image: "/art/summer.jpg",
     description: "チュウニズム１０周年で描いた二次創作",
   },
+  {
+    slug: "anna_megane",
+    title: "annna_でかメガネ部",
+    date: "2026-06-19",
+    tags:["二次創作","anna","眼鏡"],
+    image: "/art/5.png",
+    description:"アンナ・マルグレーテでかメガネ部"
+  },
+  {
+    slug: "tsunoko",
+    title: "漢ゴスロリアーツ",
+    date: "2026-06-19",
+    tags:["一次創作","眼鏡"],
+    image: "/art/tuno.png",
+    description:"つのっこ漢ゴスロリアーツのつもり"
+  }
 ];
