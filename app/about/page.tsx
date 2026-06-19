@@ -311,14 +311,6 @@ export default function AboutPage(){
                     </p>
                 </div>
             </section>
-
-            {/* フッター */}
-        <div style={{ marginTop: 80, textAlign: "center", paddingBottom: 100 }}>
-            <p style={{ opacity: 0.4, fontSize: 14 }}>Created by [kei5o55]</p>
-            <div style={{ display: "flex", justifyContent: "center", gap: 20, marginTop: 10 }}>
-            <Link href="/" style={{ color: "#666", textDecoration: "none", fontSize: 14 }}>Home</Link>
-            </div>
-        </div>
         </main>
     );
 }

@@ -46,20 +46,11 @@ export default async function WorkDetailPage({ params }: Props) {
             <a href={work.demoUrl} style={{ color: "#0066cc", fontWeight: "bold" }}>▶ DEMO</a>
             <a href={work.githubUrl} style={{ color: "#0066cc", fontWeight: "bold" }}>GitHub</a>
             </div>
-
             {/* 本文エリア */}
             <div style={{ marginTop: 32 }}>
                 {work.content}
             </div>
         </article>
-
-        {/* フッター */}
-        <div style={{ marginTop: 80, textAlign: "center", paddingBottom: 100 }}>
-            <p style={{ opacity: 0.5, fontSize: 14 }}>Created by [kei5o55]</p>
-            <div style={{ display: "flex", justifyContent: "center", gap: 20, marginTop: 10 }}>
-                <Link href="/">Home</Link>
-            </div>
-        </div>
         </main>
     );
 }

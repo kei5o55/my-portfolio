@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import {Noto_Sans_JP} from "next/font/google";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Zen_Kaku_Gothic_New } from "next/font/google";
+import Link from "next/link"
 
 const zenKaku = Zen_Kaku_Gothic_New({
   subsets: ["latin"],
@@ -43,6 +44,12 @@ export default function RootLayout({
       >
         {children}
       </body>
+            <div style={{ marginTop: 80, textAlign: "center", paddingBottom: 100 }}>
+        <p style={{ opacity: 0.5, fontSize: 14 }}>Created by [kei5o55]</p>
+        <div style={{ display: "flex", justifyContent: "center", gap: 20, marginTop: 10 }}>
+            <Link href="/">Home</Link>
+        </div>
+      </div>
       
     </html>
   );

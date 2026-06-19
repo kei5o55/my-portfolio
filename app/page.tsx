@@ -179,7 +179,7 @@ export default function Home() {
             <span style={tagStyle("#3178C6", "#fff")}>TypeScript</span>
             <span style={tagStyle("#61DAFB", "#000")}>React</span>
             <span style={tagStyle("#0070f3", "#fff")}>Next.js </span>
-            <span style={tagStyle("#8f2c2c", "#fff")}>Ruby（バックエンド）</span>
+            <span style={tagStyle("#8f2c2c", "#fff")}>Ruby</span>
             <span style={tagStyle("#9e4e86", "#fff")}>Web App</span>
             <span style={tagStyle("#4CAF50", "#fff")}>実運用中</span>
             <span style={tagStyle("#FF9800", "#fff")}>個人開発</span>
@@ -359,14 +359,6 @@ export default function Home() {
           </li>
         </ul>
       </section>
-
-            {/* フッター */}
-      <div style={{ marginTop: 80, textAlign: "center", paddingBottom: 100 }}>
-        <p style={{ opacity: 0.5, fontSize: 14 }}>Created by [kei5o55]</p>
-        <div style={{ display: "flex", justifyContent: "center", gap: 20, marginTop: 10 }}>
-            <Link href="/">Home</Link>
-        </div>
-      </div>
       
     </main>
   );
