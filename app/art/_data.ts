@@ -167,5 +167,54 @@ export const artworks: ArtWork[] = [
     tags:["一次創作","眼鏡"],
     image: "/art/tuno.png",
     description:"つのっこ漢ゴスロリアーツのつもり"
-  }
+  },
+  {
+    slug: "annna_back",
+    title: "anna_back / illustration",
+    date: "2026-06-30",
+    tags:["二次創作","anna"],
+    image: "/art/annnadayo.png",
+    description:"アンナの後ろ姿、フェチの絵です"
+  },
+  {
+    slug: "anne_4",
+    title: "anna4 / illustration",
+    date: "2026-06-30",
+    tags:["二次創作","anna"],
+    image: "/art/enne.png",
+    description:"アンナの顔、いつもと違う描き方の試し"
+  },
+  {
+    slug: "anna_art",
+    title: "Oanna. / illustration",
+    date: "2026-06-30",
+    tags:["二次創作","anna"],
+    image: "/art/ennnetyen.png",
+    description:"聖女様の御姿を絵にしたためました。\n美しく威厳ある紫水晶を宿した瞳。儚さを湛えた髪。荒れ果てた世界の中、民の希望の光たる運命をその小さな身に背負い、祈りを捧げ続ける彼女に、どうか安寧のあらんことを。"
+  },
+  {
+    slug: "kemomimi",
+    title: "anna_けもみみ / illustration",
+    date: "2026-06-30",
+    tags:["二次創作","anna"],
+    image: "/art/kemomimi.png",
+    description:"ケモミミ聖女と大宇宙のヒミツ!?編"
+  },
+  {
+    slug: "Oanna2",
+    title: "Oanna2 / illustration",
+    date: "2026-06-30",
+    tags:["二次創作","anna"],
+    image: "/art/えんぴつ.png",
+    description:"いつもと違う描き方の試し２．こういう全身を可愛くデザイン調に書けるようになりたい"
+  },
+  {
+    slug: "soshi2",
+    title: "somunia2 / illustration",
+    date: "2026-06-30",
+    tags:["二次創作"],
+    image: "/art/sosi2.png",
+    description:"静かに綺麗な音を聴くsomunia。\n波を意識した背景のつもり"
+  },
+  
 ];
