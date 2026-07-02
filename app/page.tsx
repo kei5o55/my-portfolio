@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import "./page.css";
-import Image from "next/image";
-import { useState } from "react";
+import { useState,useRef } from "react";
+
 export default function Home() {
   const tagStyle = (bgColor: string, color: string) => ({
     backgroundColor: bgColor,
@@ -12,6 +12,13 @@ export default function Home() {
     fontSize: "12px",
     fontWeight: "bold",
   });
+  const contactSectionRef = useRef<HTMLElement>(null);
+  const scrollToContact = () => {
+    contactSectionRef.current?.scrollIntoView({
+      behavior: "smooth", // これを指定すると、一瞬でジャンプせず「スルスル」と動く
+      block: "start",     // 画面のどの位置に合わせるか（セクションのトップを画面上部に合わせる）
+    });
+  };
 
   const email = "info@kei5ot.com"; // 設定したアドレス
   const [copied, setCopied] = useState(false);
@@ -70,6 +77,27 @@ export default function Home() {
         >
           More about me →
         </Link>
+        <button
+          onClick={scrollToContact}
+          className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                            cursor-pointer
+                            ml-3
+                        "
+        > 
+          Contact →
+        </button>
       </section>
 
       {/* 作品 */}
@@ -465,7 +493,7 @@ export default function Home() {
         </div>
       </section>
       {/* スキル・活動 */}
-      <section style={{ marginBottom: 32 }}>
+      <section ref={contactSectionRef} style={{ marginBottom: 32 }}>
         <h2 style={{ fontSize: 24, marginBottom: 12 }}>Contact</h2>
         <div
           style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}
