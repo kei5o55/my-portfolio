@@ -42,21 +42,6 @@ export default function Home() {
 
       {/* 自己紹介 */}
       <section style={{ marginBottom: 32 }}>
-        <h2 style={{ fontSize: 24 }}>About</h2>
-        <p>
-          kei5ot&nbsp;or&nbsp;kei5o55&nbsp;というHNで活動しています。創作世界観とイラスト・TypeScript
-          / Reactを用いたWebアプリケーションを制作しています。
-          <br />
-          創作支援アプリケーションを制作しており、Worksセクションに制作物を掲載しています。
-          <br />
-          フロントエンド領域に興味があり、問題解決のために何を作るかといったアイデア出しや、ユーザ体験を意識した新機能の追加・改善などが好きですが、
-          今後は低レイヤー領域やバックエンド技術についても意欲的に学びたいと考えています。
-          <br />
-          <br />
-          最近はRejistellaとWorklog
-          Appの二つのwebアプリに注力しています。どちらも実運用を通して機能改善を続けており、長期的な視点で育成を継続しています。
-          <br />
-        </p>
         <Link
           href="/about"
           className="
@@ -558,13 +543,10 @@ export default function Home() {
               padding: 16,
             }}
           >
-            <h3 style={{ fontSize: 18, marginBottom: 8 }}>Creative</h3>
+            <h3 style={{ fontSize: 20, marginBottom: 8 }}>お便り</h3>
             <p style={{ fontSize: 14, lineHeight: 1.6 }}>
-              こっちに
-              <br />
-              マシュマロとか
-              <br />
-              つける
+              感想とか質問とか、簡単なメッセージはマシュマロでくれると嬉しいです<br></br>
+              大体ツイートで返信します
             </p>
             <p style={{ textAlign: "right" }}>
               <Link
@@ -582,14 +564,14 @@ export default function Home() {
                         transition
                         hover:bg-zinc-200
                     "
-                href="/misoria"
+                href="https://marshmallow-qa.com/fti1k8ni3gu5g8t?t=C2uolO&utm_medium=url_text&utm_source=promotion"
                 style={{
                   display: "inline-block",
                   marginTop: 12,
                   marginLeft: "auto",
                 }}
               >
-                worldbuilding →
+                マシュマロ →
               </Link>
             </p>
           </div>

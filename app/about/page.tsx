@@ -37,8 +37,7 @@ export default function AboutPage(){
                         
                         普段は絵を描いたり個人開発アプリを作成したりしています。<br/>
                         下部の趣味欄にも記載していますが、創作やゲームが好きです。創作に関しては、最近は小説や世界観設定などの文章に興味があります。<br />
-                        イラストで同人即売会に参加もしており、一次創作では「Emotone」二次創作では「人間」というサークル名で活動しています。<br />
-                        長所は、食べ物の好き嫌いが無いところ。剣道の得意なところは出所の掴みづらい小手と攻勢時の技の繋ぎです。
+                        <br />
                     </p>
                     <div style={{ display: "flex", gap: 12, marginTop: 8 }}>
                     <a href="https://x.com/kei5ot"  className="
@@ -194,18 +193,15 @@ export default function AboutPage(){
                     <p>
                         音ゲーは中学の頃からやっていて、特にCHUNITHMを10年近く続けています。<br />
                     </p>
-                    <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
-                        主な実績
-                    </p>
                     <p >
                         ・Rating 17.50↑ ( CHUNITHM X-VERSE-X )<br />
-                        ・Legend of CRYSTAL 取得<br />
-                        ・15＋ AJ3 ( 蠍火・ToBe Continued・Danann )<br />
+                        ・Legend of CRYSTAL<br />
+                        ・15＋ AJ3<br />
                         
                         <br />
                     </p>
                     <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
-                        好きなオリジナル楽曲(ほかにも沢山あります)
+                        好きなオリジナル楽曲
                     </p>
                     <div style={{borderBottom: "1px solid #000"}}>
                         <iframe
@@ -225,22 +221,6 @@ export default function AboutPage(){
                         />
                         <br/>
                     </div>
-                    <h3 style={{ fontSize: 24,marginBottom: 12 }}>
-                        GUILTY GEAR -STRIVE-（格ゲー）
-                    </h3>
-                    <p>
-                        最近始めました。５，６階を行ったり来たりしています。<br />
-                        今まで対戦ゲームはあまりやってこなかったですが、ギルティギアはキャラクターが魅力的で音楽やストーリーにも惹かれました。<br />
-                    </p>
-                    <p style={{ fontSize:20,marginTop: 12, marginBottom: 12 }}>
-                        好きなキャラクター
-                    </p>
-                    <p style={{borderBottom: "1px solid #000"}}>
-                        ・ラムレザル<br />
-                        ・ディライラ<br />
-                        <br />
-                    </p>
-
                     <h3 style={{ fontSize: 24,marginBottom: 12 }}>
                         絵
                     </h3>
