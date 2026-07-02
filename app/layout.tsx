@@ -39,7 +39,7 @@ export default function RootLayout({
     <html lang="ja">
       <body
         className={notoSansJP.className}
-          style={{ zoom: "80%",}
+          style={{ zoom: "70%",}
         }
       >
         {children}
