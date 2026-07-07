@@ -534,6 +534,22 @@ export default function Home() {
                 >
                   {copied ? "Copied!" : "Copy"}
                 </button>
+                <Link className="
+                            inline-flex
+                            items-center
+                            gap-1
+                            px-4
+                            py-2
+                            mb-4
+                            border
+                            border-black
+                            rounded-lg
+                            text-sm
+                            transition
+                            hover:bg-zinc-200
+                            ml-3
+                        "
+                        href="/contact">Commission →</Link>
               </div>
           </div>
           <div

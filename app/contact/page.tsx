@@ -1,39 +1,54 @@
-"use client"
-import Link from "next/link"
-import {useState} from "react"
+"use client";
+import Link from "next/link";
 
-export  default function page(){
-    const email = 'info@kei5ot.com'; // 設定したアドレス
-    const [copied, setCopied] = useState(false);
-
-    const handleCopy = async () => {
-        try {
-        await navigator.clipboard.writeText(email);
-        setCopied(true);
-        
-        // 2秒後に「Copied!」から元の表示に戻す
-        setTimeout(() => {
-            setCopied(false);
-        }, 2000);
-        } catch (err) {
-        console.error('Failed to copy email: ', err);
-        }
-    }
-
-    return(
+export default function Page() {
+    return (
         <main style={{ padding: 32, maxWidth: 900, margin: "0 auto" }}>
-            <h1 style={{ fontSize: 32, marginBottom: 8 }}>
-                Contact
-            </h1>
-            <Link
-                href="/"
+        {/* メインタイトル */}
+        <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-2">
+            Commission
+        </h1>
+
+        {/* 戻るボタン */}
+        <Link
+            href="/"
+            className="
+            inline-flex
+            items-center
+            gap-2
+            px-4
+            py-2
+            mb-6
+            border
+            border-black
+            rounded-lg
+            text-sm
+            transition
+            hover:bg-zinc-200
+            "
+        >
+            ← Back to home
+        </Link>
+
+        {/* メインコンテンツカード */}
+        <div className="border border-zinc-800 rounded-lg p-6 mt-3 space-y-6">
+            {/* セクション1: 外部サイト */}
+            <div>
+            <h2 className="text-xl font-bold tracking-tight text-gray-900 mb-3">
+                外部サイトでのリクエスト
+            </h2>
+            <p className="text-gray-700 mb-4">
+                Skebやpixiv リクエストを常時受け付けています。
+            </p>
+
+            <div className="flex flex-wrap gap-3 mb-4">
+                <Link
                 className="
                     inline-flex
                     items-center
-                    gap-2
+                    gap-1
                     px-4
                     py-2
-                    mb-4
                     border
                     border-black
                     rounded-lg
@@ -41,28 +56,109 @@ export  default function page(){
                     transition
                     hover:bg-zinc-200
                 "
-            >
-            ← Back to home
-            </Link>
-            <div style={{border: "1px solid #000000",borderRadius: 8,padding: 24,lineHeight : 1.8,}}>
-                <p style={{fontSize:24}}>Email : info@kei5ot.com</p>
-                <div className="py-4">
-                    <a href="mailto:info@kei5ot.com" className="rounded bg-blue-500 px-2 py-2 text-white cursor-pointer">
-                    メールを送る
-                    </a>
-                    <button
-                        onClick={handleCopy}
-                        className={`rounded bg-blue-500  px-4 py-2 text-white text-sm font-medium rounded-md transition-all duration-200 cursor-pointer ml-3 ${
-                        copied
-                            ? 'bg-green-600 text-white'
-                            : 'bg-blue-500 hover:bg-gray-200 text-white'
-                        }`}
-                    >
-                        {copied ? 'Copied!' : 'Copy'}
-                    </button>
-                </div>
-                
+                href="https://skeb.jp/@kei5ot"
+                >
+                Skeb →
+                </Link>
+                <Link
+                className="
+                    inline-flex
+                    items-center
+                    gap-1
+                    px-4
+                    py-2
+                    border
+                    border-black
+                    rounded-lg
+                    text-sm
+                    transition
+                    hover:bg-zinc-200
+                "
+                href="https://www.pixiv.net/users/16743124/request"
+                >
+                pixiv リクエスト →
+                </Link>
             </div>
+
+            <p className="text-gray-700 leading-relaxed">
+                リクエストの際は「この絵の感じに描いて」とか、自分の過去の絵を例に挙げてくれるとやりやすいです。
+            </p>
+            </div>
+
+            <hr className="border-zinc-200" />
+
+            {/* セクション2: 参考作品 */}
+            <div>
+            <p className="text-gray-700 mb-4">
+                過去の作品の一部をArtworkページ、pixivに置いています。依頼の参考にしてください。
+            </p>
+            <div className="flex flex-wrap gap-3">
+                <Link
+                className="
+                    inline-flex
+                    items-center
+                    gap-1
+                    px-4
+                    py-2
+                    border
+                    border-black
+                    rounded-lg
+                    text-sm
+                    transition
+                    hover:bg-zinc-200
+                "
+                href="/art"
+                >
+                Artwork →
+                </Link>
+                <Link
+                className="
+                    inline-flex
+                    items-center
+                    gap-1
+                    px-4
+                    py-2
+                    border
+                    border-black
+                    rounded-lg
+                    text-sm
+                    transition
+                    hover:bg-zinc-200
+                "
+                href="https://www.pixiv.net/users/16743124"
+                >
+                pixiv →
+                </Link>
+            </div>
+            </div>
+
+            <hr className="border-zinc-200" />
+
+            {/* セクション3: メールでのご依頼 */}
+            <div>
+            <h2 className="text-xl font-bold tracking-tight text-gray-900 mb-3">
+                メールでのご依頼
+            </h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+                Skeb等の各種規約に収まらない個別のご依頼（パーツ分けイラスト、グッズ用イラスト等）はメールでも受付中です。
+                <br />
+                ホーム画面下部の
+                <Link
+                href="/#contact"
+                className="underline mx-1 font-medium hover:text-zinc-600"
+                >
+                Contact セクション
+                </Link>
+                にあるメールアドレス宛に、以下の内容を添えてお送りください。
+            </p>
+
+            <ul className="pl-5 list-disc space-y-2 text-zinc-800 font-medium">
+                <li>ご依頼内容（用途、イラストのイメージなど）</li>
+                <li>ご予算 / ご希望の納期</li>
+                <li>（可能であれば）実績公開の可否</li>
+            </ul>
+            </div>
+        </div>
         </main>
     );
 }
