@@ -140,7 +140,7 @@ export default function Page() {
                 メールでのご依頼
             </h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-                Skeb等の各種規約に収まらない個別のご依頼（パーツ分けイラスト、グッズ用イラスト等）はメールでも受付中です。
+                Skeb等の各種規約に収まらない個別のご依頼はメールでも受付中です。
                 <br />
                 ホーム画面下部の
                 <Link
