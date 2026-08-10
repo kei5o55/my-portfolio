@@ -21,25 +21,3 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-a:hover {
-  color: #00b7ff;
-}
-button:hover{
-  color: #00b7ff;
-}
-a {
-  color: #000000;
-  text-decoration: none;
-  transition: all 0.2s ease; /* 変化をなめらかに */
-}
-button {
-  color: #000000;
-  text-decoration: none;
-  transition: all 0.2s ease; /* 変化をなめらかに */
-}
