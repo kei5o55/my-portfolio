@@ -39,7 +39,7 @@ export default function ArtIndexPage() {
       {/* ホームへ戻るボタン */}
       <div className="mb-6">
         <Link
-          href="/"
+          href="/portfolio"
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-300/80 bg-white/60 text-zinc-700 text-xs tracking-wide transition-all duration-300 hover:bg-zinc-900 hover:text-white hover:border-zinc-900 backdrop-blur-sm shadow-sm"
         >
           ← Back to home

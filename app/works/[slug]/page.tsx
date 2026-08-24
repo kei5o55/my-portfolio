@@ -18,7 +18,7 @@ export default async function WorkDetailPage({ params }: Props) {
     return (
         <main style={{ padding: 32, maxWidth: 800, margin: "0 auto", color: "#000", backgroundColor: "#fff", minHeight: "100vh" }}>
         {/* 戻るボタン */}
-        <Link href="/" 
+        <Link href="/portfolio" 
         className="
                             inline-flex
                             items-center
