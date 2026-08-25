@@ -38,7 +38,7 @@ export default function Page() {
                 kei5ot.com
                 </h1>
                 <p className="text-xs text-blue-400 font-mono mt-1">
-                [ Welcome to my personal sandbox ]
+                [ Welcome to my criation hub ]
                 </p>
             </div>
 
@@ -92,10 +92,10 @@ export default function Page() {
             {/* 左側：Linktree風のデカボタン */}
             <div className="md:absolute left-4 top-8 z-20 mb-8 md:mb-0">
                 <Link 
-                href="/links" 
+                href="/portfolio" 
                 className="inline-block bg-blue-100/80 backdrop-blur border-2 border-blue-400 text-blue-700 text-2xl font-bold px-8 py-4 rounded-2xl shadow-[4px_4px_0px_0px_rgba(96,165,250,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all font-mono"
                 >
-                Linktree!! ➔
+                Portfolio!! ➔
                 </Link>
             </div>
 
@@ -103,7 +103,7 @@ export default function Page() {
             <div className="relative md:absolute md:left-1/2 md:top-4 md:-translate-x-1/2 z-10 flex justify-center">
                 <div className="relative w-72 md:w-96 aspect-[3/4] drop-shadow-xl">
                 <Image
-                    src="/image/oc-main.png" // ここに白髪の女の子のイラスト
+                    src="/image/イラスト3.png" // ここに白髪の女の子のイラスト
                     alt="Main Illustration"
                     fill
                     className="object-contain"
