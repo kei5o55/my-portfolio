@@ -163,10 +163,17 @@ export default function Page() {
             </div>
              <div className="flex items-start gap-4">
                 {/* YouTube */}
-                <div className="overflow-hidden bg-zinc-100  flex-1">
+                <div className="flex gap-4 bg-zinc-100  flex-1">
                     <iframe
-                        className=""
+                        className="flex-1  min-w-0"
                         src="https://www.youtube.com/embed/UyKNtTUGbMo"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                    />
+                    <iframe
+                        className="flex-1  min-w-0"
+                        src="https://www.youtube.com/embed/VZn-NXRJT1g?si=lxeWkus-a4agZh4B&amp;controls=0" 
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
