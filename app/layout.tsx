@@ -39,16 +39,16 @@ export default function RootLayout({
     <html lang="ja">
       <body
         className={notoSansJP.className}
-          style={{ zoom: "80%",}
+          style={{ zoom: "100%",}
         }
       >
         {children}
-        <div style={{ marginTop: 80, textAlign: "center", paddingBottom: 100 }}>
+        {/*<div style={{ marginTop: 80, textAlign: "center", paddingBottom: 100 }}>
           <p style={{ opacity: 0.5, fontSize: 14 }}>Created by [kei5o55]</p>
           <div style={{ display: "flex", justifyContent: "center", gap: 20, marginTop: 10 }}>
               <Link href="/portfolio">Home</Link>
           </div>
-        </div>
+        </div>*/}
       </body>
         
       

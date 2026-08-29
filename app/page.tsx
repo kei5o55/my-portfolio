@@ -6,14 +6,20 @@ export default function Page() {
         <main className="relative min-h-screen w-full overflow-x-hidden bg-[#fafafa] text-zinc-800 font-sans selection:bg-blue-500 selection:text-white">
         {/* 1. 背景：方眼紙（グリッド）パターン */}
         <div 
-            className="pointer-events-none absolute inset-0 z-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:24px_24px]" 
+            className="pointer-events-none absolute inset-0 z-0 bg-[linear-gradient(to_right,#e2e8f0_2px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:30px_30px]" 
         />
 
         {/* 2. 背景：散りばめるスケッチ・落書き・AA（絶対配置） */}
         <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden opacity-40 select-none">
             {/* 左上のアスキーアートやメモ */}
-            <pre className="text-xl absolute left-4 top-20 text-[10px] leading-tight text-blue-900 font-mono">
-            {`koko ha kei5ot no page. watta!?!?!?!?!?!mazikayo`}
+            <pre className="text-xl absolute left-4 top-20 ] leading-tight text-blue-900 font-mono">
+            {`koko ha kei5o55 no page. ''''''''''''''''''''''''''
+                ／￣￣￣＼
+                /       ＼   ＜ WELCOME!!
+                | ー  ー   |
+                ＼＿   ＿   ／
+                    ''seikintVevrryday
+                    Ar_tis sukisuki 888888`}
             </pre>
 
             {/* 背景に敷くラフスケッチ（手持ちのイラスト素材画像に差し替え可能） */}
@@ -26,6 +32,7 @@ export default function Page() {
                 className="object-contain"
             />
             </div>
+            
         </div>
 
         {/* 3. メインコンテンツ領域 */}
@@ -34,9 +41,9 @@ export default function Page() {
             {/* ヘッダー・ロゴ */}
             <header className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 border-b border-blue-200 pb-4">
             <div>
-                <h1 className="text-4xl md:text-6xl font-black tracking-tight text-blue-600 font-mono">
+                <h1 className="text-4xl md:text-6xl font-black tracking-tight text-blue-900 font-mono ">
                 kei5ot.com
-                </h1>
+                </h1><h3>ｯﾄﾄﾞｯﾄｺﾑｺﾞｰｺﾞｰ</h3>
                 <p className="text-xs text-blue-400 font-mono mt-1">
                 [ Welcome to my criation hub ]
                 </p>
@@ -46,9 +53,9 @@ export default function Page() {
             <nav className="flex flex-wrap items-center gap-2 text-xs font-mono scale-200">
                 <span className="text-zinc-400 mr-1">SNS ➔</span>
 
-                {/* X (Twitter) */}
+                {/*{/* X (Twitter) *
                 <a
-                    href="https://x.com/kei5ot"
+                    href=""
                     target="_blank"
                     rel="noreferrer"
                     title="X (Twitter)"
@@ -57,7 +64,7 @@ export default function Page() {
                     <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                     </svg>
-                </a>
+                </a>*/}
 
                 {/* pixiv */}
                 <a
@@ -73,7 +80,7 @@ export default function Page() {
                 
                 {/* BOOTH */}
                 <a
-                    href="https://booth.pm"
+                    href="https://shop11.booth.pm/"
                     target="_blank"
                     rel="noreferrer"
                     title="BOOTH"
@@ -95,13 +102,23 @@ export default function Page() {
                 href="/portfolio" 
                 className="inline-block bg-blue-100/80 backdrop-blur border-2 border-blue-400 text-blue-700 text-2xl font-bold px-8 py-4 rounded-2xl shadow-[4px_4px_0px_0px_rgba(96,165,250,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all font-mono"
                 >
-                Portfolio!! ➔
+                Portfolio ➔
                 </Link>
+                
             </div>
 
             {/* 中央：メインOCイラスト（画面の中心に配置） */}
             <div className="relative md:absolute md:left-1/2 md:top-4 md:-translate-x-1/2 z-10 flex justify-center">
                 <div className="relative w-72 md:w-96 aspect-[3/4] drop-shadow-xl">
+                <Image
+                    src="/image/イラスト3.png" // ここに白髪の女の子のイラスト
+                    alt="Main Illustration"
+                    fill
+                    className="object-contain"
+                    priority
+                />
+                </div>
+                <div className="relative w-33 md:w-96 aspect-[3/4] drop-shadow-xl">
                 <Image
                     src="/image/イラスト3.png" // ここに白髪の女の子のイラスト
                     alt="Main Illustration"
@@ -126,15 +143,50 @@ export default function Page() {
                 </div>
                 <p className="text-xs font-bold mt-2">1st Artbook "op.0"</p>
                 </div>
+                <Image
+                src="/image/a.gif"
+                alt="gif"
+                width={200}
+                height={400}
+                className="object-contain"></Image>
             </div>
 
             {/* 中央下部：手書き風テキストのアクセント */}
             <div className="md:absolute bottom-4 left-1/2 md:-translate-x-1/2 z-20 text-center pointer-events-none mt-8 md:mt-0">
-                <span className="text-3xl md:text-5xl font-extrabold text-blue-500/80 tracking-widest uppercase italic border-b-2 border-dashed border-blue-400">
+                <span className="text-3xl md:text-5xl font-extrabold text-blue-500/80 tracking-widest uppercase italic border-b-2 border-dashed border-blue-400 ">
                 UNDER CONSTRUCTION
                 </span>
             </div>
 
+           
+
+            </div>
+             <div className="flex items-start gap-4">
+                {/* YouTube */}
+                <div className="overflow-hidden bg-zinc-100  flex-1">
+                    <iframe
+                        className=""
+                        src="https://www.youtube.com/embed/UyKNtTUGbMo"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                    />
+                </div>
+
+                {/* GIF */}
+                <Image
+                    src="/image/b.gif"
+                    alt="gif"
+                    width={150}
+                    height={150}
+                    className="shrink-0"
+                />
+            </div>
+
+            <div className="px-2 pt-3 pb-1">
+                <p className="text-xs text-zinc-400 mt-1">
+                    currently listening...
+                </p>
             </div>
         </div>
         </main>

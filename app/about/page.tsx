@@ -39,28 +39,12 @@ export default function AboutPage() {
             絵描き / 個人開発
           </p>
           <p className="text-sm md:text-base text-zinc-600 leading-relaxed font-light mb-6">
-            普段は絵を描いたり個人開発アプリを作成したりしています。<br />
-            創作やゲームが好きです。創作に関しては、最近は小説や世界観設定などの文章に興味があります。
+            普段は絵を描いている。<br />
+            創作やゲームが好きです。最近はキャラクターや世界観などのデザイン面に興味があります。
           </p>
 
           {/* SNSリンク */}
           <div className="flex flex-wrap gap-3">
-            <a
-              href="https://x.com/kei5ot"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 rounded-full border border-zinc-200/90 bg-white/80 text-zinc-700 text-xs font-mono transition-all duration-300 hover:bg-zinc-900 hover:text-white hover:border-zinc-900 shadow-sm"
-            >
-              X (一次創作)
-            </a>
-            <a
-              href="https://x.com/mochiki_02"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 rounded-full border border-zinc-200/90 bg-white/80 text-zinc-700 text-xs font-mono transition-all duration-300 hover:bg-zinc-900 hover:text-white hover:border-zinc-900 shadow-sm"
-            >
-              X (二次創作)
-            </a>
             <a
               href="https://www.pixiv.net/users/16743124"
               target="_blank"
