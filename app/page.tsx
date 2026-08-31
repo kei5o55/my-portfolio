@@ -91,19 +91,38 @@ export default function Page() {
 
         {/* 中央コラージュエリア */}
         <div className="relative mt-8 min-h-[500px] w-full">
-          {/* 左側：Portfolioボタン */}
-          <div className="top-8 z-20 mb-8 flex flex-col items-start gap-2 md:absolute md:left-4 md:mb-0">
+{/* 左側：Portfolioボタン（ハイパー強調版） */}
+          <div className="top-8 z-30 mb-8 flex flex-col items-start gap-2 md:absolute md:left-4 md:mb-0">
+            {/* 煽りラベル：NEW & RECOMMENDED */}
+            <div className="flex items-center gap-1 font-dot text-xs font-bold text-red-600">
+              <span className="animate-ping text-yellow-500">★</span>
+              <span className="bg-yellow-300 px-1 text-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]">
+                MUST SEE!!
+              </span>
+              <span className="animate-pulse">↓↓↓</span>
+            </div>
+
+            {/* ボタン本体：虹色枠 ＆ 巨大化 ＆ ホバー時のレインボー発光 */}
             <Link
               href="/portfolio"
-              className="inline-block border-4 border-t-white border-l-white border-b-[#444] border-r-[#444] bg-[#e6e6e6] px-8 py-4 font-dot text-2xl font-black text-blue-900 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-1 active:border-t-[#444] active:border-l-[#444] active:border-b-white active:border-r-white active:shadow-none"
+              className="group relative inline-flex items-center gap-3 border-4 border-t-white border-l-white border-b-black border-r-black bg-[#e6e6e6] px-10 py-5 font-dot text-3xl font-black text-blue-900 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all hover:bg-yellow-200 hover:text-pink-600 hover:shadow-[8px_8px_0px_0px_rgba(255,0,127,1)] active:translate-x-1.5 active:translate-y-1.5 active:border-t-black active:border-l-black active:border-b-white active:border-r-white active:shadow-none"
             >
-              Portfolio ➔
+              {/* レトロ点滅矢印 */}
+              <span className="animate-[pulse_0.6s_infinite] text-pink-600 group-hover:translate-x-1 transition-transform">
+                ▶
+              </span>
+              <span>Portfolio</span><div className="animate-[spin_1s_steps(8,end)_infinite] bg-red-500 w-8 h-8 text-center text-white leading-8">☺</div>
+              <span className="text-xl font-bold text-blue-600 group-hover:text-pink-600">
+                ➡
+              </span>
             </Link>
 
-            <div className="mt-1 animate-[bounce_0.5s_steps(8,end)_infinite]">
-              <span className="inline-flex items-center gap-1.5 border-2 border-black bg-[#ff007f] px-3 py-1 font-dot text-base font-bold text-white shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
-                ▲ Check It Out!!
-                <span className="text-3xl leading-none text-yellow-300 drop-shadow-[1px_1px_0px_rgba(0,0,0,1)]">
+            {/* 下部煽り：Check It Out!!（さらに大きく＆目立つピンク×黄色） */}
+            <div className="mt-2 animate-[bounce_0.4s_steps(4,end)_infinite]">
+              <span className="inline-flex items-center gap-2 border-2 border-black bg-[#ff007f] px-4 py-1.5 font-dot text-lg font-black text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <span className="animate-pulse text-yellow-300">▲</span> 
+                <span>CLICK HERE!!</span>
+                <span className="text-3xl leading-none text-yellow-300 drop-shadow-[2px_2px_0px_rgba(0,0,0,1)]">
                   ☺☺
                 </span>
               </span>
@@ -132,15 +151,25 @@ export default function Page() {
             </div>
           </div>
 
-          {/* 右側：告知カード & GIF */}
+{/* 右側：告知カード & GIF（作品紹介・告知版） */}
           <div className="top-12 z-20 flex max-w-xs flex-col gap-4 md:absolute md:right-4">
-            <div className="border-2 border-t-white border-l-white border-r-[#808080] border-b-[#808080] bg-[#f0f0f0] p-2 shadow-md">
-              <div className="mb-1 flex items-center justify-between bg-blue-900 px-1 py-0.5">
-                <span className="font-dot text-[10px] font-bold text-white">
-                  ★ NEW ARTBOOK
+            {/* 告知カード本体 */}
+            <div className="relative border-2 border-t-white border-l-white border-r-[#808080] border-b-[#808080] bg-[#f0f0f0] p-2.5 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+              {/* COMPLETED! バッジ */}
+              <span className="absolute -top-3 -left-3 z-10 border border-black bg-yellow-300 px-2 py-0.5  text-[10px] font-black text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                COMPLETED!!
+              </span>
+
+              {/* ウインドウヘッダー */}
+              <div className="mb-1.5 flex items-center justify-between bg-blue-900 px-1.5 py-0.5 font-dot text-[10px] font-bold text-white">
+                <span className="flex items-center gap-1">
+                  <span className="text-yellow-300">★</span> 1st Artbook
                 </span>
+                <span className="text-blue-200">[PUBLISH]</span>
               </div>
-              <div className="relative h-32 w-full border border-zinc-400 bg-zinc-100">
+
+              {/* 書籍サムネイル */}
+              <div className="relative h-36 w-full overflow-hidden border border-zinc-400 bg-zinc-100">
                 <Image
                   src="/image/op0.png"
                   alt="op.0"
@@ -148,10 +177,36 @@ export default function Page() {
                   className="object-cover"
                 />
               </div>
-              <p className="mt-1 font-dot text-xs font-bold text-zinc-800">
-                1st Artbook "op.0"
-              </p>
+
+              {/* タイトル＆仕様データ */}
+              <div className="mt-2 space-y-1 font-dot">
+                <div className="flex items-baseline justify-between border-b border-dashed border-zinc-300 pb-1">
+                  <p className="text-sm font-black text-blue-900">
+                    op.0
+                  </p>
+                  <span className="text-[10px] font-bold text-zinc-500">
+                    B5 / 12P
+                  </span>
+                </div>
+
+                <p className="text-[11px] font-bold leading-tight text-zinc-700">
+                  憧れの即売会サークル参加のために初めて作ったアートブックである。（グレー歴史）
+                  残念ながらオンライン頒布はしていない。
+                </p>
+
+                {/* イベント情報・タグ */}
+                <div className="pt-1 flex items-center justify-between text-[10px]">
+                  <span className="bg-pink-100 px-1.5 py-0.5 font-bold text-pink-700 border border-pink-300">
+                    関西コミティア７６
+                  </span>
+                  <span className="font-bold text-zinc-500">
+                    CHECK IT OUT ☺
+                  </span>
+                </div>
+              </div>
             </div>
+
+            {/* GIF画像 */}
             <Image
               src="/image/a.gif"
               alt="gif"
