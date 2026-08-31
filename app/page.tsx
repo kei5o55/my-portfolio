@@ -120,7 +120,7 @@ export default function Page() {
               </div>
               <div className="relative h-32 w-full border border-zinc-400 bg-zinc-100">
                 <Image
-                  src="/image/op0_cover.png"
+                  src="/image/op0.png"
                   alt="op.0"
                   fill
                   className="object-cover"
