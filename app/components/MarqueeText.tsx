@@ -1,6 +1,6 @@
 "use client"
 export const MarqueeText = () => {
-  const text = "★ WELCOME TO KEI5OT.COM ★ NEW ARTBOOK 'op.0' OUT NOW ★ CHECK MY PORTFOLIO!! ☺☺ ★ ";
+  const text = "★ WELCOME TO KEI5OT.COM ★ CHECK MY PORTFOLIO!! ☺☺ ★ ";
 
   return (
     <div className="group flex w-full overflow-hidden border-y-2 border-black bg-black py-1.5 font-dot text-xs font-bold text-green-400 select-none">
