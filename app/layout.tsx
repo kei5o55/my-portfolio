@@ -1,28 +1,23 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import {Noto_Sans_JP} from "next/font/google";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Zen_Kaku_Gothic_New } from "next/font/google";
-import Link from "next/link"
-
-const zenKaku = Zen_Kaku_Gothic_New({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
+import localFont from "next/font/local";
+import { Noto_Sans_JP, DotGothic16 } from "next/font/google";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
+  variable: "--font-noto-sans",
+});
+const myCustomFont = localFont({
+  src: "../public/fonts/wapuro-mincho.otf", // publicからの相対パス
+  variable: "--font-my-custom",
+  display: "swap",
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dotGothic = DotGothic16({
+  weight: "400",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-dot-gothic",
 });
 
 export const metadata: Metadata = {
@@ -36,22 +31,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
-      <body
-        className={notoSansJP.className}
-          style={{ zoom: "100%",}
-        }
-      >
+    <html lang="ja" className={`${notoSansJP.variable} ${dotGothic.variable} ${myCustomFont.variable}`}>
+      <body style={{ zoom: "100%" }}>
         {children}
-        {/*<div style={{ marginTop: 80, textAlign: "center", paddingBottom: 100 }}>
-          <p style={{ opacity: 0.5, fontSize: 14 }}>Created by [kei5o55]</p>
-          <div style={{ display: "flex", justifyContent: "center", gap: 20, marginTop: 10 }}>
-              <Link href="/portfolio">Home</Link>
-          </div>
-        </div>*/}
       </body>
-        
-      
     </html>
   );
 }

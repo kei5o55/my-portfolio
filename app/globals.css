@@ -1,17 +1,17 @@
-
 @import "tailwindcss";
-
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  /* font-dot クラスを定義 */
+  --font-dot: var(--font-dot-gothic), sans-serif;
+  /* font-sans を Noto Sans JP で上書き */
+  --font-sans: var(--font-noto-sans), sans-serif;
+  /* ↓ ダウンロードしたフォント用のクラスを追加 */
+  --font-custom: var(--font-my-custom), sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,4 +20,3 @@
     --foreground: #ededed;
   }
 }
-

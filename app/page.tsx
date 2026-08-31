@@ -2,200 +2,189 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Page() {
-    return (
-        <main className="relative min-h-screen w-full overflow-x-hidden bg-[#fafafa] text-zinc-800 font-sans selection:bg-blue-500 selection:text-white">
-        {/* 1. 背景：方眼紙（グリッド）パターン */}
-        <div 
-            className="pointer-events-none absolute inset-0 z-0 bg-[linear-gradient(to_right,#e2e8f0_2px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:30px_30px]" 
-        />
+  return (
+    <main className="font-custom relative min-h-screen w-full overflow-x-hidden bg-[#fafafa] text-zinc-800 selection:bg-blue-500 selection:text-white">
+      {/* 1. 背景：方眼紙（グリッド）パターン */}
+      <div className="pointer-events-none absolute inset-0 z-0 bg-[linear-gradient(to_right,#e2e8f0_2px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:30px_30px]" />
 
-        {/* 2. 背景：散りばめるスケッチ・落書き・AA（絶対配置） */}
-        <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden opacity-40 select-none">
-            {/* 左上のアスキーアートやメモ */}
-            <pre className="text-xl absolute left-4 top-20 ] leading-tight text-blue-900 font-mono">
-            {`koko ha kei5o55 no page. ''''''''''''''''''''''''''
+      {/* 2. 背景：散りばめるスケッチ・落書き・AA（絶対配置） */}
+      <div className="pointer-events-none absolute inset-0 z-0 select-none opacity-40">
+        {/* 左上のアスキーアート */}
+        <pre className="absolute left-4 top-20 font-dot text-lg leading-tight text-blue-900">
+          {`koko ha kei5o55 no page. ''''''''''''''''''''''''''
                 ／￣￣￣＼
-                /       ＼   ＜ WELCOME!!
+                /       ＼  ＜ WELCOME!!
                 | ー  ー   |
-                ＼＿   ＿   ／
+                ＼＿  ＿  ／
                     ''seikintVevrryday
                     Ar_tis sukisuki 888888`}
-            </pre>
+        </pre>
 
-            {/* 背景に敷くラフスケッチ（手持ちのイラスト素材画像に差し替え可能） */}
-            <div className="absolute -left-10 top-1/3 w-64 md:w-96 opacity-60">
-            <Image
-                src="/image/sketch_sample.png" 
-                alt="sketch"
-                width={400}
-                height={400}
-                className="object-contain"
-            />
-            </div>
-            
+        {/* 背景ラフスケッチ */}
+        <div className="absolute -left-10 top-1/3 w-64 opacity-60 md:w-96">
+          <Image
+            src="/image/sketch_sample.png"
+            alt="sketch"
+            width={400}
+            height={400}
+            className="object-contain"
+          />
         </div>
+      </div>
 
-        {/* 3. メインコンテンツ領域 */}
-        <div className="relative z-10 mx-auto max-w-6xl min-h-screen px-6 py-8">
-            
-            {/* ヘッダー・ロゴ */}
-            <header className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 border-b border-blue-200 pb-4">
-            <div>
-                <h1 className="text-4xl md:text-6xl font-black tracking-tight text-blue-900 font-mono ">
-                kei5ot.com
-                </h1><h3>ｯﾄﾄﾞｯﾄｺﾑｺﾞｰｺﾞｰ</h3>
-                <p className="text-xs text-blue-400 font-mono mt-1">
-                [ Welcome to my criation hub ]
-                </p>
+      {/* 3. メインコンテンツ領域 */}
+      <div className="relative z-10 mx-auto min-h-screen max-w-6xl px-6 py-8">
+        {/* ヘッダー・ロゴ */}
+        <header className="flex flex-col justify-between gap-4 border-b-2 border-dotted border-blue-300 pb-4 md:flex-row md:items-baseline">
+          <div>
+            <h1 className="font-custom text-4xl font-black tracking-tight text-blue-900 md:text-6xl">
+              kei5ot.com
+            </h1>
+            <h3 className="font-custom text-xs text-blue-700">
+              ｯﾄﾄﾞｯﾄｺﾑｺﾞｰｺﾞｰ
+            </h3>
+            <p className="mt-1 font-dot text-xs text-blue-500">
+              [ Welcome to my creation hub ]
+            </p>
+          </div>
+
+          {/* 右上：SNS & ショップリンク */}
+          <nav className="flex flex-wrap items-center gap-2 font-dot text-xs">
+            <span className="mr-1 text-zinc-500">SNS ➔</span>
+
+            {/* pixiv */}
+            <a
+              href="https://www.pixiv.net/users/16743124"
+              target="_blank"
+              rel="noreferrer"
+              title="pixiv"
+              className="flex items-center justify-center border-2 border-t-white border-l-white border-r-[#808080] border-b-[#808080] bg-[#e0e0e0] px-3 py-1 font-bold text-blue-800 active:border-t-[#808080] active:border-l-[#808080] active:border-r-white active:border-b-white"
+            >
+              <span className="text-xs font-black">pixiv</span>
+            </a>
+
+            {/* BOOTH */}
+            <a
+              href="https://shop11.booth.pm/"
+              target="_blank"
+              rel="noreferrer"
+              title="BOOTH"
+              className="flex items-center justify-center border-2 border-t-blue-400 border-l-blue-400 border-r-blue-900 border-b-blue-900 bg-blue-600 px-3 py-1 font-bold text-white active:border-t-blue-900 active:border-l-blue-900 active:border-r-blue-400 active:border-b-blue-400"
+            >
+              <span className="text-xs font-bold">BOOTH</span>
+            </a>
+          </nav>
+        </header>
+
+        {/* 中央コラージュエリア */}
+        <div className="relative mt-8 min-h-[500px] w-full">
+          {/* 左側：Portfolioボタン */}
+          <div className="top-8 z-20 mb-8 md:absolute md:left-4 md:mb-0">
+            <Link
+              href="/portfolio"
+              className="inline-block border-2 border-t-white border-l-white border-r-[#555] border-b-[#555] bg-[#e6e6e6] px-6 py-3 font-dot text-xl font-bold text-blue-900 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:border-t-[#555] active:border-l-[#555] active:border-r-white active:border-b-white active:shadow-none"
+            >
+              Portfolio ➔
+            </Link>
+          </div>
+
+          {/* 中央：メインイラスト（2枚並び） */}
+          <div className="top-4 z-10 my-6 flex justify-center gap-4 md:absolute md:left-1/2 md:my-0 md:-translate-x-1/2">
+            <div className="relative aspect-[3/4] w-48 border border-zinc-400 bg-white p-1 shadow-[3px_3px_0px_0px_rgba(0,0,0,0.15)] md:w-60">
+              <Image
+                src="/image/イラスト3.png"
+                alt="Main Illustration 1"
+                fill
+                className="object-contain p-1"
+                priority
+              />
             </div>
-
-            {/* 右上：SNS & ショップリンク */}
-            <nav className="flex flex-wrap items-center gap-2 text-xs font-mono scale-200">
-                <span className="text-zinc-400 mr-1">SNS ➔</span>
-
-                {/*{/* X (Twitter) *
-                <a
-                    href=""
-                    target="_blank"
-                    rel="noreferrer"
-                    title="X (Twitter)"
-                    className="p-2 bg-white border border-blue-300 rounded-md shadow-sm hover:bg-blue-50 text-blue-600 transition flex items-center justify-center"
-                >
-                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                    </svg>
-                </a>*/}
-
-                {/* pixiv */}
-                <a
-                    href="https://www.pixiv.net/users/16743124"
-                    target="_blank"
-                    rel="noreferrer"
-                    title="pixiv"
-                    className="p-2 bg-white border border-blue-300 rounded-md shadow-sm hover:bg-blue-50 text-blue-600 transition flex items-center justify-center font-bold"
-                >
-                    {/* pixivの「p」風の簡易デザインアイコン */}
-                    <span className="text-sm font-black leading-none">p</span>
-                </a>
-                
-                {/* BOOTH */}
-                <a
-                    href="https://shop11.booth.pm/"
-                    target="_blank"
-                    rel="noreferrer"
-                    title="BOOTH"
-                    className="p-2 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 transition flex items-center justify-center"
-                >
-                    <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
-                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
-                    </svg>
-                </a>
-                </nav>
-            </header>
-
-            {/* 中央コラージュエリア */}
-            <div className="relative mt-8 min-h-[500px] w-full">
-            
-            {/* 左側：Linktree風のデカボタン */}
-            <div className="md:absolute left-4 top-8 z-20 mb-8 md:mb-0">
-                <Link 
-                href="/portfolio" 
-                className="inline-block bg-blue-100/80 backdrop-blur border-2 border-blue-400 text-blue-700 text-2xl font-bold px-8 py-4 rounded-2xl shadow-[4px_4px_0px_0px_rgba(96,165,250,1)] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all font-mono"
-                >
-                Portfolio ➔
-                </Link>
-                
+            <div className="relative aspect-[3/4] w-48 border border-zinc-400 bg-white p-1 shadow-[3px_3px_0px_0px_rgba(0,0,0,0.15)] md:w-60">
+              <Image
+                src="/image/イラスト3.png"
+                alt="Main Illustration 2"
+                fill
+                className="object-contain p-1"
+                priority
+              />
             </div>
+          </div>
 
-            {/* 中央：メインOCイラスト（画面の中心に配置） */}
-            <div className="relative md:absolute md:left-1/2 md:top-4 md:-translate-x-1/2 z-10 flex justify-center">
-                <div className="relative w-72 md:w-96 aspect-[3/4] drop-shadow-xl">
-                <Image
-                    src="/image/イラスト3.png" // ここに白髪の女の子のイラスト
-                    alt="Main Illustration"
-                    fill
-                    className="object-contain"
-                    priority
-                />
-                </div>
-                <div className="relative w-33 md:w-96 aspect-[3/4] drop-shadow-xl">
-                <Image
-                    src="/image/イラスト3.png" // ここに白髪の女の子のイラスト
-                    alt="Main Illustration"
-                    fill
-                    className="object-contain"
-                    priority
-                />
-                </div>
-            </div>
-
-            {/* 右側：告知カードや作品サムネイル */}
-            <div className="md:absolute right-4 top-12 z-20 flex flex-col gap-4 max-w-xs">
-                <div className="bg-white/90 p-3 rounded-lg border border-zinc-300 shadow-md transform md:rotate-2 hover:rotate-0 transition">
-                <span className="text-[10px] font-mono text-blue-500 font-bold block mb-1">NEW ARTBOOK</span>
-                <div className="relative w-full h-32 bg-zinc-100 rounded overflow-hidden">
-                    <Image 
-                    src="/image/op0_cover.png" 
-                    alt="op.0" 
-                    fill 
-                    className="object-cover" 
-                    />
-                </div>
-                <p className="text-xs font-bold mt-2">1st Artbook "op.0"</p>
-                </div>
-                <Image
-                src="/image/a.gif"
-                alt="gif"
-                width={200}
-                height={400}
-                className="object-contain"></Image>
-            </div>
-
-            {/* 中央下部：手書き風テキストのアクセント */}
-            <div className="md:absolute bottom-4 left-1/2 md:-translate-x-1/2 z-20 text-center pointer-events-none mt-8 md:mt-0">
-                <span className="text-3xl md:text-5xl font-extrabold text-blue-500/80 tracking-widest uppercase italic border-b-2 border-dashed border-blue-400 ">
-                UNDER CONSTRUCTION
+          {/* 右側：告知カード & GIF */}
+          <div className="top-12 z-20 flex max-w-xs flex-col gap-4 md:absolute md:right-4">
+            <div className="border-2 border-t-white border-l-white border-r-[#808080] border-b-[#808080] bg-[#f0f0f0] p-2 shadow-md">
+              <div className="mb-1 flex items-center justify-between bg-blue-900 px-1 py-0.5">
+                <span className="font-dot text-[10px] font-bold text-white">
+                  ★ NEW ARTBOOK
                 </span>
-            </div>
-
-           
-
-            </div>
-             <div className="flex items-start gap-4">
-                {/* YouTube */}
-                <div className="flex gap-4 bg-zinc-100  flex-1">
-                    <iframe
-                        className="flex-1  min-w-0"
-                        src="https://www.youtube.com/embed/UyKNtTUGbMo"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                    />
-                    <iframe
-                        className="flex-1  min-w-0"
-                        src="https://www.youtube.com/embed/VZn-NXRJT1g?si=lxeWkus-a4agZh4B&amp;controls=0" 
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                    />
-                </div>
-
-                {/* GIF */}
+              </div>
+              <div className="relative h-32 w-full border border-zinc-400 bg-zinc-100">
                 <Image
-                    src="/image/b.gif"
-                    alt="gif"
-                    width={150}
-                    height={150}
-                    className="shrink-0"
+                  src="/image/op0_cover.png"
+                  alt="op.0"
+                  fill
+                  className="object-cover"
                 />
+              </div>
+              <p className="mt-1 font-dot text-xs font-bold text-zinc-800">
+                1st Artbook "op.0"
+              </p>
             </div>
+            <Image
+              src="/image/a.gif"
+              alt="gif"
+              width={200}
+              height={400}
+              className="object-contain"
+            />
+          </div>
 
-            <div className="px-2 pt-3 pb-1">
-                <p className="text-xs text-zinc-400 mt-1">
-                    currently listening...
-                </p>
-            </div>
+          {/* 中央下部：UNDER CONSTRUCTION */}
+          <div className="bottom-4 left-1/2 z-20 mt-8 pointer-events-none text-center md:absolute md:mt-0 md:-translate-x-1/2">
+            <span className="border-b-2 whitespace-nowrap border-dashed border-red-500 font-custom text-2xl font-bold tracking-wider text-red-600 md:text-4xl">
+              ≪ UNDER CONSTRUCTION ≫
+            </span>
+          </div>
         </div>
-        </main>
-    );
+
+        {/* 埋め込みプレイヤー ＆ GIFエリア */}
+        <div className="mt-8 flex flex-col items-center gap-4 md:flex-row md:items-start">
+          <div className="flex w-full flex-1 flex-col gap-4 sm:flex-row">
+            <div className="relative aspect-video w-full flex-1 border-2 border-t-[#808080] border-l-[#808080] border-r-white border-b-white bg-black">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/UyKNtTUGbMo"
+                title="YouTube video player 1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+            <div className="relative aspect-video w-full flex-1 border-2 border-t-[#808080] border-l-[#808080] border-r-white border-b-white bg-black">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/VZn-NXRJT1g?si=lxeWkus-a4agZh4B&controls=0"
+                title="YouTube video player 2"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          <Image
+            src="/image/b.gif"
+            alt="gif"
+            width={150}
+            height={150}
+            className="shrink-0 object-contain"
+          />
+        </div>
+
+        <div className="px-2 pb-1 pt-3">
+          <p className="mt-1 font-dot text-xs text-blue-600 underline">
+            ♪ currently listening...
+          </p>
+        </div>
+      </div>
+    </main>
+  );
 }
