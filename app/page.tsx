@@ -17,7 +17,18 @@ export default function Page() {
                 | ー  ー   |
                 ＼＿  ＿  ／
                     ''seikintVevrryday
-                    Ar_tis sukisuki 888888`}
+                    Ar_tis sukisuki 888888
+                    #############//nn#####%%####%%%####*######%
+
+###############***###%%%%%%######
+########               ---::*##********####
+***************************=.....::-:-***#*#**********#==-
+==***************###*****#****##
+*****************jjjjj....:-=-::.:+++:+*******##********==::
+:+*****#***********#***********#+******
+#*++*+*#+#++#**#+*
+++***+**#****+***++++^^^+*++++*+**+++*+**++***:=*-==++=++*+**
+`}
         </pre>
 
         {/* 背景ラフスケッチ */}
@@ -79,15 +90,25 @@ export default function Page() {
         {/* 中央コラージュエリア */}
         <div className="relative mt-8 min-h-[500px] w-full">
           {/* 左側：Portfolioボタン */}
-          <div className="top-8 z-20 mb-8 md:absolute md:left-4 md:mb-0">
+            <div className="top-8 z-20 mb-8 flex flex-col items-start gap-2 md:absolute md:left-4 md:mb-0">
+            {/* ボタン全体を大きく（px-8 py-4, text-2xl） */}
             <Link
-              href="/portfolio"
-              className="inline-block border-2 border-t-white border-l-white border-r-[#555] border-b-[#555] bg-[#e6e6e6] px-6 py-3 font-dot text-xl font-bold text-blue-900 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:border-t-[#555] active:border-l-[#555] active:border-r-white active:border-b-white active:shadow-none"
+                href="/portfolio"
+                className="inline-block border-4 border-t-white border-l-white border-b-[#444] border-r-[#444] bg-[#e6e6e6] px-8 py-4 font-dot text-2xl font-black text-blue-900 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-1 active:translate-y-1 active:border-t-[#444] active:border-l-[#444] active:border-b-white active:border-r-white active:shadow-none"
             >
-              Portfolio ➔
+                Portfolio ➔
             </Link>
-          </div>
 
+            {/* バッジ＆文字サイズを拡大（text-base / ニコニコは text-3xl） */}
+            <div className="mt-1 animate-bounce">
+                <span className="inline-flex items-center gap-1.5 border-2 border-black bg-[#ff007f] px-3 py-1 font-dot text-base font-bold text-white shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+                ▲ Check It Out!!
+                <span className="text-3xl leading-none text-yellow-300 drop-shadow-[1px_1px_0px_rgba(0,0,0,1)]">
+                    ☺☺
+                </span>
+                </span>
+            </div>
+            </div>
           {/* 中央：メインイラスト（2枚並び） */}
           <div className="top-4 z-10 my-6 flex justify-center gap-4 md:absolute md:left-1/2 md:my-0 md:-translate-x-1/2">
             <div className="relative aspect-[3/4] w-48 border border-zinc-400 bg-white p-1 shadow-[3px_3px_0px_0px_rgba(0,0,0,0.15)] md:w-60">
