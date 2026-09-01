@@ -18,7 +18,7 @@ export default function Page() {
         <div className="absolute left-1/2 -top-[120px] -translate-x-1/2 md:top-18">
           <div className="relative h-[700px] w-[700px] opacity-85 md:h-[800px] md:w-[800px]">
             <Image
-              src="/image/bd.png"
+              src="/image/イラスト３.png"
               alt="Main Illustration 1"
               fill
               className="object-contain "
