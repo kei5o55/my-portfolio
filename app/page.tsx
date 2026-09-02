@@ -18,7 +18,7 @@ export default function Page() {
   <div className="absolute left-1/2 -top-[60px] -translate-x-1/2 md:top-18">
     <div className="relative h-[450px] w-[450px] opacity-40 sm:h-[600px] sm:w-[600px] md:h-[900px] md:w-[900px] md:opacity-90">
       <Image
-        src="/image/練１.png"
+        src="/image/e.png"
         alt="Main Illustration 1"
         fill
         className="object-contain"
@@ -83,14 +83,16 @@ export default function Page() {
   </div>
 
   {/* 2. 右：バナー ＆ アイコン＋SNSボタン（縦並び構造） */}
-<div className="flex flex-col items-center gap-3 md:items-end">
-  {/* SNSの「上」に配置するバナー（サイズアップ版） */}
-  <div className="inline-flex items-center gap-2.5 border-2 border-black bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 px-4 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-    <span className=" text-sm text-yellow-300 sm:text-base">💖</span>
-    <span className=" text-sm font-black tracking-widest text-white drop-shadow-[1px_1px_0px_rgba(0,0,0,1)] sm:text-base">
+  <div className="flex flex-col items-center gap-3 md:items-end">
+    {/* SNSの「上」に配置するバナー（サイズアップ版） */}
+  <div className="inline-flex items-center gap-3 border-2 border-black bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 px-6 py-3 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+    <span className="text-base text-yellow-300 sm:text-lg">❤</span>
+
+    <span className="text-base font-black tracking-widest text-white drop-shadow-[1px_1px_0px_rgba(0,0,0,1)] sm:text-lg">
       We Love Beautiful Girl.
     </span>
-    <span className="text-sm text-yellow-300 sm:text-base">💖</span>
+
+    <span className="text-base text-yellow-300 sm:text-lg">❤</span>
   </div>
 
   {/* アイコン & SNSナビゲーション */}
@@ -262,6 +264,13 @@ export default function Page() {
             <span className="border-b-2 whitespace-nowrap border-dashed border-red-500 font-custom text-xl sm:text-2xl font-bold tracking-wider text-red-600 md:text-4xl">
               ≪ UNDER CONSTRUCTION ≫
             </span>
+                      <Image
+            src="/image/d.gif"
+            alt="gif"
+            width={90}
+            height={90}
+            className="shrink-0 object-contain md:w-24"
+          />
           </div>
         </div>
 
@@ -296,6 +305,13 @@ export default function Page() {
             className="shrink-0 object-contain md:w-24"
           />
         </div>
+                  <Image
+            src="/image/c.gif"
+            alt="gif"
+            width={110}
+            height={110}
+            className="shrink-0 object-contain md:w-24"
+          />
 
         {/* フッター */}
         <footer className="mt-10 border-2 border-t-white border-l-white border-r-[#808080] border-b-[#808080] bg-[#e6e6e6] p-4 shadow-lg">
@@ -314,7 +330,7 @@ export default function Page() {
                 icon: "♪",
                 badgeColor: "text-blue-600",
                 desc: "Music / Rap",
-                url: "https://x.com/YACAINDAHOUSE",
+                url: "https://yacaindahouse.com/",
               },
               {
                 name: "gaburyu",
