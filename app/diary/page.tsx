@@ -73,7 +73,7 @@ export default function DiaryPage() {
 
                 <div className="text-sm leading-7">
                 <p>
-                    久しぶりにサイトを更新しました。
+                    久しぶりにサイトを更新しました。diaryページのtestデータ
                 </p>
 
                 <p className="mt-3">

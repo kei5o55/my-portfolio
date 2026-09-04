@@ -75,7 +75,7 @@ export default function Home() {
 
         <div className="space-y-6">
           {/* Artwork */}
-          <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
+          {/*<div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
             <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">Artwork</h3>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="px-3 py-1 rounded-full text-xs font-medium bg-pink-50 text-pink-600 border border-pink-200/60">
@@ -97,11 +97,11 @@ export default function Home() {
                 Illustrations →
               </Link>
             </div>
-          </div>
+          </div>*/}
 
           {/* Rejistella */}
           <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
-            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">Rejistella <span className="text-xs font-normal text-zinc-400">( 仮称 ) / レジアプリ</span></h3>
+            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">即売会向けレジアプリ</h3>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">TypeScript</span>
               <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-50 text-sky-600 border border-sky-200/60">React</span>
@@ -155,9 +155,10 @@ export default function Home() {
               <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-50 text-amber-600 border border-amber-200/60">個人開発</span>
             </div>
             <p className="text-sm text-zinc-600 leading-relaxed font-light mb-6">
-              イラスト版GitHubを目指した作業記録ツール。
+              イラスト版GitHubみたいなイメージの作業記録ツール。
               <br />
-              現在はNext.jsへの移行とスケジュール管理機能を強化し、創作の継続を技術で支える、日常使いのアプリとして開発を進めています。
+              現在はバックエンド領域の開発をすすめ、サービスとしての公開を目指しています。
+              (DEMOとReadmeがまだ更新できておらず過去バージョンのものになっています)
             </p>
             <div className="flex flex-wrap gap-3">
               <a
@@ -166,7 +167,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
               >
-                ▶ DEMO
+                ▶ DEMO(old version)
               </a>
               <a
                 href="https://github.com/kei5o55/worklog-app"

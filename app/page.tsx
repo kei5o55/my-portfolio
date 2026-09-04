@@ -48,21 +48,6 @@ export default function Page() {
 ++***+**#****+***++++^^^+*++++*+**+++*+**++***:=*-==++=++*+**
 `}
   </pre>
-
-
-
-  {/* 🌟 隠しページの星マーク（ラフスケッチ・アスキーアートのすぐ下付近に配置） */}
-  <div className="pointer-events-auto absolute left-6 top-[780px] sm:top-[740px] md:top-[760px]">
-    <Link
-      href="/secret"
-      title="???"
-      className="group inline-block p-2 text-xs text-blue-900/30 transition-all hover:scale-150 hover:text-yellow-400 hover:opacity-100"
-    >
-      <span className="inline-block transition-transform duration-300 group-hover:rotate-45 group-hover:drop-shadow-[0_0_8px_rgba(250,204,21,0.9)]">
-        ★
-      </span>
-    </Link>
-  </div>
 </div>
 
 
@@ -102,7 +87,7 @@ export default function Page() {
     </div>
 
     <nav className="flex flex-wrap items-center gap-2 font-dot text-xs">
-      <span className="mr-1 text-zinc-500">SNS ➔</span>
+      <span className="mr-1 text-zinc-500 text-2xl">SNS ➔</span>
 
       {/* pixiv */}
       <a
@@ -178,8 +163,34 @@ export default function Page() {
                 </span>
               </span>
             </div>
-
+            <Link
+              href="/art"
+              className="mt-5 relative inline-flex items-center gap-2 sm:gap-3 border-4 border-t-white border-l-white border-b-black border-r-black bg-[#e6e6e6] px-6 py-4 sm:px-10 sm:py-5 font-dot text-2xl sm:text-3xl font-black text-blue-900 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all hover:bg-yellow-200 hover:text-pink-600 hover:shadow-[8px_8px_0px_0px_rgba(255,0,127,1)] active:translate-x-1.5 active:translate-y-1.5 active:border-t-black active:border-l-black active:border-b-white active:border-r-white active:shadow-none"
+            >
+              <span className="animate-[pulse_0.6s_infinite] text-pink-600 group-hover:translate-x-1 transition-transform">
+                ▶
+              </span>
+              <span>ArtWorks</span>
+              <div className="animate-[spin_1s_steps(8,end)_infinite] bg-red-500 w-6 h-6 sm:w-8 sm:h-8 text-center text-white leading-6 sm:leading-8 text-xs sm:text-base">☺</div>
+              <span className="text-lg sm:text-xl font-bold text-blue-600 group-hover:text-pink-600">
+                ➡
+              </span>
+            </Link>
+            <Link
+              href="/diary"
+              className="mt-5 relative inline-flex items-center gap-2 sm:gap-3 border-4 border-t-white border-l-white border-b-black border-r-black bg-[#e6e6e6] px-6 py-4 sm:px-10 sm:py-5 font-dot text-2xl sm:text-3xl font-black text-blue-900 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all hover:bg-yellow-200 hover:text-pink-600 hover:shadow-[8px_8px_0px_0px_rgba(255,0,127,1)] active:translate-x-1.5 active:translate-y-1.5 active:border-t-black active:border-l-black active:border-b-white active:border-r-white active:shadow-none"
+            >
+              <span className="animate-[pulse_0.6s_infinite] text-pink-600 group-hover:translate-x-1 transition-transform">
+                ▶
+              </span>
+              <span>Diary</span>
+              <div className="animate-[spin_1s_steps(8,end)_infinite] bg-red-500 w-6 h-6 sm:w-8 sm:h-8 text-center text-white leading-6 sm:leading-8 text-xs sm:text-base">☺</div>
+              <span className="text-lg sm:text-xl font-bold text-blue-600 group-hover:text-pink-600">
+                ➡
+              </span>
+            </Link>
           </div>
+          
           
               {/* 背景ラフスケッチ（アスキーアートの下に配置） */}
             <div className="py-30">
@@ -325,6 +336,22 @@ export default function Page() {
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
             {[
               {
+                name: "HIKAKIN",
+                category: "MUSIC / Youtuber",
+                icon: "▶",
+                badgeColor: "text-pink-600",
+                desc: "TopYoutuber",
+                url: "https://www.youtube.com/hikakintv",
+              },
+              {
+                name: "SEIKIN",
+                category: "MUSIC / Youtuber",
+                icon: "▶",
+                badgeColor: "text-blue-600",
+                desc: "TopYoutuber",
+                url: "https://www.youtube.com/user/SeikinTV",
+              },
+              {
                 name: "yaca",
                 category: "MUSIC / RAP",
                 icon: "♪",
@@ -355,6 +382,20 @@ export default function Page() {
                 badgeColor: "text-yellow-600",
                 desc: "Sound Producer / Rap",
                 url: "https://x.com/nyankobrq",
+              },{
+                name:"zekk",
+                category:"MUSIC / inst",
+                icon: "♪",
+                badgeColor:"text-blue-600",
+                desc:"Sound Producer",
+                url: "https://www.zekkwazetku.com/"
+              },{
+                name:"ろるあ/Rolua",
+                category:"ILLUST / DESIGN",
+                icon: "🎨",
+                badgeColor:"text-blue-600",
+                desc:"Illustrator / Character",
+                url: "https://x.com/Rolua_N"
               },
               {
                 name: "CHOCO",
@@ -369,7 +410,7 @@ export default function Page() {
                 category: "ILLUST / DESIGN",
                 icon: "🎨",
                 badgeColor: "text-amber-600",
-                desc: "Illustrator / Concept Art",
+                desc: "Illustrator / Character",
                 url: "https://x.com/riuichi35",
               },
             ].map((artist) => (
