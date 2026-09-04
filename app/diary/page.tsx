@@ -1,111 +1,69 @@
-import Link from 'next/link';
 // app/diary/page.tsx
+import Link from 'next/link';
+import { diary } from './data';
 
 export default function DiaryPage() {
     return (
-        <main className=" font-custom min-h-screen bg-white text-black">
+        <main className="font-custom min-h-screen bg-white text-black">
         <div className="mx-auto w-full max-w-3xl px-4 py-8">
 
-            {/* タイトル */}
+            {/* ヘッダー */}
             <header className="mb-8 border-b-2 border-black pb-3">
-                <Link href="/" className="border cursor-pointer">Back to home</Link>
-            <h1 className="text-2xl font-bold">
-                DIARY
-            </h1>
-
-            <p className="mt-1 text-xs">
-                testdiarypage。
-            </p>
+            <Link href="/" className="border cursor-pointer inline-block mb-2 px-2 py-1 text-xs">
+                ← Back to home
+            </Link>
+            <h1 className="text-2xl font-bold">DIARY</h1>
+            <p className="mt-1 text-xs">創作や日々の思考の記録。</p>
             </header>
 
             {/* Diary一覧 */}
             <section className="space-y-8">
-
-            {/* 記事1 */}
-            <article className="border border-black p-4">
-                {/*<div className="mb-3 border-b border-gray-400 pb-2">
-                <time className="text-xs">
-                    2026.09.04
-                </time>
-
-                <h2 className="mt-1 text-lg font-bold">
-                    本物の絵描きについて
-                </h2>
-                </div>
-
-                <div className="text-sm leading-7">
-                <p>
-                    最近、昔の絵描きについて色々考えている。
-                </p>
-
-                <p className="mt-3">
-                    2000年代の個人サイトとか、同人誌とか。
-                    今とは全然違う環境で絵を描いていた人たちのことを考えると、
-                    なかなか面白い。
-                </p>
-
-                <p className="mt-3">
-                    そんなことを考えながら、自分も絵を描いている。
-                </p>
-                </div>
-
-                <div className="mt-4 text-right">
-                <a
-                    href="/diary/20260904"
-                    className="text-xs underline hover:no-underline"
-                >
-                    → 続きを読む
-                </a>
-                </div>*/}
-            </article>
-
-            {/* 記事2 */}
-            <article className="border border-black p-4">
+            {diary.map((item) => (
+                <article key={item.id} className="border border-black p-4">
                 <div className="mb-3 border-b border-gray-400 pb-2">
-                <time className="text-xs">
-                    2026.08.30
-                </time>
-
-                <h2 className="mt-1 text-lg font-bold">
-                    サイトを更新しました
-                </h2>
+                    <time className="text-xs text-gray-600 block">{item.date}</time>
+                    <h2 className="mt-1 text-lg font-bold">{item.title}</h2>
                 </div>
 
+                {/* descriptionがあればそれを優先表示し、なければ簡易表示 */}
                 <div className="text-sm leading-7">
-                <p>
-                    久しぶりにサイトを更新しました。diaryページのtestデータ
-                </p>
-
-                <p className="mt-3">
-                    まだまだ工事中ですが、少しずつ色々追加していきます。
-                </p>
+                    {item.description ? (
+                    <p>{item.description}</p>
+                    ) : (
+                    <div className="line-clamp-3">{item.content}</div>
+                    )}
                 </div>
 
+                {/* タグ表示（存在する場合） */}
+                {item.tags && item.tags.length > 0 && (
+                    <div className="mt-3 flex gap-2">
+                    {item.tags.map((tag) => (
+                        <span key={tag} className="text-[10px] border border-black px-1.5 py-0.5">
+                        #{tag}
+                        </span>
+                    ))}
+                    </div>
+                )}
+
+                {/* 詳細ページへのリンク */}
                 <div className="mt-4 text-right">
-                <a
-                    href={`/diary/${1}`}
+                    <Link
+                    href={`/diary/${item.id}`} // 詳細ページのパス（/works/[slug] または /diary/[slug]）を指定
                     className="text-xs underline hover:no-underline"
-                >
+                    >
                     → 続きを読む
-                </a>
+                    </Link>
                 </div>
-            </article>
-
+                </article>
+            ))}
             </section>
 
-            {/* ページング */}
+            {/* ページネーション（必要に応じて後からロジックを追加） */}
             <nav className="mt-10 flex justify-center gap-4 text-xs">
-            <a
-                href="#"
-                className="underline hover:no-underline"
-            >
+            <a href="#" className="underline hover:no-underline">
                 ← PREV
             </a>
-
-            <a
-                href="#"
-                className="underline hover:no-underline"
-            >
+            <a href="#" className="underline hover:no-underline">
                 NEXT →
             </a>
             </nav>
