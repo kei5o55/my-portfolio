@@ -34,7 +34,7 @@ export default function ArtIndexPage() {
     );
 
   return (
-    <main className="min-h-screen bg-[#f7f7f7] text-[#333] font-sans">
+    <main className="min-h-screen bg-[#f7f7f7] text-[#333] font-custom">
       <div className="mx-auto max-w-4xl px-4 py-8">
 
         {/* ========================================
