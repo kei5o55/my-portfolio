@@ -102,13 +102,13 @@ export default function Page() {
 
       {/* BOOTH */}
       <a
-        href="https://shop11.booth.pm/"
+        href="https://x.com/kei5ot"
         target="_blank"
         rel="noreferrer"
         title="BOOTH"
         className="flex items-center justify-center border-2 border-t-blue-400 border-l-blue-400 border-b-blue-900 border-r-blue-900 bg-blue-600 px-3 py-1 font-bold text-white active:border-t-blue-900 active:border-l-blue-900 active:border-b-blue-400 active:border-r-blue-400"
       >
-        <span className="text-xs font-bold">BOOTH</span>
+        <span className="text-xs font-custom">X</span>
       </a>
     </nav>
   </div>
