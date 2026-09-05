@@ -12,13 +12,13 @@ export type Diary = {
 export const diary: Diary[] = [
     {
         id: "1",
-        title: "ニートKochi / kei5ot：創作の原点と山籠もり",
+        title: "test",
         date: "2026-03-05",
         tags: ["爆笑"],
-        description: "個人サイトと即売会を主軸に置く理由と、創作への考えについての記録。",
+        description: "diary",
         content: (
         <div className="space-y-8 text-zinc-700 leading-relaxed">
-            {/* セクション1 */}
+            {/* セクション1 
             <section className="space-y-4">
             <h2 className="text-lg md:text-xl font-light tracking-wide text-zinc-900 border-b border-zinc-200/80 pb-2">
                 個人サイトと即売会という原点
@@ -28,7 +28,7 @@ export const diary: Diary[] = [
             </p>
             </section>
 
-            {/* セクション2 */}
+            
             <section className="space-y-4">
             <h2 className="text-lg md:text-xl font-light tracking-wide text-zinc-900 border-b border-zinc-200/80 pb-2">
                 「評価されるため」ではなく「理想を描くため」に
@@ -41,13 +41,13 @@ export const diary: Diary[] = [
             </p>
             </section>
 
-            {/* セクション3 */}
+            
             <section className="space-y-4">
             <h2 className="text-lg md:text-xl font-light tracking-wide text-zinc-900 border-b border-zinc-200/80 pb-2">
                 山籠もりのような美学
             </h2>
             <p className="text-sm md:text-base">
-                Xに絵をあげずこの方針にするのは、「不特定多数の目に触れない、もしかしたら描いた作品が誰の目にも付くことなんて無いのかもしれない」という環境下で、それでも自分は情熱を注いで描けるのか？という問いに対する自分なりのアンサーでもある。
+                個人サイト「不特定多数の目に触れない、もしかしたら描いた作品が誰の目にも付くことなんて無いのかもしれない」という環境下で、それでも自分は情熱を注いで描けるのか？という問いに対する自分なりのアンサーでもある。
             </p>
             <p className="text-sm md:text-base">
                 （当時の絵描きはそんな大層なこと考えてなかったと思うけど笑）
@@ -55,7 +55,7 @@ export const diary: Diary[] = [
             <p className="text-sm md:text-base italic text-zinc-500 pt-2">
                 感覚的には、静かに山に籠もって一人で土を捏ね続ける陶芸家みたいなノリに近いのかもしれない。
             </p>
-            </section>
+            </section>*/}
         </div>
         ),
     },
