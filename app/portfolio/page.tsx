@@ -74,48 +74,39 @@ export default function Home() {
         </div>
 
         <div className="space-y-6">
-          {/* Artwork */}
-          {/*<div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
-            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">Artwork</h3>
-            <div className="flex flex-wrap gap-2 mb-4">
-              <span className="px-3 py-1 rounded-full text-xs font-medium bg-pink-50 text-pink-600 border border-pink-200/60">
-                Illustrations
-              </span>
-            </div>
-            <p className="text-sm text-zinc-600 leading-relaxed font-light mb-6">
-              イラスト作品集。
-              <br />
-              感覚や手癖を大切にして描いています。オリジナルキャラクターや二次創作を中心に制作しています。
-              <br />
-              <span className="text-xs text-zinc-400">※高解像度画像を掲載しているため、読み込みに時間がかかる場合があります。</span>
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Link
-                href="/art"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
-              >
-                Illustrations →
-              </Link>
-            </div>
-          </div>*/}
 
           {/* Rejistella */}
           <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
-            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">即売会向けレジアプリ</h3>
-            <div className="flex flex-wrap gap-2 mb-4">
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">TypeScript</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-50 text-sky-600 border border-sky-200/60">React</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-50 text-indigo-600 border border-indigo-200/60">Vite</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-50 text-purple-600 border border-purple-200/60">Web App</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 text-slate-700 border border-slate-300/60">PWA</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-emerald-50 text-emerald-600 border border-emerald-200/60">実運用中</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-50 text-amber-600 border border-amber-200/60">個人開発</span>
+            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">
+              RejiStella (即売会向けレジアプリ)
+            </h3>
+
+            {/* 使用技術・技術領域 */}
+            <div className="space-y-2 mb-5">
+              {/* フロントエンド */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-xs font-semibold text-zinc-400 w-16">Frontend</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">TypeScript</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-50 text-sky-600 border border-sky-200/60">React</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-50 text-indigo-600 border border-indigo-200/60">Vite</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-100 text-slate-700 border border-slate-300/60">PWA</span>
+              </div>
+              {/* 属性・状態タグ */}
+              <div className="flex flex-wrap items-center gap-2 pt-1">
+                <span className="text-xs font-semibold text-zinc-400 w-16">Status</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-50 text-purple-600 border border-purple-200/60">Web App</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-emerald-50 text-emerald-600 border border-emerald-200/60">実運用中</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-50 text-amber-600 border border-amber-200/60">個人開発</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-teal-50 text-teal-600 border border-teal-200/60">Offline First</span>
+              </div>
             </div>
+
             <p className="text-sm text-zinc-600 leading-relaxed font-light mb-6">
-              同人即売会向けのレジアプリケーション。
+              同人即売会などのイベント現場に特化したPOSレジアプリケーション。
               <br />
-              実運用を通して機能を改善し、長期的な視点での育成を継続しています。
+              電波の不安定な会場でも止まらないオフラインファースト設計と直感的な操作性を追求し、実際のイベント出展を通じた継続的な改善・更新を行っています。
             </p>
+
             <div className="flex flex-wrap gap-3">
               <a
                 href="https://register-3k2l.vercel.app/"
@@ -144,22 +135,45 @@ export default function Home() {
 
           {/* 作業記録ツール */}
           <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
-            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">memomy(作業記録ツール)</h3>
-            <div className="flex flex-wrap gap-2 mb-4">
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">TypeScript</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-50 text-sky-600 border border-sky-200/60">React</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-zinc-100 text-zinc-800 border border-zinc-300/60">Next.js</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-rose-50 text-rose-600 border border-rose-200/60">Ruby</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-50 text-purple-600 border border-purple-200/60">Web App</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-emerald-50 text-emerald-600 border border-emerald-200/60">実運用中</span>
-              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-50 text-amber-600 border border-amber-200/60">個人開発</span>
+            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">
+              memomy (作業記録ツール)
+            </h3>
+
+            {/* 使用技術（フロントとバックで分割） */}
+            <div className="space-y-2 mb-5">
+              {/* フロントエンド */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-xs font-semibold text-zinc-400 w-16">Frontend</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">TypeScript</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-50 text-sky-600 border border-sky-200/60">React</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-zinc-100 text-zinc-800 border border-zinc-300/60">Next.js</span>
+              </div>
+
+              {/* バックエンド */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-xs font-semibold text-zinc-400 w-16">Backend</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-rose-50 text-rose-600 border border-rose-200/60">Ruby on Rails</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-50 text-indigo-600 border border-indigo-200/60">PostgreSQL</span>
+              </div>
+
+              {/* 属性・状態タグ */}
+              <div className="flex flex-wrap items-center gap-2 pt-1">
+                <span className="text-xs font-semibold text-zinc-400 w-16">Status</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-50 text-purple-600 border border-purple-200/60">Web App</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-emerald-50 text-emerald-600 border border-emerald-200/60">実運用中</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-50 text-amber-600 border border-amber-200/60">個人開発</span>
+              </div>
             </div>
+
             <p className="text-sm text-zinc-600 leading-relaxed font-light mb-6">
-              イラスト版GitHubみたいなイメージの作業記録ツール。
+              イラスト版GitHubのようなイメージの作業記録ツール。
               <br />
-              現在はバックエンド領域の開発をすすめ、サービスとしての公開を目指しています。
-              (Readmeがまだ更新できておらず過去バージョンのものになっています)
+              現在はバックエンド領域の開発を進め、サービスとしての完全公開を目指しています。
+              <span className="text-xs text-zinc-400 block mt-1">
+                ※ Readmeは旧バージョンのため順次更新中
+              </span>
             </p>
+
             <div className="flex flex-wrap gap-3">
               <a
                 href="https://memomy.net"
@@ -179,6 +193,63 @@ export default function Home() {
               </a>
               <Link
                 href="/works/worklog"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
+              >
+                Detail Page →
+              </Link>
+            </div>
+          </div>
+
+          <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
+            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">
+              個人ファイルサーバー (discord風アプリ)
+            </h3>
+
+            {/* 使用技術・技術領域 */}
+            <div className="space-y-2 mb-5">
+              {/* フロントエンド */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-xs font-semibold text-zinc-400 w-16">Frontend</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">TypeScript</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-50 text-sky-600 border border-sky-200/60">React</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-zinc-100 text-zinc-800 border border-zinc-300/60">Next.js</span>
+              </div>
+
+              {/* バックエンド・データ構造 */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-xs font-semibold text-zinc-400 w-16">Backend</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-rose-50 text-rose-600 border border-rose-200/60">Ruby on Rails</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-50 text-indigo-600 border border-indigo-200/60">PostgreSQL</span>
+              </div>
+
+              {/* 属性・状態タグ */}
+              <div className="flex flex-wrap items-center gap-2 pt-1">
+                <span className="text-xs font-semibold text-zinc-400 w-16">Status</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-50 text-purple-600 border border-purple-200/60">Web App</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">開発中</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-50 text-amber-600 border border-amber-200/60">個人開発</span>
+              </div>
+            </div>
+
+            <p className="text-sm text-zinc-600 leading-relaxed font-light mb-6">
+              自身の創作データやアセットを安全に管理・プレビューするための個人用ファイルストレージシステム。
+              <br />
+              ラズベリーパイなどを用いた自宅サーバ運用へ移行し、日常的な使用を目指しています
+            </p>
+
+            <div className="flex flex-wrap gap-3">
+              {/* 開発中のため、DEMOリンクを非活性（Disabled）または非表示にする想定 */}
+              <a
+                href="https://github.com/kei5o55/file-server-frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
+              >
+                GitHubリポジトリ
+              </a>
+              {/* Detailページへのリンク */}
+              <Link
+                href="/works/fileserver"
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
               >
                 Detail Page →
