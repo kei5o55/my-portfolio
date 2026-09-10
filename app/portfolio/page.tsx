@@ -144,7 +144,7 @@ export default function Home() {
 
           {/* 作業記録ツール */}
           <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
-            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">作業記録ツール</h3>
+            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">memomy(作業記録ツール)</h3>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">TypeScript</span>
               <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-50 text-sky-600 border border-sky-200/60">React</span>
@@ -158,16 +158,16 @@ export default function Home() {
               イラスト版GitHubみたいなイメージの作業記録ツール。
               <br />
               現在はバックエンド領域の開発をすすめ、サービスとしての公開を目指しています。
-              (DEMOとReadmeがまだ更新できておらず過去バージョンのものになっています)
+              (Readmeがまだ更新できておらず過去バージョンのものになっています)
             </p>
             <div className="flex flex-wrap gap-3">
               <a
-                href="https://worklog-app-ruby.vercel.app/projects"
+                href="https://memomy.net"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
               >
-                ▶ DEMO(old version)
+                ▶ DEMO
               </a>
               <a
                 href="https://github.com/kei5o55/worklog-app"
