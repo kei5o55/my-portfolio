@@ -74,6 +74,10 @@ export default function Home() {
         </div>
 
         <div className="space-y-6">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="w-2 h-2 rounded-full bg-zinc-900"></span>
+            <span className="text-xs font-semibold tracking-wider text-zinc-500 uppercase">Main Project</span>
+          </div>
 
           {/* Rejistella */}
           <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
@@ -94,7 +98,7 @@ export default function Home() {
               {/* 属性・状態タグ */}
               <div className="flex flex-wrap items-center gap-2 pt-1">
                 <span className="text-xs font-semibold text-zinc-400 w-16">Status</span>
-                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-50 text-purple-600 border border-purple-200/60">Web App</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-50 text-purple-600 border border-purple-200/60">PWA</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-emerald-50 text-emerald-600 border border-emerald-200/60">実運用中</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-50 text-amber-600 border border-amber-200/60">個人開発</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-teal-50 text-teal-600 border border-teal-200/60">Offline First</span>
@@ -159,9 +163,10 @@ export default function Home() {
               {/* 属性・状態タグ */}
               <div className="flex flex-wrap items-center gap-2 pt-1">
                 <span className="text-xs font-semibold text-zinc-400 w-16">Status</span>
-                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-50 text-purple-600 border border-purple-200/60">Web App</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-50 text-purple-600 border border-purple-200/60">Web app</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-emerald-50 text-emerald-600 border border-emerald-200/60">実運用中</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-50 text-amber-600 border border-amber-200/60">個人開発</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-50 text-cyan-600 border border-cyan-200/60">Docker</span>
               </div>
             </div>
 
@@ -202,7 +207,7 @@ export default function Home() {
 
           <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
             <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">
-              個人ファイルサーバー (discord風アプリ)
+              Resource (discord風アプリ)
             </h3>
 
             {/* 使用技術・技術領域 */}
@@ -220,6 +225,7 @@ export default function Home() {
                 <span className="text-xs font-semibold text-zinc-400 w-16">Backend</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-rose-50 text-rose-600 border border-rose-200/60">Ruby on Rails</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-50 text-indigo-600 border border-indigo-200/60">PostgreSQL</span>
+                
               </div>
 
               {/* 属性・状態タグ */}
@@ -228,12 +234,15 @@ export default function Home() {
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-50 text-purple-600 border border-purple-200/60">Web App</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">開発中</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-50 text-amber-600 border border-amber-200/60">個人開発</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-50 text-cyan-600 border border-cyan-200/60">Docker</span>
+
               </div>
             </div>
 
             <p className="text-sm text-zinc-600 leading-relaxed font-light mb-6">
-              自身の創作データやアセットを安全に管理・プレビューするための個人用ファイルストレージシステム。
+              自身の創作データやアセットを管理・プレビューするための個人用ファイルストレージシステム。
               <br />
+
               ラズベリーパイなどを用いた自宅サーバ運用へ移行し、日常的な使用を目指しています
             </p>
 
@@ -255,6 +264,11 @@ export default function Home() {
                 Detail Page →
               </Link>
             </div>
+          </div>
+
+          <div className="flex items-center gap-2 mb-3">
+            <span className="w-2 h-2 rounded-full bg-zinc-900"></span>
+            <span className="text-xs font-semibold tracking-wider text-zinc-500 uppercase">Oeher Project</span>
           </div>
 
           {/* 簡易ペイントツール */}
