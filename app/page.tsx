@@ -29,7 +29,7 @@ export default function Page() {
 
   {/* 左上のアスキーアート */}
   <pre className="hidden absolute left-4 top-20 font-dot text-lg leading-tight text-blue-900 opacity-40 md:block">
-    {`koko ha kei5o55 no page. ''''''''''''''''''''''''''
+    {`koko ha kei5o55 no page. ''''''''''''''''''''''''''testdayo
           ／￣￣￣＼
           /       ＼  ＜ WELCOME!!
           | ー  ー   |
