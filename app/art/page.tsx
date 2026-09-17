@@ -56,7 +56,7 @@ export default function ArtIndexPage() {
 
               <div className="text-right text-[10px] leading-4 text-[#888]">
                 <div>LAST UPDATE</div>
-                <div>2026.09.04</div>
+                <div>2026.09.17</div>
               </div>
             </div>
           </div>

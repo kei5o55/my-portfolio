@@ -40,7 +40,9 @@ export default function AboutPage() {
           </p>
           <p className="text-sm md:text-base text-zinc-600 leading-relaxed font-light mb-6">
             普段は絵を描いている。<br />
-            創作やゲームが好きです。最近はキャラクターや世界観などのデザイン面に興味があります。
+            創作やアート、そして創作が好きです。最近はキャラクターや世界観などのデザイン面に興味があります。<br/>
+            アートの好きなところは、そこに作者の人生や感性・価値観が見えるところです。<br/>
+            Emotoneというサークルで同人即売会に参加しています。主に関西コミティア。
           </p>
 
           {/* SNSリンク */}
@@ -70,8 +72,8 @@ export default function AboutPage() {
                 Development
               </h3>
               <ul className="text-xs md:text-sm font-mono text-zinc-600 leading-relaxed space-y-1">
-                <li><span className="text-zinc-400">main :</span> TypeScript / React</li>
-                <li><span className="text-zinc-400">sub  :</span> Next.js / HTML / CSS / C</li>
+                <li><span className="text-zinc-400">main :</span> TypeScript / React / Rails / Next.js</li>
+                <li><span className="text-zinc-400">sub  :</span> C / Vue.js / hono🔥</li>
                 <li><span className="text-zinc-400">tools:</span> VSCode / GitHub</li>
               </ul>
             </div>
@@ -93,8 +95,8 @@ export default function AboutPage() {
               </h3>
               <ul className="text-xs md:text-sm font-mono text-zinc-600 leading-relaxed space-y-1">
                 <li><span className="text-zinc-400">illust :</span> original character & worldbuilding / fan art</li>
-                <li><span className="text-zinc-400">circle :</span> Emotone / 人間</li>
-                <li><span className="text-zinc-400">tools  :</span> CLIP STUDIO PAINT</li>
+                <li><span className="text-zinc-400">circle :</span> Emotone</li>
+                <li><span className="text-zinc-400">tools  :</span> CLIP STUDIO PAINT / memomy(My product!)</li>
               </ul>
             </div>
             <div className="text-right mt-6">

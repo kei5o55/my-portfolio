@@ -64,9 +64,8 @@ export default async function ArtDetailPage({ params }: Props) {
       </header>
 
       {/* メイン作品画像（ArtLightbox） */}
-      <div className="mb-8 rounded-2xl overflow-hidden border border-zinc-200/90 bg-white/50 backdrop-blur-md shadow-sm">
         <ArtLightbox src={art.image} alt={art.title} />
-      </div>
+      
 
       {/* 説明文 */}
       {art.description && (

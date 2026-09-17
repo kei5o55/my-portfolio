@@ -16,7 +16,7 @@ export const worksData: Work[] = [
   {
     slug: "rejistella",
     title: "RejiStella / レジアプリ",
-    subtitle: "同人即売会向けレジアプリ / React + Viteで制作中",
+    subtitle: "同人即売会向けレジアプリ / Reactで制作中",
 
     content: (
       <div className="p-6 md:p-8 rounded-2xl border border-zinc-200/90 bg-white/70 backdrop-blur-md shadow-sm space-y-8 text-zinc-700 font-light leading-relaxed">
@@ -98,9 +98,9 @@ export const worksData: Work[] = [
     githubUrl: "https://github.com/kei5o55/register",
   },
   {
-    slug: "worklog",
-    title: "作業記録ツール",
-    subtitle: "イラスト版GitHub風 / 現在はViteでミニマルに制作、今後Next.jsへ移行予定",
+    slug: "memomy",
+    title: "memomy",
+    subtitle: "イラスト版GitHubをイメージした作業記録Webアプリ。",
 
     content: (
       <div className="p-6 md:p-8 rounded-2xl border border-zinc-200/90 bg-white/70 backdrop-blur-md shadow-sm space-y-6 text-zinc-700 font-light leading-relaxed">
@@ -112,10 +112,10 @@ export const worksData: Work[] = [
             個人的に欲しかったイラスト制作作業を記録していくためのツールです。1プロジェクトに対して複数コミットを保存可能で、進捗画像も一緒に保存できます。
           </p>
           <p className="text-sm md:text-base">
-            作業時間の可視化だけでなく、近年の生成AIブームの中で「人が時間を積み重ねて制作したプロセス」に価値が宿るのではないかと考え、そうした痕跡を視覚化できる仕組みを構築しています。
+            作業時間の可視化だけでなく、近年の生成AIブームの中で「人が時間を積み重ねて制作したプロセス」にこそ価値が宿るのではないかと考え、そうした痕跡を視覚化できる仕組みを構築しています。
           </p>
           <p className="text-sm md:text-base">
-            単に記録をつけるだけでなく、スケジュールカレンダーなども実装し、今後は「創作支援OS」として日常的に使えるツールを目指しています。現在はRailsを用いたバックエンド開発を進めており、ログイン機能とDBによる永続化を目標にしています。
+            単に記録をつけるだけでなく、スケジュールカレンダーなども実装し、今後は「創作支援OS」として日常的に使えるツールを目指しています。現在はRuby on Railsを用いたバックエンド開発を進めており、認証・認可を実装してサービスとして公開することを目標としています。
           </p>
 
           <div className="relative w-full max-w-xl h-64 md:h-80 mx-auto rounded-xl overflow-hidden border border-zinc-200/80 shadow-sm bg-zinc-100 my-6">
@@ -128,26 +128,32 @@ export const worksData: Work[] = [
           </div>
 
           <p className="text-sm md:text-base">
-            こちらも実際に自分で使いながら改善点を見つけ、継続的に成長させています。RejiStellaに比べて細部の作り込みが未完成な部分が多いため、今後さらに注力したいプロジェクトです。
+            現在、開発環境でのREST APIを用いたバックエンド永続化を実装し、その環境で自身でも日常的に運用しています。実際に使用しながら見つかった不具合等を修正し、より質の高いプロダクトとして長期的に育成していきたいと考えています。
+          </p>
+          <p className="text-sm md:text-base">
+            本プロジェクトに限らず、基本的に こういう機能欲しいなーとか思った骨組みのUIとデータフローをフロントで再現、その後バックエンドでのロジック・api endpointの作成 → フロントと接続 といったフローで開発を進めています。（我流なのですが作法としては良くない？）
+          </p>
+          <p className="text-sm md:text-base">
+            GitHubのIssueを見ていただくと分かりますが、実装したい機能や実現したいアイデアがまだまだたくさんあるため、これからも力を入れて開発を続けていきます。
           </p>
         </section>
 
         <div className="pt-4 border-t border-zinc-200/60">
           <a
-            href="https://github.com/kei5o55/worklog-app"
+            href="https://github.com/kei5o55/memomy-frontend"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-xs font-mono text-zinc-800 underline underline-offset-4 hover:text-zinc-500 transition-colors"
           >
-            GitHubにさらに詳しく記載しています →
+            GitHubにさらに詳しく記載しています (frontend)→
           </a>
         </div>
       </div>
     ),
 
-    demoUrl: "https://worklog-app-ruby.vercel.app/projects",
-    githubUrl: "https://github.com/kei5o55/worklog-app",
-  },
+    demoUrl: "https://memomy.net",
+    githubUrl: "https://github.com/kei5o55/memomy-frontend",
+},
   {
     slug: "drawapp",
     title: "簡易ペイントツール",
@@ -208,5 +214,29 @@ export const worksData: Work[] = [
 
     demoUrl: undefined,
     githubUrl: "https://github.com/kei5o55/my-portfolio",
+  },
+  {
+    slug: "ref-stash",
+    title: "ポートフォリオサイト",
+    subtitle: "制作物・活動実績のハブ",
+
+    content: (
+      <div className="p-6 md:p-8 rounded-2xl border border-zinc-200/90 bg-white/70 backdrop-blur-md shadow-sm space-y-6 text-zinc-700 font-light leading-relaxed">
+        <section className="space-y-4">
+          <h2 className="text-lg md:text-xl font-light tracking-wide text-zinc-900 border-b border-zinc-200/80 pb-2">
+            概要
+          </h2>
+          <p className="text-sm md:text-base">
+            現在ご覧いただいているこのWebサイトです。Next.jsやTailwind CSSをはじめとするモダンなWeb技術を取り入れて制作しました。
+          </p>
+          <p className="text-sm md:text-base">
+            自創作の発表の場や個人の制作物置き場として、自身のあらゆる表現活動のハブとして活用していく予定です。現在はVercel上でデプロイしていますが、将来的には自宅サーバー（Raspberry Pi等）上での自作運用にも挑戦してみたいと考えています。
+          </p>
+        </section>
+      </div>
+    ),
+
+    demoUrl: undefined,
+    githubUrl: "https://github.com/kei5o55/ref-stash",
   },
 ];

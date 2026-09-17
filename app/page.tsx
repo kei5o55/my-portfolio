@@ -14,18 +14,18 @@ export default function Page() {
 
 {/* 3. 背景グラフィック（スマホとPCで配置・サイズを最適化） */}
 <div className="pointer-events-none absolute inset-0 z-0 select-none overflow-hidden">
-  {/* メインイラスト：スマホでは中央奥で薄く、PCでは大きく主張 */}
-  <div className="absolute left-1/2 -top-[60px] -translate-x-1/2 md:top-18">
-    <div className="relative h-[450px] w-[450px] opacity-40 sm:h-[600px] sm:w-[600px] md:h-[900px] md:w-[900px] md:opacity-90">
-      <Image
-        src="/image/e.png"
-        alt="Main Illustration 1"
-        fill
-        className="object-contain"
-        priority
-      />
-    </div>
+{/* メインイラスト：スマホでは中央奥で薄く、PCでは大きく主張 */}
+<div className="absolute left-1/2 -top-[120px] -translate-x-1/2 md:top-0">
+  <div className="relative h-[900px] w-[900px] opacity-40 sm:h-[1200px] sm:w-[1100px] md:h-[1600px] md:w-[1600px] md:opacity-100">
+    <Image
+      src="/image/ty.png"
+      alt="Main Illustration 1"
+      fill
+      className="object-contain"
+      priority
+    />
   </div>
+</div>
 
   {/* 左上のアスキーアート */}
   <pre className="hidden absolute left-4 top-20 font-dot text-lg leading-tight text-blue-900 opacity-40 md:block">
@@ -130,6 +130,7 @@ export default function Page() {
 
         {/* 中央コラージュエリア */}
         <div className="relative mt-6 min-h-[auto] w-full md:mt-8 md:min-h-[500px]">
+          {/* 最新情報 */}
           {/* 左側：Portfolioボタン */}
           <div className="relative z-30 mb-8 flex flex-col items-center md:items-start gap-2 md:absolute md:left-4 md:top-8 md:mb-0">
             <div className="flex items-center gap-1 font-dot text-xs font-bold text-red-600">
@@ -163,19 +164,44 @@ export default function Page() {
                 </span>
               </span>
             </div>
-            <Link
-              href="/art"
-              className="mt-5 relative inline-flex items-center gap-2 sm:gap-3 border-4 border-t-white border-l-white border-b-black border-r-black bg-[#e6e6e6] px-6 py-4 sm:px-10 sm:py-5 font-dot text-2xl sm:text-3xl font-black text-blue-900 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all hover:bg-yellow-200 hover:text-pink-600 hover:shadow-[8px_8px_0px_0px_rgba(255,0,127,1)] active:translate-x-1.5 active:translate-y-1.5 active:border-t-black active:border-l-black active:border-b-white active:border-r-white active:shadow-none"
-            >
-              <span className="animate-[pulse_0.6s_infinite] text-pink-600 group-hover:translate-x-1 transition-transform">
-                ▶
-              </span>
-              <span>ArtWorks</span>
-              <div className="animate-[spin_1s_steps(8,end)_infinite] bg-red-500 w-6 h-6 sm:w-8 sm:h-8 text-center text-white leading-6 sm:leading-8 text-xs sm:text-base">☺</div>
-              <span className="text-lg sm:text-xl font-bold text-blue-600 group-hover:text-pink-600">
-                ➡
-              </span>
-            </Link>
+             {/* ArtWorks */}
+              <div className="mt-5 flex items-center gap-1 font-dot text-xs font-bold text-pink-600">
+                <span className="animate-ping text-yellow-500">★</span>
+                <span className="bg-pink-500 px-1 text-white shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]">
+                  ORIGINAL ART!!
+                </span>
+                <span className="animate-pulse">↓↓↓</span>
+              </div>
+
+              <Link
+                href="/art"
+                className="group relative inline-flex items-center gap-2 border-4 border-t-white border-l-white border-b-black border-r-black bg-[#e6e6e6] px-6 py-4 font-dot text-2xl font-black text-blue-900 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all hover:bg-yellow-200 hover:text-pink-600 hover:shadow-[8px_8px_0px_0px_rgba(255,0,127,1)] active:translate-x-1.5 active:translate-y-1.5 active:border-t-black active:border-l-black active:border-b-white active:border-r-white active:shadow-none sm:gap-3 sm:px-10 sm:py-5 sm:text-3xl"
+              >
+                <span className="animate-[pulse_0.6s_infinite] text-pink-600 transition-transform group-hover:translate-x-1">
+                  ▶
+                </span>
+
+                <span>ArtWorks</span>
+
+                <div className="animate-[spin_1s_steps(8,end)_infinite] bg-red-500 text-center text-xs leading-6 text-white sm:h-8 sm:w-8 sm:text-base sm:leading-8 w-6 h-6">
+                  ☺
+                </div>
+
+                <span className="text-lg font-bold text-blue-600 transition-colors group-hover:text-pink-600 sm:text-xl">
+                  ➡
+                </span>
+              </Link>
+
+              <div className="mt-2">
+                <span className="inline-flex items-center gap-2 border-2 border-black bg-yellow-300 px-4 py-1.5 font-dot text-base font-black text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:text-lg">
+                  <span className="animate-pulse text-pink-600">▲</span>
+                  <span>LOOK AT MY ART!!</span>
+                  <span className="text-2xl leading-none text-pink-600 drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] sm:text-3xl">
+                    ☺☺
+                  </span>
+                </span>
+              </div>
+            
             <Link
               href="/diary"
               className="mt-5 relative inline-flex items-center gap-2 sm:gap-3 border-4 border-t-white border-l-white border-b-black border-r-black bg-[#e6e6e6] px-6 py-4 sm:px-10 sm:py-5 font-dot text-2xl sm:text-3xl font-black text-blue-900 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all hover:bg-yellow-200 hover:text-pink-600 hover:shadow-[8px_8px_0px_0px_rgba(255,0,127,1)] active:translate-x-1.5 active:translate-y-1.5 active:border-t-black active:border-l-black active:border-b-white active:border-r-white active:shadow-none"
@@ -204,71 +230,146 @@ export default function Page() {
                 />
               </div>
             </div>
-          {/* 右側：告知カード & GIF（スマホでは中央寄せ） */}
-          <div className="relative z-20 mx-auto flex max-w-xs flex-col items-center gap-4 md:absolute md:right-4 md:top-12 md:mx-0">
-            <div className="relative w-full border-2 border-t-white border-l-white border-r-[#808080] border-b-[#808080] bg-[#f0f0f0] p-2.5 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
-              <span className="absolute -top-3 -left-3 z-10 border border-black bg-yellow-300 px-2 py-0.5 text-[10px] font-black text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                COMPLETED!!
-              </span>
 
-              <div className="mb-1.5 flex items-center justify-between bg-blue-900 px-1.5 py-0.5 font-dot text-[10px] font-bold text-white">
-                <span className="flex items-center gap-1">
-                  <span className="text-yellow-300">★</span> 1st Artbook
+            {/* 右側：最新情報・告知カード & GIF（スマホでは中央寄せ） */}
+            <div className="relative z-20 mx-auto flex max-w-xs flex-col items-center gap-4 md:absolute md:right-4 md:top-12 md:mx-0">
+
+              {/* 最新情報 */}
+              <div className="relative w-full">
+                <div className="border-2 border-t-white border-l-white border-r-black border-b-black bg-[#e6e6e6] p-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+
+                  {/* タイトルバー */}
+                  <div className="flex items-center justify-between bg-blue-900 px-2 py-1 font-dot text-xs font-bold text-white sm:text-sm">
+                    <span className="flex items-center gap-1">
+                      <span className="animate-pulse text-yellow-300">★</span>
+                      LATEST NEWS
+                    </span>
+                    <span className="text-blue-200">[NEW!!]</span>
+                  </div>
+
+                  {/* ニュース一覧 */}
+                  <div className="bg-white px-3 py-2 font-dot text-xs leading-relaxed sm:text-sm">
+
+                    <div className="flex gap-2 border-b border-dashed border-zinc-300 py-1.5">
+                      <span className="shrink-0 font-bold text-yellow-600">
+                        2026.12.13
+                      </span>
+                      <Link href="https://www.comitia.co.jp/" className="font-bold text-blue-900">
+                        COMITIA158 申込済
+                      </Link>
+                    </div>
+
+                    <div className="flex gap-2 border-b border-dashed border-zinc-300 py-1.5">
+                      <span className="shrink-0 font-bold text-yellow-600">
+                        2026.10.17
+                      </span>
+                      <Link href="https://www.k-comitia.com/" className="font-bold text-blue-900">
+                        関西コミティア77 参加予定
+                      </Link>
+                    </div>
+
+                    <div className="flex gap-2 border-b border-dashed border-zinc-300 py-1.5">
+                      <span className="shrink-0 font-bold text-red-600">
+                        2026.09.17
+                      </span>
+                      <span>
+                        ArtWorksを更新しました。
+                      </span>
+                    </div>
+
+                    <div className="flex gap-2 py-1.5">
+                      <span className="shrink-0 font-bold text-red-600">
+                        2026.09.17
+                      </span>
+                      <span>
+                        Portfolioを更新しました。
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* 下部 */}
+                  <div className="flex items-center justify-between border-t border-zinc-400 bg-[#d4d4d4] px-2 py-0.5 font-dot text-[9px] text-zinc-600">
+                    <span>Last Update : 2026.09.17</span>
+                    <span className="text-pink-600">CHECK IT OUT ☺</span>
+                  </div>
+
+                </div>
+              </div>
+
+
+              {/* 1st Artbook */}
+              <div className="relative w-full border-2 border-t-white border-l-white border-r-[#808080] border-b-[#808080] bg-[#f0f0f0] p-2.5 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+
+                <span className="absolute -top-3 -left-3 z-10 border border-black bg-yellow-300 px-2 py-0.5 text-[10px] font-black text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  COMPLETED!!
                 </span>
-                <span className="text-blue-200">[PUBLISH]</span>
-              </div>
-              <Link href="https://kei5ot.fanbox.cc/posts/11926764">
 
-              <div className="relative h-36 w-full overflow-hidden border border-zinc-400 bg-zinc-100">
-                <Image
-                  src="/image/op0.png"
-                  alt="op.0"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="mt-2 space-y-1 font-dot">
-                <div className="flex items-baseline justify-between border-b border-dashed border-zinc-300 pb-1">
-                  <p className="text-sm font-black text-blue-900">
-                    op.0
-                  </p>
-                  <span className="text-[10px] font-bold text-zinc-500">
-                    B5 / 12P
+                <div className="mb-1.5 flex items-center justify-between bg-blue-900 px-1.5 py-0.5 font-dot text-[10px] font-bold text-white">
+                  <span className="flex items-center gap-1">
+                    <span className="text-yellow-300">★</span> 1st Artbook
                   </span>
+                  <span className="text-blue-200">[PUBLISH]</span>
                 </div>
 
-                <p className="text-[11px] font-bold leading-tight text-zinc-700">
-                  kei5otが憧れの即売会サークル参加のために初めて作ったアートブックである。（グレー歴史）
-                  残念ながらオンライン頒布はしていない。
-                </p>
+                <Link href="https://kei5ot.fanbox.cc/posts/11926764">
+                  <div className="relative h-36 w-full overflow-hidden border border-zinc-400 bg-zinc-100">
+                    <Image
+                      src="/image/op0.png"
+                      alt="op.0"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
 
-                <div className="pt-1 flex items-center justify-between text-[10px]">
-                  <span className="bg-pink-100 px-1.5 py-0.5 font-bold text-pink-700 border border-pink-300">
-                    関西コミティア７６
-                  </span>
-                  <span className="font-bold text-zinc-500">
-                    CHECK IT OUT ☺
-                  </span>
-                </div>
-              </div></Link>
+                  <div className="mt-2 space-y-1 font-dot">
+                    <div className="flex items-baseline justify-between border-b border-dashed border-zinc-300 pb-1">
+                      <p className="text-sm font-black text-blue-900">
+                        op.0
+                      </p>
+
+                      <span className="text-[10px] font-bold text-zinc-500">
+                        B5 / 12P
+                      </span>
+                    </div>
+
+                    <p className="text-[11px] font-bold leading-tight text-zinc-700">
+                      kei5otが憧れの即売会サークル参加のために初めて作ったアートブックである。（グレー歴史）
+                      残念ながらオンライン頒布はしていない。
+                    </p>
+
+                    <div className="flex items-center justify-between pt-1 text-[10px]">
+                      <span className="border border-pink-300 bg-pink-100 px-1.5 py-0.5 font-bold text-pink-700">
+                        関西コミティア７６
+                      </span>
+
+                      <span className="font-bold text-zinc-500">
+                        CHECK IT OUT ☺
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
+
+              {/* GIF */}
+              <Image
+                src="/image/a.gif"
+                alt="gif"
+                width={200}
+                height={400}
+                className="object-contain"
+              />
+
+              {/* back2 */}
+              <Image
+                src="/image/back2.png"
+                alt="imaima"
+                width={200}
+                height={400}
+                className="object-contain"
+              />
+
             </div>
-
-            <Image
-              src="/image/a.gif"
-              alt="gif"
-              width={200}
-              height={400}
-              className="object-contain"
-            />
-            <Image
-              src="/image/back2.png"
-              alt="imaima"
-              width={200}
-              height={400}
-              className="object-contain"
-            ></Image>
-          </div>
 
           {/* 中央下部：UNDER CONSTRUCTION */}
           <div className="relative z-20 my-8 text-center pointer-events-none md:absolute md:bottom-4 md:left-1/2 md:my-0 md:-translate-x-1/2">
