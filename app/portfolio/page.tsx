@@ -83,6 +83,9 @@ export default function Home() {
           <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
             <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">
               memomy (作業記録ツール)
+              <span className="ml-2 inline-block rounded-md border border-red-500 bg-red-100 px-1.5 py-0.5 text-xs font-bold tracking-wider text-red-600 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.15)]">
+                HOT!
+              </span>
             </h3>
 
             {/* 使用技術（フロントとバックで分割） */}

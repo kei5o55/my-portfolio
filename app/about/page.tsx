@@ -1,5 +1,6 @@
 // app/about/page.tsx
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -31,21 +32,43 @@ export default function AboutPage() {
         <h2 className="text-xs font-mono uppercase tracking-widest text-zinc-400 mb-4">
           Profile
         </h2>
+
         <div className="p-6 md:p-8 rounded-2xl border border-zinc-200/90 bg-white/70 backdrop-blur-md shadow-sm">
-          <h3 className="text-2xl font-light text-zinc-900 mb-1">
-            kei5ot <span className="text-sm text-zinc-400 font-normal">/ kei5o55</span>
-          </h3>
-          <p className="text-xs font-mono text-zinc-500 mb-6 tracking-wider">
-            絵描き / 個人開発
-          </p>
+          
+          {/* Profile header */}
+          <div className="flex items-start gap-5 mb-6">
+            <div className="relative w-40 h-40 md:w-34 md:h-34 shrink-0 overflow-hidden rounded-full border border-zinc-200 bg-zinc-100 shadow-sm">
+              <Image
+                src="/image/icon2.png"
+                alt="kei5ot"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-light text-zinc-900 mb-1">
+                kei5ot{" "}
+                <span className="text-sm text-zinc-400 font-normal">
+                  / kei5o55
+                </span>
+              </h3>
+
+              <p className="text-xs font-mono text-zinc-500 tracking-wider">
+                絵描き / 個人開発
+              </p>
+            </div>
+          </div>
+
+          {/* Profile text */}
           <p className="text-sm md:text-base text-zinc-600 leading-relaxed font-light mb-6">
             普段は絵を描いている。<br />
-            創作やアート、そして創作が好きです。最近はキャラクターや世界観などのデザイン面に興味があります。<br/>
-            アートの好きなところは、そこに作者の人生や感性・価値観が見えるところです。<br/>
+            創作やアートが好きです。最近はキャラクターや世界観などのデザイン面に興味があります。<br />
+            アートの好きなところは、そこに作者の人生や感性・価値観が見えるところです。<br />
             Emotoneというサークルで同人即売会に参加しています。主に関西コミティア。
           </p>
 
-          {/* SNSリンク */}
+          {/* SNS links */}
           <div className="flex flex-wrap gap-3">
             <a
               href="https://www.pixiv.net/users/16743124"
@@ -72,8 +95,8 @@ export default function AboutPage() {
                 Development
               </h3>
               <ul className="text-xs md:text-sm font-mono text-zinc-600 leading-relaxed space-y-1">
-                <li><span className="text-zinc-400">main :</span> TypeScript / React / Rails / Next.js</li>
-                <li><span className="text-zinc-400">sub  :</span> C / Vue.js / hono🔥</li>
+                <li><span className="text-zinc-400">main :</span> TypeScript / React / Next.js / Rails</li>
+                <li><span className="text-zinc-400">other:</span> C / Vue.js / Hono🔥</li>
                 <li><span className="text-zinc-400">tools:</span> VSCode / GitHub</li>
               </ul>
             </div>
@@ -94,9 +117,9 @@ export default function AboutPage() {
                 Creative
               </h3>
               <ul className="text-xs md:text-sm font-mono text-zinc-600 leading-relaxed space-y-1">
-                <li><span className="text-zinc-400">illust :</span> original character & worldbuilding / fan art</li>
+                <li><span className="text-zinc-400">illust :</span> original characters & fan art</li>
                 <li><span className="text-zinc-400">circle :</span> Emotone</li>
-                <li><span className="text-zinc-400">tools  :</span> CLIP STUDIO PAINT / memomy(My product!)</li>
+                <li><span className="text-zinc-400">tools  :</span> CLIP STUDIO PAINT / memomy (my product!)</li>
               </ul>
             </div>
             <div className="text-right mt-6">
