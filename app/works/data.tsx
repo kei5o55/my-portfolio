@@ -193,7 +193,7 @@ export const worksData: Work[] = [
   },
   {
     slug: "portfolio",
-    title: "ポートフォリオサイト",
+    title: "kei5ot.com",
     subtitle: "制作物・活動実績のハブ",
 
     content: (
@@ -203,7 +203,8 @@ export const worksData: Work[] = [
             概要
           </h2>
           <p className="text-sm md:text-base">
-            現在ご覧いただいているこのWebサイトです。Next.jsやTailwind CSSをはじめとするモダンなWeb技術を取り入れて制作しました。
+            現在ご覧いただいているこのWebサイトです。Next.jsやTailwind CSSをはじめとするモダンなWeb技術習得を目標として作成しました。<br/>
+            ルートページはカオスインターネット・y2k vibeに強く影響を受けたデザインとして世界観を構築しています（つもり）。ポートフォリオページに関してはなるべくシンプルで見やすい構成
           </p>
           <p className="text-sm md:text-base">
             自創作の発表の場や個人の制作物置き場として、自身のあらゆる表現活動のハブとして活用していく予定です。現在はVercel上でデプロイしていますが、将来的には自宅サーバー（Raspberry Pi等）上での自作運用にも挑戦してみたいと考えています。

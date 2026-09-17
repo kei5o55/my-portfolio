@@ -206,7 +206,7 @@ export default function Home() {
 
           <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
             <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">
-              Resource (創作assets管理アプリ)
+              ref-stash (創作assets管理アプリ)
             </h3>
 
             {/* 使用技術・技術領域 */}
@@ -231,7 +231,7 @@ export default function Home() {
               <div className="flex flex-wrap items-center gap-2 pt-1">
                 <span className="text-xs font-semibold text-zinc-400 w-16">Status</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-50 text-purple-600 border border-purple-200/60">Web App</span>
-                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">開発中</span>
+                <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">個人運用中</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-50 text-amber-600 border border-amber-200/60">個人開発</span>
                 <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-50 text-cyan-600 border border-cyan-200/60">Docker</span>
 
@@ -241,14 +241,14 @@ export default function Home() {
             <p className="text-sm text-zinc-600 leading-relaxed font-light mb-6">
               自身の創作データやアセットを管理・プレビューするための個人用リソース管理システム。
               <br />
-
+              
               将来的に自宅サーバ環境での構築・運用へ移行し、日常的に使用できるようにしたいです（金銭的にサーバ用ｐｃが買えない）
             </p>
 
             <div className="flex flex-wrap gap-3">
               {/* 開発中のため、DEMOリンクを非活性（Disabled）または非表示にする想定 */}
               <a
-                href="https://github.com/kei5o55/file-server-frontend"
+                href="https://github.com/kei5o55/ref-stash-frontend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
@@ -257,7 +257,7 @@ export default function Home() {
               </a>
               {/* Detailページへのリンク */}
               <Link
-                href="/works/fileserver"
+                href="/works/ref-stash"
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
               >
                 Detail Page →
@@ -304,7 +304,7 @@ export default function Home() {
 
           {/* ポートフォリオサイト */}
           <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
-            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">ポートフォリオサイト</h3>
+            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">kei5ot.com</h3>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-sky-50 text-sky-600 border border-sky-200/60">React</span>
               <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-zinc-100 text-zinc-800 border border-zinc-300/60">Next.js</span>

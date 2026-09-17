@@ -503,7 +503,7 @@ export default function Page() {
                 category: "ILLUST / DESIGN",
                 icon: "🎨",
                 badgeColor: "text-amber-600",
-                desc: "Illustrator / Mecha & Character",
+                desc: "comic artist / Mecha & Character",
                 url: "https://x.com/chocolateshop_i",
               },
               {
