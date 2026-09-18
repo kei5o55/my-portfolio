@@ -34,7 +34,7 @@ export default function Home() {
       <div className="pointer-events-none absolute top-1/3 -right-40 w-96 h-96 bg-gradient-to-bl from-blue-100/40 via-sky-100/20 to-transparent rounded-full blur-3xl -z-10" />
 
       {/* ヘッダー */}
-      <header className="mb-12 border-b border-zinc-200 pb-8 flex flex-col gap-2">
+      <header className="mb-6 border-b border-zinc-200 pb-8 flex flex-col gap-2">
         <h1 className="text-4xl md:text-5xl font-light tracking-widest text-zinc-900 flex items-center gap-3">
           Portfolio
           <span className="w-2 h-2 rounded-full bg-sky-400/80 animate-pulse" />
@@ -45,7 +45,7 @@ export default function Home() {
       </header>
 
       {/* 自己紹介 & アクション */}
-      <section className="mb-16 flex flex-wrap gap-4 items-center">
+      <section className="mb-6 flex flex-wrap gap-4 items-center">
         <Link
           href="/about"
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-300/80 bg-white/60 text-zinc-700 text-sm tracking-wide transition-all duration-300 hover:bg-zinc-900 hover:text-white hover:border-zinc-900 backdrop-blur-sm shadow-sm hover:shadow-md"
