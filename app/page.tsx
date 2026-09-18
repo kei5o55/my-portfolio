@@ -392,7 +392,7 @@ export default function Page() {
             <div className="relative aspect-video flex-1 border-2 border-t-[#808080] border-l-[#808080] border-r-white border-b-white bg-black">
               <iframe
                 className="absolute inset-0 h-full w-full"
-                src="https://www.youtube.com/embed/UyKNtTUGbMo"
+                src="https://www.youtube.com/embed/VZn-NXRJT1g"
                 title="YouTube video player 1"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
