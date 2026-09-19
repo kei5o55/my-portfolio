@@ -12,12 +12,17 @@ export type Diary = {
 export const diary: Diary[] = [
     {
         id: "1",
-        title: "test",
-        date: "2026-03-05",
+        title: "testDiaryだよぅ",
+        date: "2026-03-015",
         tags: ["爆笑"],
-        description: "diary",
+        description: "ここにプレビューでてるかー？",
         content: (
         <div className="space-y-8 text-zinc-700 leading-relaxed">
+            <h2>テストDiary</h2>
+
+            <p className="tesxt-sm md:text-base">
+                日記というか、まじで下らない思考の掃きだめにする予定である。これ、いちいちファイルに直書きするのだるすぎるから早くcmsを実装したい
+            </p>
             {/* セクション1 
             <section className="space-y-4">
             <h2 className="text-lg md:text-xl font-light tracking-wide text-zinc-900 border-b border-zinc-200/80 pb-2">
