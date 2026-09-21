@@ -4,14 +4,10 @@
 
 Next.js（App Router）を使ってサイト構造を作
 
-## Demo
+## Link
 
 https://kei5ot.com/
 
-
-## バックエンド(dbなど制作中）
-https://github.com/kei5o55/image-app
----
 
 ## 内容
 

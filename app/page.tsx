@@ -15,10 +15,10 @@ export default function Page() {
 {/* 3. 背景グラフィック（スマホとPCで配置・サイズを最適化） */}
 <div className="pointer-events-none absolute inset-0 z-0 select-none overflow-hidden">
 {/* メインイラスト：スマホでは中央奥で薄く、PCでは大きく主張 */}
-<div className="absolute left-1/2 -top-[120px] -translate-x-1/2 md:top-0">
-  <div className="relative h-[900px] w-[900px] opacity-40 sm:h-[1200px] sm:w-[1100px] md:h-[1600px] md:w-[1600px] md:opacity-100">
+<div className="absolute left-1/2 -top-[60px] -translate-x-1/2 md:top-12">
+  <div className="relative h-[1000px] w-[900px] opacity-40 sm:h-[1000px] sm:w-[1000px] md:h-[1000px] md:w-[1000px] md:opacity-100">
     <Image
-      src="/image/ty.png"
+      src="/image/tes.png"
       alt="Main Illustration 1"
       fill
       className="object-contain"
