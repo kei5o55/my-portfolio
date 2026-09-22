@@ -296,4 +296,20 @@ export const artworks: ArtWork[] = [
     image: "/art/練１.png",
     description:"ちゃんと肌を塗りまして。\nセクシーで綺麗な雰囲気を描きたい"
   },
+  {
+    slug: "chigiri",
+    title: " chigiri / illustration",
+    date: "2026-09-22",
+    tags:["オリジナル"],
+    image: "/art/hyousi.png",
+    description:"意味ありげな印みたいな手の表情って\n良いなぁ。"
+  },
+  {
+    slug: "chigiri_face",
+    title: " chigiri_御顔 / illustration",
+    date: "2026-09-22",
+    tags:["オリジナル"],
+    image: "/art/t4.png",
+    description:"久しぶりに目をシッカリ描いた。\nカワイー"
+  },
 ];
