@@ -301,7 +301,7 @@ export const artworks: ArtWork[] = [
     title: " chigiri / illustration",
     date: "2026-09-22",
     tags:["オリジナル"],
-    image: "/art/hyousi.png",
+    image: "/art/hyousi2.png",
     description:"意味ありげな印みたいな手の表情って\n良いなぁ。"
   },
   {
