@@ -119,9 +119,6 @@ export default function Home() {
               イラスト版GitHubのようなイメージの作業記録ツール。最も力を入れて制作しています。
               <br />
               現在は、認証認可の実装およびサービスとしての完全公開を目指しています。
-              <span className="text-xs text-zinc-400 block mt-1">
-                ※ Readmeは旧バージョンのため順次更新中
-              </span>
             </p>
 
             <div className="flex flex-wrap gap-3">
