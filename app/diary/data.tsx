@@ -64,4 +64,53 @@ export const diary: Diary[] = [
         </div>
         ),
     },
+    {
+        id: "2",
+        title: "関西コミティア77に参加するぞ",
+        date: "2026-09-025",
+        tags: ["イベント"],
+        description: "関西コミティア77 F-85",
+        content: (
+        <div className="space-y-8 text-zinc-700 leading-relaxed">
+            <h2>関西コミティアに参加する</h2>
+
+            <p className="tesxt-sm md:text-base">
+                10月18日に京都で開催される関西コミティア７７に参加するよう
+            </p>
+            
+            <section className="space-y-4">
+            <h2 className="text-lg md:text-xl font-light tracking-wide text-zinc-900 border-b border-zinc-200/80 pb-2">
+                関西コミティアとは
+            </h2>
+            <p className="text-sm md:text-base">
+                関西コミティアとは　簡単な説明だとオリジナルの同人誌即売会である。名前の通り関西（主に大阪）で開催される地方COMITIAだぞ
+            </p>
+            </section>
+            <section className="space-y-4">
+            <h2 className="text-lg md:text-xl font-light tracking-wide text-zinc-900 border-b border-zinc-200/80 pb-2">
+                頒布予定
+            </h2>
+            <p className="text-sm md:text-base">
+                画集・ポストカードを頒布します。ちなみに、まだ何も準備できてない！絵に関しては既存のまとめになる予定。
+            </p>
+            </section>
+            
+            <section className="space-y-4">
+            <h2 className="text-lg md:text-xl font-light tracking-wide text-zinc-900 border-b border-zinc-200/80 pb-2">
+                schedule予定
+            </h2>
+            <p className="text-sm md:text-base">
+                前日入りして観光➡当日➡翌日に帰る。おそらくゲーセンにも行くので、エンカしたい人いたら連絡してねー
+            </p>
+            <p className="text-sm md:text-base">
+                あと、ちょうどNIKKEのイベントもやっててアツいと思った。
+            </p>
+            <p className="text-sm md:text-base">
+                せっかくDiaryあるので使ってみたけど、こういう日記とは別にイベントタブ作るのが良くね？
+            </p>
+            </section>
+        </div>
+        ),
+    },
+    
 ];
