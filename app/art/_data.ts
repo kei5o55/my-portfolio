@@ -312,4 +312,12 @@ export const artworks: ArtWork[] = [
     image: "/art/t4.png",
     description:"久しぶりに目をシッカリ描いた。\nカワイー"
   },
+    {
+    slug: "girls_in_the_reliquary",
+    title: " girls_in_the_reliquary / Rough",
+    date: "2026-09-22",
+    tags:["オリジナル","ラフ"],
+    image: "/art/hibanngana.png",
+    description:"関西コミティア７７表紙用ラフ予定。\nラフの時点でこのくらい詰めてたら、跡がめっちゃ楽になりそう"
+  },
 ];
