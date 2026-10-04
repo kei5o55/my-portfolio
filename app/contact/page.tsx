@@ -3,160 +3,117 @@ import Link from "next/link";
 
 export default function Page() {
     return (
-        <main style={{ padding: 32, maxWidth: 900, margin: "0 auto" }}>
-        {/* メインタイトル */}
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-2">
+        <main className="min-h-screen bg-[#fafafa] text-zinc-800 selection:bg-zinc-800 selection:text-white px-6 py-12 md:py-20 max-w-4xl mx-auto font-sans relative overflow-hidden">
+        {/* 繊細な背景グラデーション / ノイズ感のある光 */}
+        <div className="pointer-events-none absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-br from-slate-200/40 via-purple-100/30 to-transparent rounded-full blur-3xl -z-10" />
+        <div className="pointer-events-none absolute top-1/3 -right-40 w-96 h-96 bg-gradient-to-bl from-blue-100/40 via-sky-100/20 to-transparent rounded-full blur-3xl -z-10" />
+
+        {/* ヘッダー */}
+        <header className="mb-8 border-b border-zinc-200 pb-8 flex flex-col gap-2">
+            <h1 className="text-4xl md:text-5xl font-light tracking-widest text-zinc-900 flex items-center gap-3">
             Commission
-        </h1>
+            <span className="w-2 h-2 rounded-full bg-sky-400/80 animate-pulse" />
+            </h1>
+            <p className="text-xs text-zinc-400 tracking-wider font-mono uppercase">
+            Request & Contact Information
+            </p>
+        </header>
 
         {/* 戻るボタン */}
-        <Link
+        <div className="mb-8">
+            <Link
             href="/"
-            className="
-            inline-flex
-            items-center
-            gap-2
-            px-4
-            py-2
-            mb-6
-            border
-            border-black
-            rounded-lg
-            text-sm
-            transition
-            hover:bg-zinc-200
-            "
-        >
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-300/80 bg-white/60 text-zinc-700 text-sm tracking-wide transition-all duration-300 hover:bg-zinc-900 hover:text-white hover:border-zinc-900 backdrop-blur-sm shadow-sm hover:shadow-md"
+            >
             ← Back to home
-        </Link>
+            </Link>
+        </div>
 
-        {/* メインコンテンツカード */}
-        <div className="border border-zinc-800 rounded-lg p-6 mt-3 space-y-6">
-            {/* セクション1: 外部サイト */}
-            <div>
-            <h2 className="text-xl font-bold tracking-tight text-gray-900 mb-3">
+        {/* メインコンテンツカード群 */}
+        <div className="space-y-6">
+            {/* セクション1: 外部サイトでのリクエスト */}
+            <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
+            <h2 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">
                 外部サイトでのリクエスト
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-sm text-zinc-600 leading-relaxed font-light mb-6">
                 Skebやpixiv リクエストを常時受け付けています。
+                <br />
+                リクエストの際は「この絵の感じに描いて」など、自身の過去作を例に挙げていただけるとスムーズです。
             </p>
 
-            <div className="flex flex-wrap gap-3 mb-4">
-                <Link
-                className="
-                    inline-flex
-                    items-center
-                    gap-1
-                    px-4
-                    py-2
-                    border
-                    border-black
-                    rounded-lg
-                    text-sm
-                    transition
-                    hover:bg-zinc-200
-                "
+            <div className="flex flex-wrap gap-3">
+                <a
                 href="https://skeb.jp/@kei5ot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
                 >
                 Skeb →
-                </Link>
-                <Link
-                className="
-                    inline-flex
-                    items-center
-                    gap-1
-                    px-4
-                    py-2
-                    border
-                    border-black
-                    rounded-lg
-                    text-sm
-                    transition
-                    hover:bg-zinc-200
-                "
+                </a>
+                <a
                 href="https://www.pixiv.net/users/16743124/request"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
                 >
                 pixiv リクエスト →
-                </Link>
+                </a>
             </div>
-
-            <p className="text-gray-700 leading-relaxed">
-                リクエストの際は「この絵の感じに描いて」とか、自分の過去の絵を例に挙げてくれるとやりやすいです。
-            </p>
             </div>
-
-            <hr className="border-zinc-200" />
 
             {/* セクション2: 参考作品 */}
-            <div>
-            <p className="text-gray-700 mb-4">
+            <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
+            <h2 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">
+                参考作品
+            </h2>
+            <p className="text-sm text-zinc-600 leading-relaxed font-light mb-6">
                 過去の作品の一部をArtworkページ、pixivに置いています。依頼の参考にしてください。
             </p>
+
             <div className="flex flex-wrap gap-3">
                 <Link
-                className="
-                    inline-flex
-                    items-center
-                    gap-1
-                    px-4
-                    py-2
-                    border
-                    border-black
-                    rounded-lg
-                    text-sm
-                    transition
-                    hover:bg-zinc-200
-                "
                 href="/art"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
                 >
                 Artwork →
                 </Link>
-                <Link
-                className="
-                    inline-flex
-                    items-center
-                    gap-1
-                    px-4
-                    py-2
-                    border
-                    border-black
-                    rounded-lg
-                    text-sm
-                    transition
-                    hover:bg-zinc-200
-                "
+                <a
                 href="https://www.pixiv.net/users/16743124"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
                 >
                 pixiv →
-                </Link>
+                </a>
             </div>
             </div>
-
-            <hr className="border-zinc-200" />
 
             {/* セクション3: メールでのご依頼 */}
-            <div>
-            <h2 className="text-xl font-bold tracking-tight text-gray-900 mb-3">
+            <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
+            <h2 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">
                 メールでのご依頼
             </h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-sm text-zinc-600 leading-relaxed font-light mb-4">
                 Skeb等の各種規約に収まらない個別のご依頼はメールでも受付中です。
                 <br />
                 ホーム画面下部の
                 <Link
                 href="/#contact"
-                className="underline mx-1 font-medium hover:text-zinc-600"
+                className="underline underline-offset-4 decoration-zinc-300 hover:decoration-zinc-900 text-zinc-800 font-medium mx-1 transition-all"
                 >
                 Contact セクション
                 </Link>
                 にあるメールアドレス宛に、以下の内容を添えてお送りください。
             </p>
 
-            <ul className="pl-5 list-disc space-y-2 text-zinc-800 font-medium">
+            <div className="p-4 rounded-xl bg-zinc-50/80 border border-zinc-200/60">
+                <ul className="list-disc list-inside space-y-1.5 text-xs md:text-sm text-zinc-700 font-light">
                 <li>ご依頼内容（用途、イラストのイメージなど）</li>
                 <li>ご予算 / ご希望の納期</li>
                 <li>（可能であれば）実績公開の可否</li>
-            </ul>
+                </ul>
+            </div>
             </div>
         </div>
         </main>
