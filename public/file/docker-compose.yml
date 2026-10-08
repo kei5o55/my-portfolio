@@ -1,0 +1,44 @@
+services:
+  db:
+    image: postgres:15
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password
+
+  web:
+    build:
+      context: ./progress-recorder-backend      # Railsのあるフォルダパス（※実際のフォルダ名に合わせて調整してください）
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    command: bundle exec rails s -b '0.0.0.0'
+    volumes:
+      - ./progress-recorder-backend:/app        # ホスト側のRailsディレクトリをマウント
+    ports:
+      - "3001:3000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_HOST: db
+      DATABASE_PASSWORD: password
+
+  frontend:
+    build:
+      context: ./worklog-app  # Next.jsのあるフォルダパス
+      dockerfile: Dockerfile
+    command: npm run dev
+    volumes:
+      - ./worklog-app:/app    # ホスト側のNext.jsディレクトリをマウント
+      - /app/node_modules     # コンテナ内のnode_modulesを保持
+      - /app/.next
+    ports:
+      - "3000:3000"
+    environment:
+      - WATCHPACK_POLLING=true
+      - NEXT_PUBLIC_API_URL=http://localhost:3001
+    depends_on:
+      - web
+
+volumes:
+  db_data:

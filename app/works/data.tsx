@@ -268,6 +268,29 @@ export const worksData: Work[] = [
           GitHubで開発状況・Issueを見る →
         </a>
       </div>
+      {/* docker-compose.yml ダウンロードボタン */}
+      <a
+        href="/file/docker-compose.yml"
+        download="docker-compose.yml"
+        className="inline-flex items-center gap-2 rounded-lg border border-zinc-300 px-4 py-2.5 text-xs font-mono shadow-sm transition-all hover:shadow md:text-sm"
+      >
+        <svg
+          className="h-4 w-4 text-zinc-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+          />
+        </svg>
+        <span>docker-compose.yml</span>
+      </a>
+      
 
     </section>
 
