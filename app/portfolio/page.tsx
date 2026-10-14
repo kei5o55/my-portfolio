@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useRef } from "react";
+import { artworks } from '../art/_data';
 
 export default function Home() {
   const contactSectionRef = useRef<HTMLElement>(null);
@@ -268,6 +269,35 @@ export default function Home() {
           <div className="flex items-center gap-2 mb-3">
             <span className="w-2 h-2 rounded-full bg-zinc-900"></span>
             <span className="text-xs font-semibold tracking-wider text-zinc-500 uppercase">Oeher Project</span>
+          </div>
+
+          <div className="group relative border border-zinc-200/90 rounded-2xl p-6 md:p-8 bg-white/70 backdrop-blur-md transition-all duration-300 hover:border-zinc-400/80 hover:shadow-xl hover:shadow-zinc-200/50">
+            <h3 className="text-xl font-medium tracking-wide text-zinc-900 mb-3">ArtLightbox</h3>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-50 text-blue-600 border border-blue-200/60">TypeScript</span>
+              <span className="px-2.5 py-1 rounded-md text-xs font-mono bg-lime-50 text-lime-700 border border-lime-200/60">ライブラリツール</span>
+            </div>
+            <p className="text-sm text-zinc-600 leading-relaxed font-light mb-6">
+              イラスト作品・画像を美しく見せることを意識して作成したLightboxライブラリです。
+              <br />
+              まだ開発途中ですが、本サイトの/artworksにて使用中のものになります。
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://github.com/kei5o55/ArtLightbox"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
+              >
+                GitHubリポジトリ
+              </a>
+              <Link
+                href=""
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-zinc-300 bg-white text-zinc-800 text-sm transition-all duration-200 hover:bg-zinc-900 hover:text-white hover:border-zinc-900"
+              >
+                Detail Page →
+              </Link>
+            </div>
           </div>
 
           {/* 簡易ペイントツール */}
